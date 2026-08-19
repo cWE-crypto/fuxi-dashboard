@@ -2,8 +2,9 @@ name: 伏羲数据定时采集
 
 on:
   schedule:
-    # 【测试中】每 5 分钟运行一次，用于验证 schedule 自动触发是否生效；测完改回生产频率
-    - cron: '*/5 * * * *'
+    # 每小时第 13 分运行（UTC xx:13 = 北京 xx:13+8；GitHub 调度可能延迟或丢弃，属平台已知限制，
+    # 备用通道：WorkBuddy 本机每小时定时任务也会采集并推送，双保险保证数据更新）
+    - cron: '13 * * * *'
   # 支持手动触发（Actions 页面点 Run workflow）
   workflow_dispatch:
 
