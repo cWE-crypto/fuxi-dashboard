@@ -38,7 +38,10 @@ import subprocess
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 import httpx
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
+
+# 北京时间（UTC+8）：云端 runner 运行在 UTC，必须显式指定，否则日期/更新时间会差 8 小时
+BJ_TZ = timezone(timedelta(hours=8))
 
 # ========== 配置 ==========
 FUXI_BASE = "https://fuxi.umeng100.com"
@@ -208,7 +211,7 @@ def fetch_add_friend_data(session, days=None, channel_keyword="KOC"):
     print("[2/4] 拉取加好友数据...", file=sys.stderr)
 
     days = days or DAYS
-    today = datetime.now()
+    today = datetime.now(BJ_TZ)
     start_date = today - timedelta(days=days - 1)
     start_ts = ts(start_date.replace(hour=0, minute=0, second=0, microsecond=0))
     end_ts = ts(today.replace(hour=23, minute=59, second=59, microsecond=999))
@@ -447,7 +450,7 @@ def process_raw_data(raw_rows):
     result = {
         "meta": {
             "source": "fuxi_api",
-            "updateTime": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "updateTime": datetime.now(BJ_TZ).strftime("%Y-%m-%d %H:%M:%S"),
             "dateRange": f"{dates[0]} 至 {dates[-1]}",
             "days": len(dates),
             "totalRecords": len(detail),
@@ -456,7 +459,7 @@ def process_raw_data(raw_rows):
         "dates": dates,
         "today": today,
         "yesterday": yesterday,
-        "updateTime": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "updateTime": datetime.now(BJ_TZ).strftime("%Y-%m-%d %H:%M"),
         "dateRangeText": f"{dates[0]} 至 {dates[-1]}（{len(dates)} 天）",
         "kpi": {
             # 加好友数
@@ -652,7 +655,7 @@ def main():
 def _gen_mock_data(days=7):
     """生成模拟数据（测试用）- 与真实 API 字段对齐"""
     dates = []
-    today = datetime.now()
+    today = datetime.now(BJ_TZ)
     for i in range(days - 1, -1, -1):
         d = today - timedelta(days=i)
         dates.append(f"{d.month:02d}-{d.day:02d}")
