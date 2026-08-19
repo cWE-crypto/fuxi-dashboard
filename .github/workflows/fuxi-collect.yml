@@ -2,8 +2,8 @@ name: 伏羲数据定时采集
 
 on:
   schedule:
-    # 每小时整点运行一次（cron 时区为 UTC，频率不受影响）
-    - cron: '0 * * * *'
+    # 每小时第 13 分运行（北京时间 xx:13；避开整点高峰，GitHub 整点定时任务易被延迟或丢弃）
+    - cron: '13 * * * *'
   # 支持手动触发（Actions 页面点 Run workflow）
   workflow_dispatch:
 
