@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>投放加好友数据看板 · QC渠道</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+<body>
+  <div class="page">
+    <!-- 顶部标题区 -->
+    <header class="header">
+      <div class="header-left">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18"/>
+            <path d="M7 14l4-4 4 4 5-5"/>
+          </svg>
+        </div>
+        <div class="header-titles">
+          <h1 class="header-title">投放加好友数据看板</h1>
+          <p class="header-sub">伏羲系统 · 投放看板 · 加好友数据 · KOC渠道</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="date-range">
+          <span class="date-label">数据周期</span>
+          <span class="date-value" id="dateRange">近 7 天</span>
+        </div>
+        <div class="data-source-badge" id="dataSourceBadge">
+          <span class="ds-dot"></span>
+          <span class="ds-text">示例数据</span>
+        </div>
+        <button class="share-btn" id="shareBtn" onclick="shareDashboard()" title="生成分享链接，没有伏羲账号也能看">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"/>
+            <circle cx="6" cy="12" r="3"/>
+            <circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+          <span>分享</span>
+        </button>
+        <label class="auto-refresh-wrap">
+          <input type="checkbox" id="autoRefreshToggle" onchange="toggleAutoRefresh()">
+          <span class="auto-refresh-text" id="autoRefreshText">自动刷新</span>
+        </label>
+        <button class="refresh-btn" id="refreshBtn" onclick="handleRefresh()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="refresh-icon">
+            <path d="M21 12a9 9 0 1 1-3-6.7L21 8"/>
+            <path d="M21 3v5h-5"/>
+          </svg>
+          <span>刷新数据</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 筛选条件条 -->
+    <div class="filter-bar">
+      <div class="filter-item">
+        <span class="filter-key">投放日期</span>
+        <span class="filter-val" id="filterDate">—</span>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-item">
+        <span class="filter-key">二级渠道</span>
+          <span class="filter-val chip">KOC</span>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-item">
+        <span class="filter-key">透视维度</span>
+        <span class="filter-val">全部勾选</span>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-item">
+        <span class="filter-key">更新时间</span>
+        <span class="filter-val mono" id="updateTime">—</span>
+        <span class="freshness-dot" id="freshnessDot" title="数据新鲜度"></span>
+      </div>
+      <div class="filter-divider"></div>
+      <button class="manual-collect-btn" id="healthCheckBtn" onclick="checkCollectorHealth()" title="检查后台采集服务状态">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mc-icon">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        </svg>
+        <span>检查采集</span>
+      </button>
+    </div>
+
+    <!-- KPI 指标条 -->
+    <section class="kpi-strip">
+      <div class="kpi-card primary">
+        <div class="kpi-label">今日加好友数</div>
+        <div class="kpi-value" id="kpiToday">—</div>
+        <div class="kpi-delta up" id="kpiTodayDelta">—</div>
+        <div class="kpi-foot">较昨日同期</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">近 7 天加好友总数</div>
+        <div class="kpi-value" id="kpi7d">—</div>
+        <div class="kpi-delta up" id="kpi7dDelta">—</div>
+        <div class="kpi-foot">较上一周期</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">昨日加好友数</div>
+        <div class="kpi-value" id="kpiYtd">—</div>
+        <div class="kpi-delta up" id="kpiYtdDelta">—</div>
+        <div class="kpi-foot">较前日</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">日均加好友数</div>
+        <div class="kpi-value" id="kpiAvg">—</div>
+        <div class="kpi-delta">近 7 日均值</div>
+        <div class="kpi-foot">7 日滚动</div>
+      </div>
+      <div class="kpi-card retain">
+        <div class="kpi-label">48h 留存率</div>
+        <div class="kpi-value" id="kpiRetain">—<small>%</small></div>
+        <div class="kpi-delta" id="kpiRetainToday">今日 —%</div>
+        <div class="kpi-foot">近 7 天整体</div>
+      </div>
+    </section>
+
+    <!-- 分组汇总：郑州三组 vs 郑州五组 -->
+    <section class="group-summary">
+      <div class="group-summary-head">
+        <h2 class="panel-title">分组汇总</h2>
+        <p class="panel-sub">小写 koc = 郑州三组 · 大写 KOC = 郑州五组</p>
+        <div class="tab-switch" style="margin-left:auto">
+          <button class="tab-btn active" data-gtab="today" onclick="switchGroupTab('today')">今日</button>
+          <button class="tab-btn" data-gtab="yesterday" onclick="switchGroupTab('yesterday')">昨日</button>
+          <button class="tab-btn" data-gtab="d7" onclick="switchGroupTab('d7')">近7天</button>
+        </div>
+      </div>
+      <div class="group-cards" id="groupCards">
+        <!-- 动态生成 -->
+      </div>
+    </section>
+
+    <!-- 主分析区：趋势图 + 年级分布 -->
+    <section class="main-grid">
+      <!-- 近7天趋势 -->
+      <div class="panel panel-trend">
+        <div class="panel-head">
+          <div>
+            <h2 class="panel-title">近 7 天加好友趋势</h2>
+            <div class="panel-tabs" id="trendTabs">
+              <button class="ptab active" data-metric="add" onclick="switchTrendMetric('add')">加好友数</button>
+              <button class="ptab" data-metric="retain" onclick="switchTrendMetric('retain')">留存数</button>
+              <button class="ptab" data-metric="rate" onclick="switchTrendMetric('rate')">留存率</button>
+            </div>
+          </div>
+          <div>
+            <p class="panel-sub">每日加好友数走势 · KOC渠道</p>
+            <div class="legend-group" id="trendLegend"></div>
+          </div>
+        </div>
+        <div class="chart-box">
+          <div id="trendChart" style="width:100%;height:320px"></div>
+        </div>
+      </div>
+
+      <!-- 分年级统计 -->
+      <div class="panel panel-grade">
+        <div class="panel-head">
+          <div>
+            <h2 class="panel-title">分年级加好友统计</h2>
+            <p class="panel-sub">高一 / 高二 / 高三 · 今昨对比</p>
+          </div>
+          <div class="tab-switch">
+             <button class="tab-btn active" data-tab="today" onclick="switchGradeTab('today')">今日</button>
+             <button class="tab-btn" data-tab="yesterday" onclick="switchGradeTab('yesterday')">昨日</button>
+             <button class="tab-btn" data-tab="d7" onclick="switchGradeTab('d7')">近7天</button>
+           </div>
+        </div>
+        <div class="grade-bars" id="gradeBars">
+          <!-- 动态生成 -->
+        </div>
+        <div class="grade-total">
+          <span>合计</span>
+          <span class="grade-total-val" id="gradeTotal">—</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 主播排名 + 明细表 -->
+    <section class="bottom-grid">
+      <!-- 主播排名 -->
+      <div class="panel panel-anchor">
+        <div class="panel-head">
+          <div>
+            <h2 class="panel-title">主播加好友排行</h2>
+            <p class="panel-sub">二级渠道"KOC-"后缀提取 · TOP 10</p>
+          </div>
+          <div class="tab-switch">
+             <button class="tab-btn active" data-atab="today" onclick="switchAnchorTab('today')">今日</button>
+             <button class="tab-btn" data-atab="yesterday" onclick="switchAnchorTab('yesterday')">昨日</button>
+             <button class="tab-btn" data-atab="d7" onclick="switchAnchorTab('d7')">近7天</button>
+           </div>
+        </div>
+        <div class="anchor-list" id="anchorList">
+          <!-- 动态生成 -->
+        </div>
+      </div>
+
+      <!-- 数据明细 -->
+      <div class="panel panel-detail">
+        <div class="panel-head">
+          <div>
+            <h2 class="panel-title">数据明细</h2>
+            <p class="panel-sub">按日期 × 年级 × 主播展开</p>
+          </div>
+          <button class="export-btn" onclick="handleExport()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            导出
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>二级渠道</th>
+                <th>主播</th>
+                <th>年级</th>
+                <th class="num">加好友数</th>
+                <th class="num">占比</th>
+              </tr>
+            </thead>
+            <tbody id="detailBody">
+              <!-- 动态生成 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部口径说明 -->
+    <footer class="footer">
+      <div class="foot-note">
+        <strong>数据口径：</strong>加好友数 = 用户通过投放链接成功添加企业微信的数量，按添加时间统计。
+        数据来源：伏羲系统-投放看板-加好友数据，二级渠道筛选"KOC"，透视维度全选。
+        主播名 = 二级渠道末段（以"-"分隔的最后一段）。
+      </div>
+      <div class="foot-tip">
+        * 点击右上角「导入数据」上传伏羲系统导出的加好友数据文件（支持 .xlsx / .csv），看板将自动解析并渲染。
+        支持字段：日期、二级渠道、年级、加好友数（自动识别表头顺序，主播名从二级渠道末段提取）。
+        勾选「自动刷新」每 2 分钟自动刷新一次数据（真实数据模式下默认开启）。
+      </div>
+    </footer>
+  </div>
+
+  <!-- 刷新提示 -->
+  <div class="toast" id="toast"></div>
+
+  <!-- 书签工具引导弹窗 -->
+  <div class="modal-mask" id="bookmarkletModal" onclick="if(event.target===this)hideBookmarkletGuide()">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>零安装 · 伏羲数据抓取</h3>
+        <button class="modal-close" onclick="hideBookmarkletGuide()">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">不用装任何软件，把下面这个按钮拖到浏览器书签栏，在伏羲页面点一下就能抓取数据。</p>
+        
+        <div class="bookmarklet-drag">
+          <a class="bookmarklet-link" id="bookmarkletLink" href="javascript:(function(){})()" onclick="return false;
+            &lt;!-- 点击没用，拖到书签栏 --&gt;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+            伏羲→看板
+          </a>
+          <span class="drag-tip">← 把我拖到浏览器书签栏</span>
+        </div>
+
+        <ol class="steps-list">
+          <li><strong>第1步：</strong>把上面的「伏羲→看板」按钮拖到你浏览器的书签栏上</li>
+          <li><strong>第2步：</strong>打开伏羲系统，登录后进入「加好友数据」页面</li>
+          <li><strong>第3步：</strong>设置好筛选条件（日期、二级渠道=KOC、透视维度全选）</li>
+          <li><strong>第4步：</strong>点一下书签栏里的「伏羲→看板」</li>
+          <li><strong>第5步：</strong>自动抓取数据并跳转到看板，搞定！</li>
+        </ol>
+
+        <div class="tip-box">
+          <strong>💡 提示：</strong>
+          <ul>
+            <li>如果看不到书签栏，按 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>（Mac 是 <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>）显示</li>
+            <li>数据来自当前页面表格，所以页面上有多少条就抓多少条（建议调大每页数量）</li>
+            <li>如果表格是分页的，数据不全，建议导出 Excel 后用「导入数据」功能</li>
+            <li>抓取的数据保存在浏览器本地，不会上传到任何服务器</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分享弹窗 -->
+  <div class="modal-mask" id="shareModal" onclick="if(event.target===this)hideShareModal()">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>分享看板数据</h3>
+        <button class="modal-close" onclick="hideShareModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">把链接发给同事，他们直接打开就能看到数据，<strong>不需要伏羲账号</strong>。</p>
+        
+        <div class="share-link-box">
+          <input type="text" id="shareLinkInput" readonly />
+          <button class="copy-btn" onclick="copyShareLink()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            复制链接
+          </button>
+        </div>
+        <p class="share-data-tip" id="shareDataTip"></p>
+
+        <div class="tip-box">
+          <strong>📌 说明：</strong>
+          <ul>
+            <li>数据被压缩到链接里了，打开链接即可直接查看</li>
+            <li>分享的是<strong>当前快照</strong>，不会自动更新</li>
+            <li>有新数据了重新生成链接再发一次就行</li>
+            <li>数据只在链接里，不上传服务器</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js?v=5"></script>
+  <script src="app.js?v=5"></script>
+</body>
+</html>
