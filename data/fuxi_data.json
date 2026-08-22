@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-08-22 18:38:46",
+    "updateTime": "2026-08-22 19:54:14",
     "dateRange": "08-09 至 08-22",
     "days": 14,
     "totalRecords": 153,
@@ -25,24 +25,24 @@
   ],
   "today": "08-22",
   "yesterday": "08-21",
-  "updateTime": "2026-08-22 18:38",
+  "updateTime": "2026-08-22 19:54",
   "dateRangeText": "08-09 至 08-22（14 天）",
   "kpi": {
-    "today": 10,
-    "todayDelta": -41,
-    "todayDeltaPct": "-80.4",
-    "total7d": 478,
-    "total7dDelta": 114,
-    "total7dDeltaPct": "31.3",
+    "today": 19,
+    "todayDelta": -32,
+    "todayDeltaPct": "-62.7",
+    "total7d": 487,
+    "total7dDelta": 123,
+    "total7dDeltaPct": "33.8",
     "yesterday": 51,
     "ytdDelta": -11,
     "ytdDeltaPct": "-17.7",
-    "avg7d": 34,
-    "todayRetain48h": 9,
-    "totalRetain48h": 422,
-    "totalDelete48h": 56,
+    "avg7d": 35,
+    "todayRetain48h": 17,
+    "totalRetain48h": 430,
+    "totalDelete48h": 57,
     "retainRate48h": 88.3,
-    "todayRetainRate48h": 90.0
+    "todayRetainRate48h": 89.5
   },
   "daily": [
     {
@@ -151,17 +151,17 @@
     },
     {
       "date": "08-22",
-      "count": 10,
-      "addCount": 10,
-      "retain48h": 9,
-      "delete48h": 1,
-      "retainRate48h": 90.0
+      "count": 19,
+      "addCount": 19,
+      "retain48h": 17,
+      "delete48h": 2,
+      "retainRate48h": 89.5
     }
   ],
   "grade": {
     "today": {
       "高一": 0,
-      "高三": 8,
+      "高三": 17,
       "高二": 2
     },
     "yesterday": {
@@ -171,7 +171,7 @@
     },
     "todayAdd": {
       "高一": 0,
-      "高三": 8,
+      "高三": 17,
       "高二": 2
     },
     "yesterdayAdd": {
@@ -181,7 +181,7 @@
     },
     "todayRetain": {
       "高一": 0,
-      "高三": 7,
+      "高三": 15,
       "高二": 2
     },
     "yesterdayRetain": {
@@ -200,7 +200,7 @@
       "刘双双": 0,
       "刘莹莹": 0,
       "周璞": 0,
-      "孙浩洋": 2,
+      "孙浩洋": 8,
       "孟萍": 0,
       "屈海连": 0,
       "张新淼": 0,
@@ -208,7 +208,7 @@
       "李冠甫": 0,
       "梁孟婷": 0,
       "漆存军": 0,
-      "窦哲": 8,
+      "窦哲": 11,
       "郭云波": 0,
       "雷双拥": 0,
       "马振堃": 0
@@ -234,7 +234,7 @@
       "刘双双": 0,
       "刘莹莹": 0,
       "周璞": 0,
-      "孙浩洋": 2,
+      "孙浩洋": 8,
       "孟萍": 0,
       "屈海连": 0,
       "张新淼": 0,
@@ -242,7 +242,7 @@
       "李冠甫": 0,
       "梁孟婷": 0,
       "漆存军": 0,
-      "窦哲": 8,
+      "窦哲": 11,
       "郭云波": 0,
       "雷双拥": 0,
       "马振堃": 0
@@ -268,7 +268,7 @@
       "刘双双": 0,
       "刘莹莹": 0,
       "周璞": 0,
-      "孙浩洋": 2,
+      "孙浩洋": 8,
       "孟萍": 0,
       "屈海连": 0,
       "张新淼": 0,
@@ -276,7 +276,7 @@
       "李冠甫": 0,
       "梁孟婷": 0,
       "漆存军": 0,
-      "窦哲": 7,
+      "窦哲": 9,
       "郭云波": 0,
       "雷双拥": 0,
       "马振堃": 0
@@ -438,6 +438,18 @@
       "count": 10
     },
     {
+      "date": "08-22",
+      "channel": "KOC内部学习方法类-窦哲",
+      "anchor": "窦哲",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 10,
+      "delete48h": 2,
+      "retain48h": 8,
+      "count": 10
+    },
+    {
       "date": "08-19",
       "channel": "koc警校--周璞",
       "anchor": "周璞",
@@ -463,14 +475,14 @@
     },
     {
       "date": "08-22",
-      "channel": "KOC内部学习方法类-窦哲",
-      "anchor": "窦哲",
+      "channel": "KOC内部学习方法类-孙浩洋",
+      "anchor": "孙浩洋",
       "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 7,
-      "delete48h": 1,
-      "retain48h": 6,
+      "delete48h": 0,
+      "retain48h": 7,
       "count": 7
     },
     {
@@ -510,18 +522,6 @@
       "count": 6
     },
     {
-      "date": "08-17",
-      "channel": "koc警校--周璞",
-      "anchor": "周璞",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 6,
-      "delete48h": 3,
-      "retain48h": 3,
-      "count": 6
-    },
-    {
       "date": "08-11",
       "channel": "KOC内部课程类-孟萍",
       "anchor": "孟萍",
@@ -531,6 +531,18 @@
       "addCount": 6,
       "delete48h": 1,
       "retain48h": 5,
+      "count": 6
+    },
+    {
+      "date": "08-17",
+      "channel": "koc警校--周璞",
+      "anchor": "周璞",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 6,
+      "delete48h": 3,
+      "retain48h": 3,
       "count": 6
     },
     {
@@ -679,18 +691,6 @@
     },
     {
       "date": "08-14",
-      "channel": "KOC内部课程类-孟萍",
-      "anchor": "孟萍",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 4,
-      "delete48h": 0,
-      "retain48h": 4,
-      "count": 4
-    },
-    {
-      "date": "08-14",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
       "grade": "高三",
@@ -702,15 +702,15 @@
       "count": 4
     },
     {
-      "date": "08-17",
-      "channel": "koc入团类--郭云波",
-      "anchor": "郭云波",
+      "date": "08-14",
+      "channel": "KOC内部课程类-孟萍",
+      "anchor": "孟萍",
       "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 4,
-      "delete48h": 1,
-      "retain48h": 3,
+      "delete48h": 0,
+      "retain48h": 4,
       "count": 4
     },
     {
@@ -730,6 +730,18 @@
       "channel": "KOC内部课程类-孟萍",
       "anchor": "孟萍",
       "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 4,
+      "delete48h": 1,
+      "retain48h": 3,
+      "count": 4
+    },
+    {
+      "date": "08-17",
+      "channel": "koc入团类--郭云波",
+      "anchor": "郭云波",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 4,
@@ -789,24 +801,24 @@
       "date": "08-21",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
-      "count": 3
-    },
-    {
-      "date": "08-21",
-      "channel": "koc课程类--雷双拥",
-      "anchor": "雷双拥",
       "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 3,
       "delete48h": 2,
       "retain48h": 1,
+      "count": 3
+    },
+    {
+      "date": "08-21",
+      "channel": "koc课程类--雷双拥",
+      "anchor": "雷双拥",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 3,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3
     },
     {
@@ -979,8 +991,8 @@
     },
     {
       "date": "08-19",
-      "channel": "KOC内部课程类-孟萍",
-      "anchor": "孟萍",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -1003,8 +1015,8 @@
     },
     {
       "date": "08-19",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
+      "channel": "KOC内部课程类-孟萍",
+      "anchor": "孟萍",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -1147,18 +1159,6 @@
     },
     {
       "date": "08-13",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 2,
-      "delete48h": 0,
-      "retain48h": 2,
-      "count": 2
-    },
-    {
-      "date": "08-13",
       "channel": "KOC内部课程类-孟萍",
       "anchor": "孟萍",
       "grade": "高一",
@@ -1173,6 +1173,18 @@
       "date": "08-13",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 2,
+      "delete48h": 0,
+      "retain48h": 2,
+      "count": 2
+    },
+    {
+      "date": "08-13",
+      "channel": "KOC内部讲题送资料-屈海连",
+      "anchor": "屈海连",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -1230,9 +1242,9 @@
       "count": 2
     },
     {
-      "date": "08-17",
-      "channel": "KOC内部学习方法类-孙浩洋",
-      "anchor": "孙浩洋",
+      "date": "08-11",
+      "channel": "KOC内部学习方法类-窦哲",
+      "anchor": "窦哲",
       "grade": "高三",
       "plan": "",
       "source": "",
@@ -1242,9 +1254,9 @@
       "count": 2
     },
     {
-      "date": "08-11",
-      "channel": "KOC内部学习方法类-窦哲",
-      "anchor": "窦哲",
+      "date": "08-17",
+      "channel": "KOC内部学习方法类-孙浩洋",
+      "anchor": "孙浩洋",
       "grade": "高三",
       "plan": "",
       "source": "",
@@ -1399,6 +1411,42 @@
     },
     {
       "date": "08-20",
+      "channel": "koc入团类--郭云波",
+      "anchor": "郭云波",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 1,
+      "retain48h": 0,
+      "count": 1
+    },
+    {
+      "date": "08-20",
+      "channel": "KOC内部课程类-李冠甫",
+      "anchor": "李冠甫",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-20",
+      "channel": "koc女生规划--曲雅",
+      "anchor": "曲雅",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 1,
+      "retain48h": 0,
+      "count": 1
+    },
+    {
+      "date": "08-20",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -1410,42 +1458,6 @@
       "count": 1
     },
     {
-      "date": "08-20",
-      "channel": "koc入团类--郭云波",
-      "anchor": "郭云波",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
-      "count": 1
-    },
-    {
-      "date": "08-20",
-      "channel": "KOC内部课程类-李冠甫",
-      "anchor": "李冠甫",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-20",
-      "channel": "koc女生规划--曲雅",
-      "anchor": "曲雅",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
-      "count": 1
-    },
-    {
       "date": "08-18",
       "channel": "KOC内部学习方法类-孙浩洋",
       "anchor": "孙浩洋",
@@ -1557,7 +1569,7 @@
       "date": "08-21",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
-      "grade": "高一",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1569,7 +1581,7 @@
       "date": "08-21",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
-      "grade": "高二",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1605,18 +1617,6 @@
       "date": "08-13",
       "channel": "KOC内部学习方法类-孙浩洋",
       "anchor": "孙浩洋",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-13",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
       "grade": "高二",
       "plan": "",
       "source": "",
@@ -1651,8 +1651,8 @@
     },
     {
       "date": "08-13",
-      "channel": "koc入团类--郭云波",
-      "anchor": "郭云波",
+      "channel": "KOC内部讲题送资料-屈海连",
+      "anchor": "屈海连",
       "grade": "高二",
       "plan": "",
       "source": "",
@@ -1674,6 +1674,18 @@
       "count": 1
     },
     {
+      "date": "08-13",
+      "channel": "koc入团类--郭云波",
+      "anchor": "郭云波",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
       "date": "08-12",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
@@ -1687,33 +1699,33 @@
     },
     {
       "date": "08-12",
-      "channel": "KOC内部课程类-孟萍",
-      "anchor": "孟萍",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-12",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-12",
       "channel": "KOC内部学习方法类-刘双双",
       "anchor": "刘双双",
       "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-12",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-12",
+      "channel": "KOC内部课程类-孟萍",
+      "anchor": "孟萍",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1810,6 +1822,66 @@
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
       "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-11",
+      "channel": "KOC内部课程类-李冠甫",
+      "anchor": "李冠甫",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-11",
+      "channel": "KOC内部学习方法类-窦哲",
+      "anchor": "窦哲",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-11",
+      "channel": "KOC内部学习方法类-孙浩洋",
+      "anchor": "孙浩洋",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-11",
+      "channel": "KOC内部学习方法类-孙浩洋",
+      "anchor": "孙浩洋",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-11",
+      "channel": "KOC内部纯资料-刘莹莹",
+      "anchor": "刘莹莹",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1878,22 +1950,10 @@
       "count": 1
     },
     {
-      "date": "08-11",
-      "channel": "KOC内部课程类-李冠甫",
-      "anchor": "李冠甫",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-11",
+      "date": "08-22",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
-      "grade": "高一",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1902,34 +1962,10 @@
       "count": 1
     },
     {
-      "date": "08-11",
+      "date": "08-22",
       "channel": "KOC内部学习方法类-孙浩洋",
       "anchor": "孙浩洋",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-11",
-      "channel": "KOC内部学习方法类-孙浩洋",
-      "anchor": "孙浩洋",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-11",
-      "channel": "KOC内部纯资料-刘莹莹",
-      "anchor": "刘莹莹",
-      "grade": "高一",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1963,21 +1999,9 @@
     },
     {
       "date": "08-16",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
       "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-16",
-      "channel": "KOC内部课程类-马振堃",
-      "anchor": "马振堃",
-      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -1999,8 +2023,20 @@
     },
     {
       "date": "08-16",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
+      "channel": "KOC内部课程类-马振堃",
+      "anchor": "马振堃",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-16",
+      "channel": "KOC内部讲题送资料-屈海连",
+      "anchor": "屈海连",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -2023,8 +2059,8 @@
     },
     {
       "date": "08-15",
-      "channel": "KOC内部纯资料-刘莹莹",
-      "anchor": "刘莹莹",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -2035,8 +2071,8 @@
     },
     {
       "date": "08-15",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
+      "channel": "KOC内部纯资料-刘莹莹",
+      "anchor": "刘莹莹",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -2074,42 +2110,6 @@
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
       "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-22",
-      "channel": "KOC内部学习方法类-窦哲",
-      "anchor": "窦哲",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-22",
-      "channel": "KOC内部学习方法类-孙浩洋",
-      "anchor": "孙浩洋",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-22",
-      "channel": "KOC内部学习方法类-孙浩洋",
-      "anchor": "孙浩洋",
-      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
