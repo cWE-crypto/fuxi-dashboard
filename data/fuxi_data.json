@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-01 03:16:09",
+    "updateTime": "2026-09-01 04:16:08",
     "dateRange": "08-19 至 08-31",
     "days": 6,
     "totalRecords": 45,
@@ -17,7 +17,7 @@
   ],
   "today": "08-31",
   "yesterday": "08-29",
-  "updateTime": "2026-09-01 03:16",
+  "updateTime": "2026-09-01 04:16",
   "dateRangeText": "08-19 至 08-31（6 天）",
   "kpi": {
     "today": 1,
@@ -396,24 +396,24 @@
       "date": "08-21",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
-      "count": 3
-    },
-    {
-      "date": "08-21",
-      "channel": "koc课程类--雷双拥",
-      "anchor": "雷双拥",
       "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 3,
       "delete48h": 2,
       "retain48h": 1,
+      "count": 3
+    },
+    {
+      "date": "08-21",
+      "channel": "koc课程类--雷双拥",
+      "anchor": "雷双拥",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 3,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3
     },
     {
@@ -552,7 +552,7 @@
       "date": "08-19",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
-      "grade": "高一",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -564,7 +564,7 @@
       "date": "08-19",
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
-      "grade": "高二",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -634,6 +634,18 @@
     },
     {
       "date": "08-20",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-20",
       "channel": "koc女生规划--曲雅",
       "anchor": "曲雅",
       "grade": "高三",
@@ -657,9 +669,9 @@
       "count": 1
     },
     {
-      "date": "08-20",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
+      "date": "08-21",
+      "channel": "KOC内部学习方法类-窦哲",
+      "anchor": "窦哲",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -682,8 +694,8 @@
     },
     {
       "date": "08-21",
-      "channel": "KOC内部学习方法类-窦哲",
-      "anchor": "窦哲",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -696,18 +708,6 @@
       "date": "08-21",
       "channel": "KOC内部课程类-李冠甫",
       "anchor": "李冠甫",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-21",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -741,7 +741,7 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -753,7 +753,7 @@
       "count": 1
     },
     {
-      "date": "08-31",
+      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
