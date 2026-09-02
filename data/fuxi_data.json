@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-02 16:24:06",
+    "updateTime": "2026-09-02 17:23:00",
     "dateRange": "08-20 至 09-01",
     "days": 6,
     "totalRecords": 31,
@@ -17,7 +17,7 @@
   ],
   "today": "09-01",
   "yesterday": "08-31",
-  "updateTime": "2026-09-02 16:24",
+  "updateTime": "2026-09-02 17:23",
   "dateRangeText": "08-20 至 09-01（6 天）",
   "kpi": {
     "today": 1,
@@ -428,14 +428,14 @@
     },
     {
       "date": "08-20",
-      "channel": "koc入团类--郭云波",
-      "anchor": "郭云波",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
       "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
+      "delete48h": 0,
+      "retain48h": 1,
       "count": 1
     },
     {
@@ -464,8 +464,20 @@
     },
     {
       "date": "08-20",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
+      "channel": "koc入团类--郭云波",
+      "anchor": "郭云波",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 1,
+      "retain48h": 0,
+      "count": 1
+    },
+    {
+      "date": "08-21",
+      "channel": "KOC内部学习方法类-窦哲",
+      "anchor": "窦哲",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -479,18 +491,6 @@
       "channel": "KOC内部学习方法类-窦哲",
       "anchor": "窦哲",
       "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-21",
-      "channel": "KOC内部学习方法类-窦哲",
-      "anchor": "窦哲",
-      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -547,7 +547,7 @@
       "count": 1
     },
     {
-      "date": "08-31",
+      "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -571,7 +571,7 @@
       "count": 1
     },
     {
-      "date": "09-01",
+      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
