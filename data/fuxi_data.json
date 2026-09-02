@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-03 06:21:16",
+    "updateTime": "2026-09-03 07:19:36",
     "dateRange": "08-21 至 09-01",
     "days": 5,
     "totalRecords": 20,
@@ -16,7 +16,7 @@
   ],
   "today": "09-01",
   "yesterday": "08-31",
-  "updateTime": "2026-09-03 06:21",
+  "updateTime": "2026-09-03 07:19",
   "dateRangeText": "08-21 至 09-01（5 天）",
   "kpi": {
     "today": 1,
@@ -345,8 +345,8 @@
     },
     {
       "date": "08-21",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
+      "channel": "KOC内部课程类-李冠甫",
+      "anchor": "李冠甫",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -357,8 +357,8 @@
     },
     {
       "date": "08-21",
-      "channel": "KOC内部课程类-李冠甫",
-      "anchor": "李冠甫",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
