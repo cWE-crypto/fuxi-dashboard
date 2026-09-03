@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-03 22:24:13",
+    "updateTime": "2026-09-03 23:25:53",
     "dateRange": "08-21 至 09-03",
     "days": 6,
     "totalRecords": 21,
@@ -17,7 +17,7 @@
   ],
   "today": "09-03",
   "yesterday": "09-01",
-  "updateTime": "2026-09-03 22:24",
+  "updateTime": "2026-09-03 23:25",
   "dateRangeText": "08-21 至 09-03（6 天）",
   "kpi": {
     "today": 1,
@@ -272,24 +272,24 @@
       "date": "08-21",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
-      "count": 3
-    },
-    {
-      "date": "08-21",
-      "channel": "koc课程类--雷双拥",
-      "anchor": "雷双拥",
       "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 3,
       "delete48h": 2,
       "retain48h": 1,
+      "count": 3
+    },
+    {
+      "date": "08-21",
+      "channel": "koc课程类--雷双拥",
+      "anchor": "雷双拥",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 3,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3
     },
     {
@@ -354,8 +354,8 @@
     },
     {
       "date": "08-21",
-      "channel": "KOC内部课程类-李冠甫",
-      "anchor": "李冠甫",
+      "channel": "KOC内部学习方法类-刘双双",
+      "anchor": "刘双双",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -366,8 +366,8 @@
     },
     {
       "date": "08-21",
-      "channel": "KOC内部学习方法类-刘双双",
-      "anchor": "刘双双",
+      "channel": "KOC内部课程类-李冠甫",
+      "anchor": "李冠甫",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -401,19 +401,7 @@
       "count": 1
     },
     {
-      "date": "09-01",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-03",
+      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -437,7 +425,19 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "09-01",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-03",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
