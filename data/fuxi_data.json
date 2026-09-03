@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-03 15:23:06",
+    "updateTime": "2026-09-03 16:24:33",
     "dateRange": "08-21 至 09-01",
     "days": 5,
     "totalRecords": 20,
@@ -16,7 +16,7 @@
   ],
   "today": "09-01",
   "yesterday": "08-31",
-  "updateTime": "2026-09-03 15:23",
+  "updateTime": "2026-09-03 16:24",
   "dateRangeText": "08-21 至 09-01（5 天）",
   "kpi": {
     "today": 1,
@@ -263,24 +263,24 @@
       "date": "08-21",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 3,
-      "delete48h": 2,
-      "retain48h": 1,
-      "count": 3
-    },
-    {
-      "date": "08-21",
-      "channel": "koc课程类--雷双拥",
-      "anchor": "雷双拥",
       "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 3,
       "delete48h": 0,
       "retain48h": 3,
+      "count": 3
+    },
+    {
+      "date": "08-21",
+      "channel": "koc课程类--雷双拥",
+      "anchor": "雷双拥",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 3,
+      "delete48h": 2,
+      "retain48h": 1,
       "count": 3
     },
     {
@@ -392,6 +392,18 @@
       "count": 1
     },
     {
+      "date": "08-29",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
       "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
@@ -405,18 +417,6 @@
     },
     {
       "date": "08-31",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
