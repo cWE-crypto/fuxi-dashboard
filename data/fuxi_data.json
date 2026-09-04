@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-04 15:38:52",
+    "updateTime": "2026-09-04 16:24:05",
     "dateRange": "08-22 至 09-04",
     "days": 6,
     "totalRecords": 13,
@@ -17,7 +17,7 @@
   ],
   "today": "09-04",
   "yesterday": "09-03",
-  "updateTime": "2026-09-04 15:38",
+  "updateTime": "2026-09-04 16:24",
   "dateRangeText": "08-22 至 09-04（6 天）",
   "kpi": {
     "today": 7,
@@ -251,24 +251,24 @@
       "date": "09-04",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-04",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
       "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
       "delete48h": 1,
       "retain48h": 0,
+      "count": 1
+    },
+    {
+      "date": "09-04",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
       "count": 1
     },
     {
@@ -308,7 +308,7 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -320,7 +320,7 @@
       "count": 1
     },
     {
-      "date": "08-31",
+      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
