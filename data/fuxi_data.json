@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-05 00:23:01",
+    "updateTime": "2026-09-05 01:20:07",
     "dateRange": "08-29 至 09-04",
     "days": 5,
-    "totalRecords": 6,
+    "totalRecords": 8,
     "channelFilter": "KOC"
   },
   "dates": [
@@ -16,7 +16,7 @@
   ],
   "today": "09-04",
   "yesterday": "09-03",
-  "updateTime": "2026-09-05 00:23",
+  "updateTime": "2026-09-05 01:20",
   "dateRangeText": "08-29 至 09-04（5 天）",
   "kpi": {
     "today": 8,
@@ -79,25 +79,39 @@
   ],
   "grade": {
     "today": {
-      "--": 8
+      "高一": 4,
+      "高三": 3,
+      "高二": 1
     },
     "yesterday": {
-      "--": 1
+      "高一": 1,
+      "高三": 0,
+      "高二": 0
     },
     "todayAdd": {
-      "--": 8
+      "高一": 4,
+      "高三": 3,
+      "高二": 1
     },
     "yesterdayAdd": {
-      "--": 1
+      "高一": 1,
+      "高三": 0,
+      "高二": 0
     },
     "todayRetain": {
-      "--": 6
+      "高一": 3,
+      "高三": 3,
+      "高二": 0
     },
     "yesterdayRetain": {
-      "--": 1
+      "高一": 1,
+      "高三": 0,
+      "高二": 0
     },
     "grades": [
-      "--"
+      "高一",
+      "高三",
+      "高二"
     ]
   },
   "anchor": {
@@ -142,19 +156,43 @@
       "date": "09-04",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "--",
+      "grade": "高一",
       "plan": "",
       "source": "",
-      "addCount": 7,
-      "delete48h": 2,
-      "retain48h": 5,
-      "count": 7
+      "addCount": 4,
+      "delete48h": 1,
+      "retain48h": 3,
+      "count": 4
+    },
+    {
+      "date": "09-04",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 2,
+      "delete48h": 0,
+      "retain48h": 2,
+      "count": 2
+    },
+    {
+      "date": "09-04",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 1,
+      "retain48h": 0,
+      "count": 1
     },
     {
       "date": "09-04",
       "channel": "koc入团类--郭云波",
       "anchor": "郭云波",
-      "grade": "--",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -166,7 +204,7 @@
       "date": "09-03",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "--",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -178,19 +216,7 @@
       "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "--",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-31",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "grade": "--",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -202,7 +228,19 @@
       "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "--",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-31",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
