@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-06 15:20:53",
+    "updateTime": "2026-09-06 16:23:01",
     "dateRange": "08-29 至 09-06",
     "days": 7,
     "totalRecords": 15,
@@ -18,24 +18,24 @@
   ],
   "today": "09-06",
   "yesterday": "09-05",
-  "updateTime": "2026-09-06 15:20",
+  "updateTime": "2026-09-06 16:23",
   "dateRangeText": "08-29 至 09-06（7 天）",
   "kpi": {
-    "today": 11,
-    "todayDelta": -21,
-    "todayDeltaPct": "-65.6",
-    "total7d": 55,
-    "total7dDelta": 48,
-    "total7dDeltaPct": "685.7",
+    "today": 20,
+    "todayDelta": -12,
+    "todayDeltaPct": "-37.5",
+    "total7d": 64,
+    "total7dDelta": 57,
+    "total7dDeltaPct": "814.3",
     "yesterday": 32,
     "ytdDelta": 24,
     "ytdDeltaPct": "300.0",
-    "avg7d": 8,
-    "todayRetain48h": 10,
-    "totalRetain48h": 48,
-    "totalDelete48h": 7,
-    "retainRate48h": 87.3,
-    "todayRetainRate48h": 90.9
+    "avg7d": 9,
+    "todayRetain48h": 18,
+    "totalRetain48h": 56,
+    "totalDelete48h": 8,
+    "retainRate48h": 87.5,
+    "todayRetainRate48h": 90.0
   },
   "daily": [
     {
@@ -88,16 +88,16 @@
     },
     {
       "date": "09-06",
-      "count": 11,
-      "addCount": 11,
-      "retain48h": 10,
-      "delete48h": 1,
-      "retainRate48h": 90.9
+      "count": 20,
+      "addCount": 20,
+      "retain48h": 18,
+      "delete48h": 2,
+      "retainRate48h": 90.0
     }
   ],
   "grade": {
     "today": {
-      "高一": 10,
+      "高一": 19,
       "高三": 1,
       "高二": 0
     },
@@ -107,7 +107,7 @@
       "高二": 2
     },
     "todayAdd": {
-      "高一": 10,
+      "高一": 19,
       "高三": 1,
       "高二": 0
     },
@@ -117,7 +117,7 @@
       "高二": 2
     },
     "todayRetain": {
-      "高一": 9,
+      "高一": 17,
       "高三": 1,
       "高二": 0
     },
@@ -134,7 +134,7 @@
   },
   "anchor": {
     "today": {
-      "张新淼": 11,
+      "张新淼": 20,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -146,7 +146,7 @@
       "雷双拥": 4
     },
     "todayAdd": {
-      "张新淼": 11,
+      "张新淼": 20,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -158,7 +158,7 @@
       "雷双拥": 4
     },
     "todayRetain": {
-      "张新淼": 10,
+      "张新淼": 18,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -196,10 +196,10 @@
       "grade": "高一",
       "plan": "",
       "source": "",
-      "addCount": 10,
-      "delete48h": 1,
-      "retain48h": 9,
-      "count": 10
+      "addCount": 19,
+      "delete48h": 2,
+      "retain48h": 17,
+      "count": 19
     },
     {
       "date": "09-04",
@@ -322,6 +322,18 @@
       "count": 1
     },
     {
+      "date": "08-31",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
       "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
@@ -335,18 +347,6 @@
     },
     {
       "date": "09-03",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
