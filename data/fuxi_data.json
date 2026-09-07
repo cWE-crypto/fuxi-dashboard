@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-07 23:22:49",
+    "updateTime": "2026-09-08 00:22:56",
     "dateRange": "08-29 至 09-07",
     "days": 8,
-    "totalRecords": 18,
+    "totalRecords": 11,
     "channelFilter": "KOC"
   },
   "dates": [
@@ -19,7 +19,7 @@
   ],
   "today": "09-07",
   "yesterday": "09-06",
-  "updateTime": "2026-09-07 23:22",
+  "updateTime": "2026-09-08 00:22",
   "dateRangeText": "08-29 至 09-07（8 天）",
   "kpi": {
     "today": 11,
@@ -106,39 +106,25 @@
   ],
   "grade": {
     "today": {
-      "高一": 9,
-      "高三": 1,
-      "高二": 1
+      "--": 11
     },
     "yesterday": {
-      "高一": 21,
-      "高三": 1,
-      "高二": 0
+      "--": 22
     },
     "todayAdd": {
-      "高一": 9,
-      "高三": 1,
-      "高二": 1
+      "--": 11
     },
     "yesterdayAdd": {
-      "高一": 21,
-      "高三": 1,
-      "高二": 0
+      "--": 22
     },
     "todayRetain": {
-      "高一": 8,
-      "高三": 1,
-      "高二": 1
+      "--": 10
     },
     "yesterdayRetain": {
-      "高一": 17,
-      "高三": 1,
-      "高二": 0
+      "--": 18
     },
     "grades": [
-      "高一",
-      "高三",
-      "高二"
+      "--"
     ]
   },
   "anchor": {
@@ -190,67 +176,67 @@
       "date": "09-05",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
-      "addCount": 25,
-      "delete48h": 4,
+      "addCount": 26,
+      "delete48h": 5,
       "retain48h": 21,
-      "count": 25
+      "count": 26
     },
     {
       "date": "09-06",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
-      "addCount": 21,
+      "addCount": 22,
       "delete48h": 4,
-      "retain48h": 17,
-      "count": 21
+      "retain48h": 18,
+      "count": 22
     },
     {
       "date": "09-07",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
-      "addCount": 9,
+      "addCount": 11,
       "delete48h": 1,
-      "retain48h": 8,
-      "count": 9
+      "retain48h": 10,
+      "count": 11
     },
     {
       "date": "09-04",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
-      "addCount": 4,
-      "delete48h": 1,
-      "retain48h": 3,
-      "count": 4
+      "addCount": 7,
+      "delete48h": 3,
+      "retain48h": 4,
+      "count": 7
     },
     {
       "date": "09-05",
       "channel": "koc课程类--雷双拥",
       "anchor": "雷双拥",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
-      "addCount": 3,
+      "addCount": 4,
       "delete48h": 0,
-      "retain48h": 3,
-      "count": 3
+      "retain48h": 4,
+      "count": 4
     },
     {
       "date": "09-05",
       "channel": "koc入团类--郭云波",
       "anchor": "郭云波",
-      "grade": "高三",
+      "grade": "--",
       "plan": "",
       "source": "",
       "addCount": 2,
@@ -260,105 +246,9 @@
     },
     {
       "date": "09-04",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 2,
-      "delete48h": 1,
-      "retain48h": 1,
-      "count": 2
-    },
-    {
-      "date": "09-05",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
-      "count": 1
-    },
-    {
-      "date": "09-05",
-      "channel": "koc课程类--雷双拥",
-      "anchor": "雷双拥",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-06",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-07",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-07",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-04",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
-      "count": 1
-    },
-    {
-      "date": "09-04",
       "channel": "koc入团类--郭云波",
       "anchor": "郭云波",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-03",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -370,7 +260,7 @@
       "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -379,10 +269,10 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "09-03",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "高一",
+      "grade": "--",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -394,7 +284,19 @@
       "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
-      "grade": "高一",
+      "grade": "--",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "08-29",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "--",
       "plan": "",
       "source": "",
       "addCount": 1,
