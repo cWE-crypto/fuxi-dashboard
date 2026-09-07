@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-07 14:39:06",
+    "updateTime": "2026-09-07 15:24:38",
     "dateRange": "08-29 至 09-07",
     "days": 8,
     "totalRecords": 17,
@@ -19,7 +19,7 @@
   ],
   "today": "09-07",
   "yesterday": "09-06",
-  "updateTime": "2026-09-07 14:39",
+  "updateTime": "2026-09-07 15:24",
   "dateRangeText": "08-29 至 09-07（8 天）",
   "kpi": {
     "today": 6,
@@ -343,7 +343,7 @@
       "count": 1
     },
     {
-      "date": "08-31",
+      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -379,7 +379,7 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
