@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-07 15:38:27",
+    "updateTime": "2026-09-07 16:25:45",
     "dateRange": "08-29 至 09-07",
     "days": 8,
-    "totalRecords": 17,
+    "totalRecords": 18,
     "channelFilter": "KOC"
   },
   "dates": [
@@ -19,24 +19,24 @@
   ],
   "today": "09-07",
   "yesterday": "09-06",
-  "updateTime": "2026-09-07 15:38",
+  "updateTime": "2026-09-07 16:25",
   "dateRangeText": "08-29 至 09-07（8 天）",
   "kpi": {
-    "today": 6,
-    "todayDelta": -16,
-    "todayDeltaPct": "-72.7",
-    "total7d": 72,
-    "total7dDelta": 64,
-    "total7dDeltaPct": "800.0",
+    "today": 9,
+    "todayDelta": -13,
+    "todayDeltaPct": "-59.1",
+    "total7d": 75,
+    "total7dDelta": 67,
+    "total7dDeltaPct": "837.5",
     "yesterday": 22,
     "ytdDelta": -10,
     "ytdDeltaPct": "-31.2",
     "avg7d": 9,
-    "todayRetain48h": 6,
-    "totalRetain48h": 61,
-    "totalDelete48h": 11,
-    "retainRate48h": 84.7,
-    "todayRetainRate48h": 100.0
+    "todayRetain48h": 8,
+    "totalRetain48h": 63,
+    "totalDelete48h": 12,
+    "retainRate48h": 84.0,
+    "todayRetainRate48h": 88.9
   },
   "daily": [
     {
@@ -97,17 +97,17 @@
     },
     {
       "date": "09-07",
-      "count": 6,
-      "addCount": 6,
-      "retain48h": 6,
-      "delete48h": 0,
-      "retainRate48h": 100.0
+      "count": 9,
+      "addCount": 9,
+      "retain48h": 8,
+      "delete48h": 1,
+      "retainRate48h": 88.9
     }
   ],
   "grade": {
     "today": {
-      "高一": 5,
-      "高三": 0,
+      "高一": 7,
+      "高三": 1,
       "高二": 1
     },
     "yesterday": {
@@ -116,8 +116,8 @@
       "高二": 0
     },
     "todayAdd": {
-      "高一": 5,
-      "高三": 0,
+      "高一": 7,
+      "高三": 1,
       "高二": 1
     },
     "yesterdayAdd": {
@@ -126,8 +126,8 @@
       "高二": 0
     },
     "todayRetain": {
-      "高一": 5,
-      "高三": 0,
+      "高一": 6,
+      "高三": 1,
       "高二": 1
     },
     "yesterdayRetain": {
@@ -143,7 +143,7 @@
   },
   "anchor": {
     "today": {
-      "张新淼": 6,
+      "张新淼": 9,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -155,7 +155,7 @@
       "雷双拥": 0
     },
     "todayAdd": {
-      "张新淼": 6,
+      "张新淼": 9,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -167,7 +167,7 @@
       "雷双拥": 0
     },
     "todayRetain": {
-      "张新淼": 6,
+      "张新淼": 8,
       "梁孟婷": 0,
       "郭云波": 0,
       "雷双拥": 0
@@ -217,10 +217,10 @@
       "grade": "高一",
       "plan": "",
       "source": "",
-      "addCount": 5,
-      "delete48h": 0,
-      "retain48h": 5,
-      "count": 5
+      "addCount": 7,
+      "delete48h": 1,
+      "retain48h": 6,
+      "count": 7
     },
     {
       "date": "09-04",
@@ -307,6 +307,30 @@
       "count": 1
     },
     {
+      "date": "09-07",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-07",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
       "date": "09-04",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
@@ -331,19 +355,7 @@
       "count": 1
     },
     {
-      "date": "09-07",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "08-31",
+      "date": "08-29",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -355,7 +367,7 @@
       "count": 1
     },
     {
-      "date": "09-01",
+      "date": "08-31",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -379,7 +391,7 @@
       "count": 1
     },
     {
-      "date": "08-29",
+      "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
