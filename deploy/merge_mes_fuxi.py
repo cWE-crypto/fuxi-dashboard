@@ -52,7 +52,18 @@ def normalize_detail_row(row: dict, source: str) -> dict:
     out["contentType"] = row.get("contentType", "")
     out["grade"] = row.get("grade", "")
     out["plan"] = row.get("plan", "")
+    # 主播级人工覆盖：链接大小写规则跟真实组别不符时按 anchor 强制归组
+    # 例：任彩瑜（小写 koc 链接，但属郑州五组）
+    if out["anchor"] in ANCHOR_GROUP_OVERRIDE:
+        out["group"] = ANCHOR_GROUP_OVERRIDE[out["anchor"]]
     return out
+
+
+# 主播级组别人工覆盖（跨脚本共享同一份规则）
+ANCHOR_GROUP_OVERRIDE = {
+    "任彩瑜": "郑州五组",
+    # 后续遇到新例外按 "主播名: 真实组别" 追加
+}
 
 
 def merge_detail(mes: dict, fuxi: dict) -> list[dict]:

@@ -125,13 +125,17 @@ def extract_anchor(channel):
     return parts[-1].strip() if parts else str(channel)
 
 
-def detect_koc_group(channel):
+def detect_koc_group(channel, anchor=None):
     """根据渠道名中 KOC 大小写识别组别（伏羲口径：大写 KOC=郑州五组，小写 koc=郑州三组）。
 
     返回 "郑州五组" / "郑州三组" / None。
-    规则：在 channel 字符串中找第一次出现的 KOC/koc（区分大小写），
-    命中后再用该原始匹配的大小写决定组别。
+    规则：
+      1) 先用主播级人工覆盖（ANCHOR_GROUP_OVERRIDE），个别主播例外（如任彩瑜：链接里
+         是小写 koc，但实际属郑州五组）
+      2) 再回退到 KOC/koc 大小写规则
     """
+    if anchor and anchor in ANCHOR_GROUP_OVERRIDE:
+        return ANCHOR_GROUP_OVERRIDE[anchor]
     if not channel:
         return None
     s = str(channel)
@@ -147,6 +151,14 @@ def detect_koc_group(channel):
     if lower_pos < upper_pos:
         return "郑州三组"
     return "郑州五组"
+
+
+# 主播级组别人工覆盖：链接名大小写规则有例外时按此归组
+# 比如任彩瑜：链接名是 "koc选科--任彩瑜"（小写 koc），但人是郑州五组的
+ANCHOR_GROUP_OVERRIDE = {
+    "任彩瑜": "郑州五组",
+    # 后续遇到新例外按 "主播名: 真实组别" 追加
+}
 
 
 # ========== 伏羲 API 调用 ==========
@@ -359,7 +371,7 @@ def process_raw_data(raw_rows):
         anchor = extract_anchor(channel_str)
         grade_str = str(grade) if grade else "未知"
         # 伏羲口径：大写 KOC=郑州五组，小写 koc=郑州三组（按 channel 原始大小写识别）
-        koc_group = detect_koc_group(channel_str)
+        koc_group = detect_koc_group(channel_str, anchor)
 
         if add_count <= 0 and retain_48h <= 0:
             continue

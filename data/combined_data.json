@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-12 15:41:25",
+    "updateTime": "2026-09-12 15:49:44",
     "dateRange": "08-31 至 09-12",
     "days": 11,
     "totalRecords": 53,
@@ -37,7 +37,7 @@
     "09-11",
     "09-12"
   ],
-  "updateTime": "2026-09-12 15:41",
+  "updateTime": "2026-09-12 15:49",
   "dateRangeText": "09-06 至 09-12（近 7 天）",
   "kpi": {
     "today": 14,
@@ -177,9 +177,8 @@
       "leader": "恩熙",
       "today": 0,
       "yesterday": 9,
-      "d7": 10,
+      "d7": 9,
       "anchors": [
-        "任彩瑜",
         "梁孟婷",
         "梁梦婷",
         "赵亚乐",
@@ -187,11 +186,6 @@
         "雷双拥"
       ],
       "anchorDetail": {
-        "任彩瑜": {
-          "today": 0,
-          "yesterday": 0,
-          "d7": 1
-        },
         "梁孟婷": {
           "today": 0,
           "yesterday": 0,
@@ -225,12 +219,18 @@
       "leader": "锦安",
       "today": 14,
       "yesterday": 11,
-      "d7": 182,
+      "d7": 183,
       "anchors": [
+        "任彩瑜",
         "屈海连",
         "张新淼"
       ],
       "anchorDetail": {
+        "任彩瑜": {
+          "today": 0,
+          "yesterday": 0,
+          "d7": 1
+        },
         "屈海连": {
           "today": 13,
           "yesterday": 11,
@@ -931,7 +931,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "郑州三组",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
