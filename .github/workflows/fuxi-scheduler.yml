@@ -1,4 +1,4 @@
-name: 伏羲数据定时采集
+name: 伏羲数据定时采集 + 双源合并
 
 on:
   schedule:
@@ -34,11 +34,26 @@ jobs:
           cd deploy
           python fuxi_collector.py --output ../data/fuxi_data.json --days 14
 
+      # MES 需要本地扫码登录，无法在 GitHub Actions 里采集；
+      # 所以这里只把已存在的 mes_data.json 与最新 fuxi_data.json 合并，
+      # 若 mes_data.json 不存在则跳过合并步骤。
+      - name: 合并 MES + 伏羲 数据
+        run: |
+          cd deploy
+          if [ -f "../data/mes_data.json" ]; then
+            python merge_mes_fuxi.py \
+              --mes ../data/mes_data.json \
+              --fuxi ../data/fuxi_data.json \
+              --out ../data/combined_data.json
+          else
+            echo "mes_data.json 不存在，跳过合并"
+          fi
+
       - name: 提交数据更新并推送
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/fuxi_data.json
+          git add data/fuxi_data.json data/combined_data.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "数据无变化，跳过提交"
           else

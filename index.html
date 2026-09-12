@@ -6,7 +6,7 @@
   <title>投放加好友数据看板 · QC渠道</title>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body>
   <div class="page">
@@ -20,8 +20,8 @@
           </svg>
         </div>
         <div class="header-titles">
-          <h1 class="header-title">投放加好友数据看板</h1>
-          <p class="header-sub">MES系统 · 企微获客链接 · 加好友数据 · 自孵化KOC</p>
+<h1 class="header-title">投放加好友数据看板</h1>
+        <p class="header-sub">MES + 伏羲双源合并 · 自孵化KOC · 加好友数据</p>
         </div>
       </div>
       <div class="header-right">
@@ -78,6 +78,12 @@
         <span class="filter-key">更新时间</span>
         <span class="filter-val mono" id="updateTime">—</span>
         <span class="freshness-dot" id="freshnessDot" title="数据新鲜度"></span>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-item" id="sourceBreakdownItem" style="display:none">
+        <span class="filter-key">来源分布</span>
+        <span class="filter-val source-pill mes-pill" id="mesCount">MES 0</span>
+        <span class="filter-val source-pill fuxi-pill" id="fuxiCount">伏羲 0</span>
       </div>
       <div class="filter-divider"></div>
       <button class="manual-collect-btn" id="healthCheckBtn" onclick="checkCollectorHealth()" title="检查后台采集服务状态">
@@ -210,13 +216,15 @@
     <!-- 底部口径说明 -->
     <footer class="footer">
       <div class="foot-note">
-        <strong>数据口径：</strong>加好友数 = 用户通过企微获客链接成功添加企业微信的数量，按添加时间统计。
-        数据来源：MES系统-获客渠道路径-推广链接管理-企微获客链接，查询后导出明细。
-        组别 / 内容类型 / 主播 = 从链接名称解析（自孵化-组别-内容类型-主播）。
+        <strong>数据口径：</strong>加好友数 = 用户通过企微获客链接或伏羲渠道成功添加企业微信的数量，按添加时间统计。
+        数据来源 ①：MES系统-获客渠道路径-推广链接管理-企微获客链接，查询后导出明细（提供组别 / 内容类型 / 主播维度）。
+        数据来源 ②：伏羲系统加好友数据（提供年级 / 主播 / 留存率维度）。
+        双源合并后：组别 / 主播对齐展示，年级 / 留存率补全伏羲数据。
       </div>
       <div class="foot-tip">
-        * 数据源：MES系统-获客渠道路径-推广链接管理-企微获客链接，查询后导出明细（支持 .xlsx / .csv）。
-        支持字段：日期、组别、内容类型、主播、加好友数（组别/内容类型/主播从链接名称自动解析）。
+        * 当前数据源：MES 系统 + 伏羲系统 双源合并（由后端 merge_mes_fuxi.py 定时聚合）。
+        合并策略：两源 detail 直接拼接，每行带 source 字段；同一天同一主播的加好友数按 source 分开统计后在汇总层叠加。
+        支持字段：日期、组别、内容类型、主播、加好友数（组别/内容类型来自 MES；年级/留存率来自伏羲）。
         勾选「自动刷新」每 2 分钟自动刷新一次数据（真实数据模式下默认开启）。
       </div>
     </footer>
@@ -302,7 +310,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=6"></script>
-  <script src="app.js?v=6"></script>
+  <script src="data.js?v=7"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

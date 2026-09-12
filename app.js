@@ -17,8 +17,8 @@
   // 伏羲代理API地址（本地运行时配置）
   const FUXI_API_BASE = localStorage.getItem('fuxi_api_base') || 'http://localhost:8765';
   // JSON 数据文件路径（TOS 挂载点同步，比 miaoda deploy 更稳，不受 token 过期影响）
-  // 2026-09-12 切换数据源:伏羲 -> MES(企微获客链接明细导出)
-  const JSON_DATA_URL = 'data/mes_data.json';
+  // 2026-09-12 数据源：伏羲(fuxi.umeng100.com) + MES(market.baijia.com 企微获客链接) 双源合并
+  const JSON_DATA_URL = 'data/combined_data.json';
 
   // 分类色板（与CSS变量一致）
   const COLORS = {
@@ -247,26 +247,33 @@
     const text = badge.querySelector('.ds-text');
     if (dataSource === 'fuxi') {
       badge.classList.add('real', 'fuxi');
-      badge.classList.remove('bookmarklet', 'json');
+      badge.classList.remove('bookmarklet', 'json', 'combined');
       text.textContent = '伏羲实时数据';
+    } else if (dataSource === 'combined') {
+      badge.classList.add('real', 'combined');
+      badge.classList.remove('fuxi', 'json', 'bookmarklet', 'share');
+      const m = (data && data.meta) || {};
+      const mesN = m.mesRecords != null ? m.mesRecords : '';
+      const fuxiN = m.fuxiRecords != null ? m.fuxiRecords : '';
+      text.textContent = 'MES+伏羲双源合并';
     } else if (dataSource === 'json') {
       badge.classList.add('real', 'json');
-      badge.classList.remove('fuxi', 'bookmarklet', 'share');
+      badge.classList.remove('fuxi', 'bookmarklet', 'share', 'combined');
       text.textContent = '自动采集数据';
     } else if (dataSource === 'bookmarklet') {
       badge.classList.add('real', 'bookmarklet');
-      badge.classList.remove('fuxi', 'share');
+      badge.classList.remove('fuxi', 'share', 'combined');
       text.textContent = '伏羲抓取数据';
     } else if (dataSource === 'share') {
       badge.classList.add('real', 'share');
-      badge.classList.remove('fuxi', 'bookmarklet');
+      badge.classList.remove('fuxi', 'bookmarklet', 'combined');
       text.textContent = '分享数据快照';
     } else if (dataSource === 'upload') {
       badge.classList.add('real');
-      badge.classList.remove('fuxi', 'bookmarklet', 'share');
+      badge.classList.remove('fuxi', 'bookmarklet', 'share', 'combined');
       text.textContent = '已导入真实数据';
     } else {
-      badge.classList.remove('real', 'fuxi', 'bookmarklet', 'share');
+      badge.classList.remove('real', 'fuxi', 'bookmarklet', 'share', 'combined');
       text.textContent = '示例数据';
     }
   }
@@ -942,7 +949,7 @@
       if (autoRefreshTimer) clearInterval(autoRefreshTimer);
       autoRefreshTimer = setInterval(() => {
         // JSON数据源下静默刷新，不打扰用户
-        if (dataSource === 'json') {
+        if (dataSource === 'json' || dataSource === 'combined') {
           fetchJsonDataSilent();
         } else {
           window.handleRefresh();
@@ -975,7 +982,7 @@
         toggle.checked = true;
         if (autoRefreshTimer) clearInterval(autoRefreshTimer);
         autoRefreshTimer = setInterval(() => {
-          if (dataSource === 'json') {
+          if (dataSource === 'json' || dataSource === 'combined') {
             fetchJsonDataSilent();
           } else {
             window.handleRefresh();
@@ -1042,14 +1049,13 @@
         }
       }
 
-      // 优先级3：JSON 数据源（后端自动采集输出）
+      // 优先级3：JSON 数据源（后端自动采集输出 / 双源合并）
       // 默认尝试加载真实数据，加载失败自动回退到示例数据
       const savedSource = localStorage.getItem('koc_data_source');
-      if (savedSource === 'json' || !savedSource) {
+      if (savedSource === 'json' || savedSource === 'combined' || !savedSource) {
         fetchJsonData(true).then(ok => {
           if (ok) {
-            // 加载成功，记录偏好
-            try { localStorage.setItem('koc_data_source', 'json'); } catch(e) {}
+            // 加载成功，记录偏好（fetchJsonData 内已按 meta.source 写入 combined 或 json）
             // 真实数据下默认开启自动刷新（用户没关过就开）
             const autoPref = localStorage.getItem('koc_auto_refresh');
             const toggle = document.getElementById('autoRefreshToggle');
@@ -1111,10 +1117,12 @@
 
       uploadedDetail = jsonData.detail || [];
       isRealData = true;
-      dataSource = 'json';
+      // 根据 meta.source 区分双源合并 / 单一自动采集
+      const mSource = (jsonData.meta && jsonData.meta.source) || '';
+      dataSource = (mSource === 'mes_plus_fuxi') ? 'combined' : 'json';
 
       try {
-        localStorage.setItem('koc_data_source', 'json');
+        localStorage.setItem('koc_data_source', dataSource);
       } catch(e) {}
 
       // 按系统真实日期重新计算 今天/昨天/近7天
@@ -1297,7 +1305,12 @@
     // === 分组汇总：按明细里的 group 字段（来自链接名称解析）聚合，只统计加好友数 ===
     const groupMap = {};
     detail.forEach(r => {
-      const g = r.group || '未知组';
+      // 双源合并下，伏羲明细无 group 字段 → 归到「伏羲未分组」
+      // 单一 MES 下，没有 group 也保留为「未知组」
+      let g = r.group || '';
+      if (!g) {
+        g = (dataSource === 'combined') ? '伏羲未分组' : '未知组';
+      }
       if (!groupMap[g]) groupMap[g] = [];
       groupMap[g].push(r);
     });
@@ -1347,6 +1360,23 @@
     document.getElementById('filterDate').textContent = data.dateRangeText;
     document.getElementById('updateTime').textContent = data.updateTime;
     document.getElementById('dateRange').textContent = `近 7 天（${dates[0]} ～ ${dates[dates.length - 1]}）`;
+
+    // 来源分布：仅在双源合并模式下显示
+    const sbItem = document.getElementById('sourceBreakdownItem');
+    if (sbItem) {
+      if (dataSource === 'combined' && data.sourceBreakdown) {
+        sbItem.style.display = '';
+        const mesTotal = (data.sourceBreakdown.totals && data.sourceBreakdown.totals['MES']) || 0;
+        const fuxiTotal = (data.sourceBreakdown.totals && data.sourceBreakdown.totals['伏羲']) || 0;
+        const mesEl = document.getElementById('mesCount');
+        const fuxiEl = document.getElementById('fuxiCount');
+        if (mesEl) mesEl.textContent = `MES ${mesTotal}`;
+        if (fuxiEl) fuxiEl.textContent = `伏羲 ${fuxiTotal}`;
+      } else {
+        sbItem.style.display = 'none';
+      }
+    }
+
     updateFreshnessDot();
   }
 
@@ -1817,8 +1847,8 @@
     btn.classList.add('loading');
     btn.disabled = true;
 
-    // 如果是 JSON 数据源，重新加载 JSON 文件
-    if (dataSource === 'json') {
+    // 如果是 JSON / 双源合并数据源，重新加载 JSON 文件
+    if (dataSource === 'json' || dataSource === 'combined') {
       fetchJsonData(false)
         .then(ok => {
           if (ok) showToast('数据已刷新');
@@ -1925,7 +1955,7 @@
 
   // 切回页面时自动静默刷新一次（后台跑了2分钟以上没看的话）
   document.addEventListener('visibilitychange', function() {
-    if (!document.hidden && dataSource === 'json' && autoRefreshTimer) {
+    if (!document.hidden && (dataSource === 'json' || dataSource === 'combined') && autoRefreshTimer) {
       fetchJsonDataSilent();
     }
   });
