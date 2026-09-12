@@ -143,8 +143,10 @@ def trigger_export(page, link_id: str, start_date: str, end_date: str) -> str:
 
 
 def wait_one_export(page, since_operate_time: str, start_date: str, end_date: str,
-                    max_wait_s: int = 60) -> str | None:
+                    max_wait_s: int = 60, used_urls: set | None = None) -> str | None:
     """轮询 record/list 直到出现 status=2 且 operateTime >= since_operate_time 且日期匹配的 exportUrl
+    used_urls: 已被前面 link 消费过的 exportUrl 集合（同秒触发多个导出时 operateTime 秒级精度
+    无法区分归属，必须靠 URL 去重防止 A 链接拿走 B 链接的导出文件）
     返回:exportUrl 或 None
     注意:record 里 addFriendStartTime 是 "YYYY.MM.DD" 点分隔,不是 ISO 横线
     """
@@ -175,7 +177,12 @@ def wait_one_export(page, since_operate_time: str, start_date: str, end_date: st
                     continue
                 if op_dt < since_dt:
                     continue
-                return r.get("exportUrl")
+                eu = r.get("exportUrl")
+                if not eu:
+                    continue
+                if used_urls and eu in used_urls:
+                    continue
+                return eu
         time.sleep(2)
     return None
 
@@ -490,6 +497,7 @@ def main():
             print(f"  - {l['linkId']}  {l['linkName']}")
 
         all_rows = []
+        used_urls = set()  # 已消费的导出文件 URL，防止同秒触发互相串文件
         # 2) 串行触发 + 串行等待(每个 link 完成后再下一个,精确对应)
         for i, l in enumerate(links):
             link_id = l["linkId"]
@@ -507,7 +515,9 @@ def main():
                     for r in (j.get("data") or []):
                         if r.get("exportStatus") == 2 and r.get("addFriendStartTime") == sd and r.get("addFriendEndTime") == ed:
                             eu = r.get("exportUrl")
-                            break
+                            if eu and eu not in used_urls:
+                                break
+                            eu = None
                 if not eu:
                     print(f"  [!] 复用失败:无可用 record,跳过")
                     continue
@@ -515,10 +525,11 @@ def main():
             else:
                 t_op = trigger_export(page, link_id, start_date, end_date)
                 print(f"  trigger ok @ {t_op}")
-                eu = wait_one_export(page, t_op, start_date, end_date, max_wait_s=60)
+                eu = wait_one_export(page, t_op, start_date, end_date, max_wait_s=60, used_urls=used_urls)
                 if not eu:
                     print(f"  [!] 等待 60s 未就绪,跳过此 link")
                     continue
+            used_urls.add(eu)
             # 下载 + 解析
             xlsx_path = DOWNLOAD_DIR / f"mes_{link_id}_{start_date}_{end_date}.xlsx"
             try:
@@ -528,6 +539,8 @@ def main():
                 print(f"  [✓] 解析 {len(rows)} 条")
             except Exception as e:
                 print(f"  [!] 下载/解析失败: {e}")
+            # 错开触发时间：operateTime 只有秒级精度，同秒触发会让 record 匹配串链
+            time.sleep(1.2)
 
         ctx.close()
 
