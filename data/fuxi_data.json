@@ -228,7 +228,8 @@
       "addCount": 45,
       "delete48h": 7,
       "retain48h": 38,
-      "count": 45
+      "count": 45,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -240,7 +241,8 @@
       "addCount": 33,
       "delete48h": 8,
       "retain48h": 25,
-      "count": 33
+      "count": 33,
+      "group": "郑州五组"
     },
     {
       "date": "09-05",
@@ -252,7 +254,8 @@
       "addCount": 25,
       "delete48h": 4,
       "retain48h": 21,
-      "count": 25
+      "count": 25,
+      "group": "郑州五组"
     },
     {
       "date": "09-06",
@@ -264,7 +267,8 @@
       "addCount": 21,
       "delete48h": 4,
       "retain48h": 17,
-      "count": 21
+      "count": 21,
+      "group": "郑州五组"
     },
     {
       "date": "09-09",
@@ -276,7 +280,8 @@
       "addCount": 16,
       "delete48h": 1,
       "retain48h": 15,
-      "count": 16
+      "count": 16,
+      "group": "郑州五组"
     },
     {
       "date": "09-12",
@@ -288,7 +293,8 @@
       "addCount": 11,
       "delete48h": 1,
       "retain48h": 10,
-      "count": 11
+      "count": 11,
+      "group": "郑州五组"
     },
     {
       "date": "09-09",
@@ -300,7 +306,8 @@
       "addCount": 9,
       "delete48h": 2,
       "retain48h": 7,
-      "count": 9
+      "count": 9,
+      "group": "郑州五组"
     },
     {
       "date": "09-07",
@@ -312,7 +319,8 @@
       "addCount": 9,
       "delete48h": 1,
       "retain48h": 8,
-      "count": 9
+      "count": 9,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -324,7 +332,8 @@
       "addCount": 7,
       "delete48h": 1,
       "retain48h": 6,
-      "count": 7
+      "count": 7,
+      "group": "郑州五组"
     },
     {
       "date": "09-09",
@@ -336,7 +345,8 @@
       "addCount": 5,
       "delete48h": 0,
       "retain48h": 5,
-      "count": 5
+      "count": 5,
+      "group": "郑州五组"
     },
     {
       "date": "09-04",
@@ -348,7 +358,8 @@
       "addCount": 4,
       "delete48h": 1,
       "retain48h": 3,
-      "count": 4
+      "count": 4,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -360,7 +371,8 @@
       "addCount": 3,
       "delete48h": 0,
       "retain48h": 3,
-      "count": 3
+      "count": 3,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -372,7 +384,8 @@
       "addCount": 3,
       "delete48h": 1,
       "retain48h": 2,
-      "count": 3
+      "count": 3,
+      "group": "郑州五组"
     },
     {
       "date": "09-05",
@@ -384,7 +397,8 @@
       "addCount": 3,
       "delete48h": 0,
       "retain48h": 3,
-      "count": 3
+      "count": 3,
+      "group": "郑州三组"
     },
     {
       "date": "09-05",
@@ -396,7 +410,8 @@
       "addCount": 2,
       "delete48h": 0,
       "retain48h": 2,
-      "count": 2
+      "count": 2,
+      "group": "郑州三组"
     },
     {
       "date": "09-04",
@@ -408,7 +423,8 @@
       "addCount": 2,
       "delete48h": 1,
       "retain48h": 1,
-      "count": 2
+      "count": 2,
+      "group": "郑州五组"
     },
     {
       "date": "09-09",
@@ -420,7 +436,8 @@
       "addCount": 1,
       "delete48h": 1,
       "retain48h": 0,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-09",
@@ -432,7 +449,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -444,7 +462,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-08",
@@ -456,7 +475,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "09-05",
@@ -468,7 +488,8 @@
       "addCount": 1,
       "delete48h": 1,
       "retain48h": 0,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-05",
@@ -480,7 +501,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "09-06",
@@ -492,7 +514,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-12",
@@ -504,7 +527,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-12",
@@ -516,7 +540,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-12",
@@ -528,7 +553,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-07",
@@ -540,7 +566,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-07",
@@ -552,7 +579,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-04",
@@ -564,7 +592,8 @@
       "addCount": 1,
       "delete48h": 1,
       "retain48h": 0,
-      "count": 1
+      "count": 1,
+      "group": "郑州五组"
     },
     {
       "date": "09-04",
@@ -576,7 +605,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "08-31",
@@ -588,7 +618,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "09-03",
@@ -600,7 +631,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "09-01",
@@ -612,7 +644,8 @@
       "addCount": 1,
       "delete48h": 0,
       "retain48h": 1,
-      "count": 1
+      "count": 1,
+      "group": "郑州三组"
     }
   ]
 }

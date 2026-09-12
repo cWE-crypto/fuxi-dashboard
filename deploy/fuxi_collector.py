@@ -125,6 +125,30 @@ def extract_anchor(channel):
     return parts[-1].strip() if parts else str(channel)
 
 
+def detect_koc_group(channel):
+    """根据渠道名中 KOC 大小写识别组别（伏羲口径：大写 KOC=郑州五组，小写 koc=郑州三组）。
+
+    返回 "郑州五组" / "郑州三组" / None。
+    规则：在 channel 字符串中找第一次出现的 KOC/koc（区分大小写），
+    命中后再用该原始匹配的大小写决定组别。
+    """
+    if not channel:
+        return None
+    s = str(channel)
+    upper_pos = s.find("KOC")
+    lower_pos = s.find("koc")
+    if upper_pos == -1 and lower_pos == -1:
+        return None
+    if upper_pos == -1:
+        return "郑州三组"   # 仅小写
+    if lower_pos == -1:
+        return "郑州五组"   # 仅大写
+    # 同时存在：取第一次出现的位置
+    if lower_pos < upper_pos:
+        return "郑州三组"
+    return "郑州五组"
+
+
 # ========== 伏羲 API 调用 ==========
 def login(session):
     """登录伏羲系统，返回 session"""
@@ -334,6 +358,8 @@ def process_raw_data(raw_rows):
         date = normalize_date(date_val)
         anchor = extract_anchor(channel_str)
         grade_str = str(grade) if grade else "未知"
+        # 伏羲口径：大写 KOC=郑州五组，小写 koc=郑州三组（按 channel 原始大小写识别）
+        koc_group = detect_koc_group(channel_str)
 
         if add_count <= 0 and retain_48h <= 0:
             continue
@@ -350,6 +376,8 @@ def process_raw_data(raw_rows):
             "retain48h": retain_48h,
             # 兼容旧字段名（看板可能还在用 count）
             "count": add_count,
+            # 伏羲组别（来自 KOC 大小写区分）
+            "group": koc_group or "",
         })
 
     if not detail:

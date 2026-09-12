@@ -96,16 +96,34 @@ def aggregate_daily(detail: list[dict]) -> list[dict]:
 
 
 def aggregate_groups(detail: list[dict], dates7d: list[str], today: str, yesterday: str) -> list[dict]:
-    """按 group 字段聚合，无 group 的行归到「伏羲未分组」"""
-    groups_map = defaultdict(list)
+    """按 group 字段聚合。
+
+    组名归一化规则：
+    - MES 的链接名形如「郑州三组（恩熙）」→ 归到主组「郑州三组」
+    - 伏羲已通过 detect_koc_group 标成「郑州三组」/「郑州五组」
+    - 没有 group 的行归到「伏羲未分组」
+    同时每个组保留 leader（括号内负责人），leader 取首个出现的非空值。
+    """
+    groups_map = defaultdict(lambda: {"leader": "", "rows": []})
     for r in detail:
-        gname = r.get("group") or "伏羲未分组"
-        groups_map[gname].append(r)
+        raw_group = r.get("group") or "伏羲未分组"
+        # 去掉「（负责人）」括号部分，提取主组名
+        m = re.match(r"^(.+?)[（(].+?[)）]\s*$", raw_group)
+        gname = m.group(1).strip() if m else raw_group.strip()
+
+        # leader 提取
+        lm = re.search(r"[（(](.+?)[)）]", raw_group)
+        leader = lm.group(1).strip() if lm else ""
+
+        bucket = groups_map[gname]
+        if not bucket["leader"] and leader:
+            bucket["leader"] = leader
+        bucket["rows"].append(r)
 
     out = []
-    for idx, (gname, rows) in enumerate(sorted(groups_map.items())):
-        leader_match = re.search(r"[（(](.+?)[)）]", gname)
-        leader = leader_match.group(1) if leader_match else ""
+    for idx, (gname, payload) in enumerate(sorted(groups_map.items())):
+        rows = payload["rows"]
+        leader = payload["leader"]
 
         today_count = sum(r["count"] for r in rows if r["date"] == today)
         yesterday_count = sum(r["count"] for r in rows if r["date"] == yesterday)

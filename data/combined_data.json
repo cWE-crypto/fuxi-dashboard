@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-12 15:39:26",
+    "updateTime": "2026-09-12 15:41:25",
     "dateRange": "08-31 至 09-12",
     "days": 11,
     "totalRecords": 53,
@@ -37,7 +37,7 @@
     "09-11",
     "09-12"
   ],
-  "updateTime": "2026-09-12 15:39",
+  "updateTime": "2026-09-12 15:41",
   "dateRangeText": "09-06 至 09-12（近 7 天）",
   "kpi": {
     "today": 14,
@@ -173,16 +173,16 @@
   "groups": [
     {
       "key": "g0",
-      "name": "伏羲未分组",
-      "leader": "",
-      "today": 14,
-      "yesterday": 0,
-      "d7": 172,
+      "name": "郑州三组",
+      "leader": "恩熙",
+      "today": 0,
+      "yesterday": 9,
+      "d7": 10,
       "anchors": [
         "任彩瑜",
-        "屈海连",
-        "张新淼",
         "梁孟婷",
+        "梁梦婷",
+        "赵亚乐",
         "郭云波",
         "雷双拥"
       ],
@@ -192,46 +192,11 @@
           "yesterday": 0,
           "d7": 1
         },
-        "屈海连": {
-          "today": 13,
-          "yesterday": 0,
-          "d7": 39
-        },
-        "张新淼": {
-          "today": 1,
-          "yesterday": 0,
-          "d7": 132
-        },
         "梁孟婷": {
           "today": 0,
           "yesterday": 0,
           "d7": 0
         },
-        "郭云波": {
-          "today": 0,
-          "yesterday": 0,
-          "d7": 0
-        },
-        "雷双拥": {
-          "today": 0,
-          "yesterday": 0,
-          "d7": 0
-        }
-      }
-    },
-    {
-      "key": "g1",
-      "name": "郑州三组（恩熙）",
-      "leader": "恩熙",
-      "today": 0,
-      "yesterday": 9,
-      "d7": 9,
-      "anchors": [
-        "梁梦婷",
-        "赵亚乐",
-        "雷双拥"
-      ],
-      "anchorDetail": {
         "梁梦婷": {
           "today": 0,
           "yesterday": 2,
@@ -242,6 +207,11 @@
           "yesterday": 4,
           "d7": 4
         },
+        "郭云波": {
+          "today": 0,
+          "yesterday": 0,
+          "d7": 0
+        },
         "雷双拥": {
           "today": 0,
           "yesterday": 3,
@@ -250,20 +220,26 @@
       }
     },
     {
-      "key": "g2",
-      "name": "郑州五组（锦安）",
+      "key": "g1",
+      "name": "郑州五组",
       "leader": "锦安",
-      "today": 0,
+      "today": 14,
       "yesterday": 11,
-      "d7": 11,
+      "d7": 182,
       "anchors": [
-        "屈海连"
+        "屈海连",
+        "张新淼"
       ],
       "anchorDetail": {
         "屈海连": {
-          "today": 0,
+          "today": 13,
           "yesterday": 11,
-          "d7": 11
+          "d7": 50
+        },
+        "张新淼": {
+          "today": 1,
+          "yesterday": 0,
+          "d7": 132
         }
       }
     }
@@ -430,7 +406,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -445,7 +421,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -460,7 +436,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -475,7 +451,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -790,7 +766,7 @@
       "delete48h": 7,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -805,7 +781,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -820,7 +796,7 @@
       "delete48h": 2,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -835,7 +811,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -850,7 +826,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -865,7 +841,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -880,7 +856,7 @@
       "delete48h": 8,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -895,7 +871,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -910,7 +886,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -925,7 +901,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -940,7 +916,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -955,7 +931,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -970,7 +946,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -985,7 +961,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -1000,7 +976,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -1015,7 +991,7 @@
       "delete48h": 4,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1030,7 +1006,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -1045,7 +1021,7 @@
       "delete48h": 4,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1060,7 +1036,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1075,7 +1051,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -1090,7 +1066,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -1105,7 +1081,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -1120,7 +1096,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1135,7 +1111,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -1150,7 +1126,7 @@
       "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
       "plan": ""
@@ -1165,7 +1141,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高三",
       "plan": ""
@@ -1180,7 +1156,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1195,7 +1171,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
@@ -1210,7 +1186,7 @@
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
-      "group": "",
+      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": ""
