@@ -18,7 +18,8 @@
   // 伏羲代理API地址（本地运行时配置）
   const FUXI_API_BASE = localStorage.getItem('fuxi_api_base') || 'http://localhost:8765';
   // JSON 数据文件路径（TOS 挂载点同步，比 miaoda deploy 更稳，不受 token 过期影响）
-  const JSON_DATA_URL = 'data/fuxi_data.json';
+  // 2026-09-12 切换数据源:伏羲 -> MES(企微获客链接明细导出)
+  const JSON_DATA_URL = 'data/mes_data.json';
 
   // 分类色板（与CSS变量一致）
   const COLORS = {

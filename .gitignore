@@ -1,0 +1,13 @@
+# Playwright 持久化用户数据（含 MES 登录 cookie，不要提交）
+deploy/.playwright_chrome_profile/
+
+# 部署/探查日志（含截图、网络响应体、下载的 xlsx、解析样本）
+deploy/logs/
+deploy/logs/downloads/
+
+# Python 临时文件
+__pycache__/
+*.pyc
+
+# 妙搭本地调试
+.miaoda/
