@@ -24,8 +24,8 @@ MES 加好友明细采集器（生产级）
 
 环境：
   - 默认 Python: %USERPROFILE%\\.workbuddy\\binaries\\python\\envs\\default\\Scripts\\python.exe
-  - 调用方:GAS 每小时 cron,执行:
-      python mes_collector.py --output ../data/mes_data.json --days 14
+  - 调用方:hourly cron,执行:
+      python mes_collector.py --output ../data/mes_data.json --days 7
 """
 import argparse
 import json
@@ -320,6 +320,57 @@ def aggregate(rows: list, days: int = 14) -> dict:
     total7d_delta = total7d - total7d_prior
     total7d_delta_pct = f"{(total7d_delta / total7d_prior * 100):.1f}" if total7d_prior else "0.0"
 
+    # 按组聚合(用于分组汇总卡片)
+    group_map = {}
+    for r in rows:
+        g = r["group"]
+        if not g:
+            continue
+        try:
+            d_obj = datetime.strptime(r["date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if d_obj < start_date or d_obj > today:
+            continue
+        host = r["host"]
+        if g not in group_map:
+            group_map[g] = {
+                "name": g,
+                "today": 0, "yesterday": 0, "d7": 0,
+                "anchors": set(),
+                "anchorDetail": {},
+            }
+        gm = group_map[g]
+        gm["d7"] += 1
+        if d_obj == today:
+            gm["today"] += 1
+        if d_obj == yesterday:
+            gm["yesterday"] += 1
+        gm["anchors"].add(host)
+        ad = gm["anchorDetail"].setdefault(host, {"today": 0, "yesterday": 0, "d7": 0})
+        ad["d7"] += 1
+        if d_obj == today:
+            ad["today"] += 1
+        if d_obj == yesterday:
+            ad["yesterday"] += 1
+
+    groups_out = []
+    for gname in sorted(group_map.keys()):
+        gm = group_map[gname]
+        # 提取括号里的负责人,如"郑州三组（恩熙）" -> "恩熙"
+        leader_m = re.search(r"[（(](.+?)[)）]", gname)
+        leader = leader_m.group(1) if leader_m else ""
+        groups_out.append({
+            "key": "g" + str(len(groups_out)),
+            "name": gname,
+            "leader": leader,
+            "today": gm["today"],
+            "yesterday": gm["yesterday"],
+            "d7": gm["d7"],
+            "anchors": sorted(gm["anchors"]),
+            "anchorDetail": {a: gm["anchorDetail"][a] for a in sorted(gm["anchors"])},
+        })
+
     return {
         "meta": {
             "source": "mes_api",
@@ -345,24 +396,12 @@ def aggregate(rows: list, days: int = 14) -> dict:
             "ytdDelta": today_count - yesterday_count,
             "ytdDeltaPct": f"{((today_count - yesterday_count) / yesterday_count * 100):.1f}" if yesterday_count else "0.0",
             "avg7d": avg7d,
-            "todayRetain48h": today_count,  # 占位
-            "totalRetain48h": total7d,
-            "totalDelete48h": 0,
-            "retainRate48h": 100.0,
-            "todayRetainRate48h": 100.0 if today_count else 0.0,
         },
         "daily": daily_out,
-        "grade": {
-            "today": {}, "yesterday": {}, "todayAdd": {}, "yesterdayAdd": {},
-            "todayRetain": {}, "yesterdayRetain": {}, "grades": [],
-        },
+        "groups": groups_out,
         "anchor": {
             "today": anchor_today,
             "yesterday": anchor_yesterday,
-            "todayAdd": anchor_today,
-            "yesterdayAdd": anchor_yesterday,
-            "todayRetain": anchor_today,  # 占位
-            "yesterdayRetain": anchor_yesterday,
             "anchors": sorted(all_anchors),
         },
         "detail": detail,
@@ -415,7 +454,8 @@ def ensure_logged_in(ctx) -> object:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--output", default=str(BASE_DIR.parent / "data" / "mes_data.json"))
-    ap.add_argument("--days", type=int, default=14)
+    ap.add_argument("--days", type=int, default=7,
+                    help="近 N 天(默认 7,与 MES 批量导出明细的『近 7 天』一致)")
     ap.add_argument("--reuse-only", action="store_true",
                     help="不触发新导出,只用 record/list 里 status=2 的最近记录")
     args = ap.parse_args()

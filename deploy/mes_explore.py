@@ -310,9 +310,9 @@ def run():
         try:
             if "请选择加好友时间" in page.evaluate("() => document.body.innerText || ''"):
                 print("[i] 检测到加好友时间选择弹窗,填写日期范围...")
-                # 默认填最近 14 天
+                # 默认填最近 7 天(与看板近 7 天一致)
                 end = _dt_mod.datetime.now()
-                start = end - _dt_mod.timedelta(days=13)
+                start = end - _dt_mod.timedelta(days=6)
                 start_str = start.strftime("%Y-%m-%d")
                 end_str = end.strftime("%Y-%m-%d")
 
@@ -374,7 +374,7 @@ def run():
 
                 if dialog_visible:
                     end = _dt_mod.datetime.now()
-                    start = end - _dt_mod.timedelta(days=13)
+                    start = end - _dt_mod.timedelta(days=6)
                     start_str = start.strftime("%Y-%m-%d")
                     end_str = end.strftime("%Y-%m-%d")
                     print(f"[i] 准备填日期范围: {start_str} 至 {end_str}")
