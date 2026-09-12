@@ -702,6 +702,10 @@ html, body {
 }
 .group-card.zz5 { border-left: 3px solid #2563eb; }
 .group-card.zz3 { border-left: 3px solid #7c3aed; }
+.group-card.g0 { border-left: 3px solid #2563eb; }
+.group-card.g1 { border-left: 3px solid #7c3aed; }
+.group-card.g2 { border-left: 3px solid #0891b2; }
+.group-card.g3 { border-left: 3px solid #db2777; }
 .group-card-head {
   display: flex;
   align-items: center;
@@ -720,6 +724,10 @@ html, body {
 }
 .group-card.zz5 .group-card-tag { background: rgba(37,99,235,0.1); color: #2563eb; }
 .group-card.zz3 .group-card-tag { background: rgba(124,58,237,0.1); color: #7c3aed; }
+.group-card.g0 .group-card-tag { background: rgba(37,99,235,0.1); color: #2563eb; }
+.group-card.g1 .group-card-tag { background: rgba(124,58,237,0.1); color: #7c3aed; }
+.group-card.g2 .group-card-tag { background: rgba(8,145,178,0.1); color: #0891b2; }
+.group-card.g3 .group-card-tag { background: rgba(219,39,119,0.1); color: #db2777; }
 .group-card-kpis {
   display: flex;
   gap: 20px;
@@ -800,9 +808,37 @@ html, body {
 /* ===== 主分析区网格 ===== */
 .main-grid {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 1fr;
   gap: 14px;
   margin-bottom: 20px;
+}
+
+/* 主播排行：分组标题 */
+.anchor-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin: 6px 0 8px;
+  background: var(--gray-50, #f8fafc);
+  border-radius: 6px;
+  border-left: 3px solid #2563eb;
+}
+.anchor-group-head:first-child { margin-top: 0; }
+.anchor-group-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700, #334155);
+}
+.anchor-group-total {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-800, #1e293b);
+}
+.anchor-group-total small {
+  font-size: 11px;
+  color: var(--gray-400, #94a3b8);
+  margin-left: 2px;
 }
 
 .bottom-grid {

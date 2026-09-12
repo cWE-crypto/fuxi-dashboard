@@ -21,7 +21,7 @@
         </div>
         <div class="header-titles">
           <h1 class="header-title">投放加好友数据看板</h1>
-          <p class="header-sub">伏羲系统 · 投放看板 · 加好友数据 · KOC渠道</p>
+          <p class="header-sub">MES系统 · 企微获客链接 · 加好友数据 · 自孵化KOC</p>
         </div>
       </div>
       <div class="header-right">
@@ -33,7 +33,7 @@
           <span class="ds-dot"></span>
           <span class="ds-text">示例数据</span>
         </div>
-        <button class="share-btn" id="shareBtn" onclick="shareDashboard()" title="生成分享链接，没有伏羲账号也能看">
+        <button class="share-btn" id="shareBtn" onclick="shareDashboard()" title="生成分享链接，没有 MES 账号也能看">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="18" cy="5" r="3"/>
             <circle cx="6" cy="12" r="3"/>
@@ -114,19 +114,13 @@
         <div class="kpi-delta">近 7 日均值</div>
         <div class="kpi-foot">7 日滚动</div>
       </div>
-      <div class="kpi-card retain">
-        <div class="kpi-label">48h 留存率</div>
-        <div class="kpi-value" id="kpiRetain">—<small>%</small></div>
-        <div class="kpi-delta" id="kpiRetainToday">今日 —%</div>
-        <div class="kpi-foot">近 7 天整体</div>
-      </div>
     </section>
 
     <!-- 分组汇总：郑州三组 vs 郑州五组 -->
     <section class="group-summary">
       <div class="group-summary-head">
         <h2 class="panel-title">分组汇总</h2>
-        <p class="panel-sub">小写 koc = 郑州三组 · 大写 KOC = 郑州五组</p>
+        <p class="panel-sub">分组来自企微获客链接名称 · 只统计加好友数</p>
         <div class="tab-switch" style="margin-left:auto">
           <button class="tab-btn active" data-gtab="today" onclick="switchGroupTab('today')">今日</button>
           <button class="tab-btn" data-gtab="yesterday" onclick="switchGroupTab('yesterday')">昨日</button>
@@ -138,48 +132,21 @@
       </div>
     </section>
 
-    <!-- 主分析区：趋势图 + 年级分布 -->
+    <!-- 主分析区：趋势图 -->
     <section class="main-grid">
       <!-- 近7天趋势 -->
       <div class="panel panel-trend">
         <div class="panel-head">
           <div>
             <h2 class="panel-title">近 7 天加好友趋势</h2>
-            <div class="panel-tabs" id="trendTabs">
-              <button class="ptab active" data-metric="add" onclick="switchTrendMetric('add')">加好友数</button>
-              <button class="ptab" data-metric="retain" onclick="switchTrendMetric('retain')">留存数</button>
-              <button class="ptab" data-metric="rate" onclick="switchTrendMetric('rate')">留存率</button>
-            </div>
           </div>
           <div>
-            <p class="panel-sub">每日加好友数走势 · KOC渠道</p>
+            <p class="panel-sub">每日加好友数走势 · 企微获客链接</p>
             <div class="legend-group" id="trendLegend"></div>
           </div>
         </div>
         <div class="chart-box">
           <div id="trendChart" style="width:100%;height:320px"></div>
-        </div>
-      </div>
-
-      <!-- 分年级统计 -->
-      <div class="panel panel-grade">
-        <div class="panel-head">
-          <div>
-            <h2 class="panel-title">分年级加好友统计</h2>
-            <p class="panel-sub">高一 / 高二 / 高三 · 今昨对比</p>
-          </div>
-          <div class="tab-switch">
-             <button class="tab-btn active" data-tab="today" onclick="switchGradeTab('today')">今日</button>
-             <button class="tab-btn" data-tab="yesterday" onclick="switchGradeTab('yesterday')">昨日</button>
-             <button class="tab-btn" data-tab="d7" onclick="switchGradeTab('d7')">近7天</button>
-           </div>
-        </div>
-        <div class="grade-bars" id="gradeBars">
-          <!-- 动态生成 -->
-        </div>
-        <div class="grade-total">
-          <span>合计</span>
-          <span class="grade-total-val" id="gradeTotal">—</span>
         </div>
       </div>
     </section>
@@ -190,8 +157,8 @@
       <div class="panel panel-anchor">
         <div class="panel-head">
           <div>
-            <h2 class="panel-title">主播加好友排行</h2>
-            <p class="panel-sub">二级渠道"KOC-"后缀提取 · TOP 10</p>
+            <h2 class="panel-title">主播加好友排行 · 分组</h2>
+            <p class="panel-sub">按企微获客链接主播提取 · 组内排名</p>
           </div>
           <div class="tab-switch">
              <button class="tab-btn active" data-atab="today" onclick="switchAnchorTab('today')">今日</button>
@@ -209,7 +176,7 @@
         <div class="panel-head">
           <div>
             <h2 class="panel-title">数据明细</h2>
-            <p class="panel-sub">按日期 × 年级 × 主播展开</p>
+            <p class="panel-sub">按日期 × 组别 × 主播展开</p>
           </div>
           <button class="export-btn" onclick="handleExport()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -225,9 +192,9 @@
             <thead>
               <tr>
                 <th>日期</th>
-                <th>二级渠道</th>
+                <th>组别</th>
                 <th>主播</th>
-                <th>年级</th>
+                <th>内容类型</th>
                 <th class="num">加好友数</th>
                 <th class="num">占比</th>
               </tr>
@@ -243,13 +210,13 @@
     <!-- 底部口径说明 -->
     <footer class="footer">
       <div class="foot-note">
-        <strong>数据口径：</strong>加好友数 = 用户通过投放链接成功添加企业微信的数量，按添加时间统计。
-        数据来源：伏羲系统-投放看板-加好友数据，二级渠道筛选"KOC"，透视维度全选。
-        主播名 = 二级渠道末段（以"-"分隔的最后一段）。
+        <strong>数据口径：</strong>加好友数 = 用户通过企微获客链接成功添加企业微信的数量，按添加时间统计。
+        数据来源：MES系统-获客渠道路径-推广链接管理-企微获客链接，查询后导出明细。
+        组别 / 内容类型 / 主播 = 从链接名称解析（自孵化-组别-内容类型-主播）。
       </div>
       <div class="foot-tip">
-        * 点击右上角「导入数据」上传伏羲系统导出的加好友数据文件（支持 .xlsx / .csv），看板将自动解析并渲染。
-        支持字段：日期、二级渠道、年级、加好友数（自动识别表头顺序，主播名从二级渠道末段提取）。
+        * 数据源：MES系统-获客渠道路径-推广链接管理-企微获客链接，查询后导出明细（支持 .xlsx / .csv）。
+        支持字段：日期、组别、内容类型、主播、加好友数（组别/内容类型/主播从链接名称自动解析）。
         勾选「自动刷新」每 2 分钟自动刷新一次数据（真实数据模式下默认开启）。
       </div>
     </footer>
@@ -335,7 +302,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=5"></script>
-  <script src="app.js?v=5"></script>
+  <script src="data.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

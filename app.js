@@ -4,9 +4,8 @@
 (function() {
   let data = window.DASHBOARD_DATA;
   let trendChart = null;
-  let gradeTab = 'today';
   let anchorTab = 'today';
-  let trendMetric = 'add'; // add / retain / rate
+  let trendMetric = 'add'; // add（MES 无留存数据，仅加好友）
   let groupTab = 'today';
   let uploadedDetail = null; // 已上传的原始明细数据
 
@@ -1295,23 +1294,27 @@
       data.anchor.anchors = anchors;
     }
 
-    // === 分组汇总：大写KOC=郑州五组，小写koc=郑州三组 ===
-    const GROUPS = [
-      { key: 'zz5', name: '郑州五组', match: ch => ch.startsWith('KOC') },
-      { key: 'zz3', name: '郑州三组', match: ch => ch.startsWith('koc') }
-    ];
-    data.groups = GROUPS.map(g => {
-      const rows = detail.filter(r => g.match(r.channel || ''));
+    // === 分组汇总：按明细里的 group 字段（来自链接名称解析）聚合，只统计加好友数 ===
+    const groupMap = {};
+    detail.forEach(r => {
+      const g = r.group || '未知组';
+      if (!groupMap[g]) groupMap[g] = [];
+      groupMap[g].push(r);
+    });
+    const groupNames = Object.keys(groupMap).sort();
+    data.groups = groupNames.map((name, gIdx) => {
+      const rows = groupMap[name];
       const todayRows = rows.filter(r => r.date === todayStr);
       const yesterdayRows = rows.filter(r => r.date === yesterdayStr);
       const d7Rows = rows.filter(r => dates7d.includes(r.date));
 
       const todayCount = todayRows.reduce((s, r) => s + r.count, 0);
-      const todayRetain = todayRows.reduce((s, r) => s + (r.retain48h || 0), 0);
       const yesterdayCount = yesterdayRows.reduce((s, r) => s + r.count, 0);
-      const yesterdayRetain = yesterdayRows.reduce((s, r) => s + (r.retain48h || 0), 0);
       const d7Count = d7Rows.reduce((s, r) => s + r.count, 0);
-      const d7Retain = d7Rows.reduce((s, r) => s + (r.retain48h || 0), 0);
+
+      // 组长名（链接名称括号里的名字，如 郑州三组（恩熙） -> 恩熙）
+      const leaderMatch = name.match(/[（(](.+?)[)）]/);
+      const leader = leaderMatch ? leaderMatch[1] : '';
 
       // 组内主播明细
       const anchorSet = new Set(rows.map(r => r.anchor));
@@ -1326,15 +1329,12 @@
       });
 
       return {
-        key: g.key,
-        name: g.name,
+        key: 'g' + gIdx,
+        name: name,
+        leader: leader,
         today: todayCount,
-        todayRetain: todayRetain,
         yesterday: yesterdayCount,
-        yesterdayRetain: yesterdayRetain,
         d7: d7Count,
-        d7Retain: d7Retain,
-        d7RetainRate: d7Count > 0 ? +(d7Retain / d7Count * 100).toFixed(1) : 0,
         anchors: anchorsInGroup,
         anchorDetail: anchorDetail
       };
@@ -1448,18 +1448,6 @@
     yd.textContent = `${fmtPct(k.ytdDeltaPct)}`;
 
     document.getElementById('kpiAvg').textContent = fmt(k.avg7d);
-
-    // 48h 留存率
-    const retainEl = document.getElementById('kpiRetain');
-    const retainTodayEl = document.getElementById('kpiRetainToday');
-    if (k.retainRate48h !== undefined) {
-      retainEl.innerHTML = `${k.retainRate48h}<small>%</small>`;
-      const todayRate = k.todayRetainRate48h || 0;
-      retainTodayEl.textContent = `今日 ${todayRate}%`;
-    } else {
-      retainEl.innerHTML = `—<small>%</small>`;
-      retainTodayEl.textContent = '暂无数据';
-    }
   }
 
   /* ---------- 渲染：趋势图 ---------- */
@@ -1472,32 +1460,15 @@
 
     const dailyData = data.daily7d || data.daily;
     const dates = dailyData.map(d => d.date);
-    const hasRetain = dailyData.some(d => d.retain48h !== undefined);
 
+    // 只展示加好友数（MES 无留存数据）
     let values, color, label, unit, yMax, isRate = false;
-    if (trendMetric === 'retain' && hasRetain) {
-      values = dailyData.map(d => d.retain48h || 0);
-      color = '#16a34a';
-      label = '48h留存数';
-      unit = '人';
-      const max = Math.max(...values);
-      yMax = Math.ceil(max * 1.2 / 100) * 100;
-    } else if (trendMetric === 'rate' && hasRetain) {
-      values = dailyData.map(d => d.retainRate48h || 0);
-      color = '#7c3aed';
-      label = '48h留存率';
-      unit = '%';
-      const max = Math.max(...values);
-      yMax = Math.min(100, Math.ceil(max * 1.15 / 5) * 5);
-      isRate = true;
-    } else {
-      values = dailyData.map(d => d.count);
-      color = COLORS.brand;
-      label = '加好友数';
-      unit = '人';
-      const max = Math.max(...values, 1);
-      yMax = Math.ceil(max * 1.4 / 10) * 10;
-    }
+    values = dailyData.map(d => d.count);
+    color = COLORS.brand;
+    label = '加好友数';
+    unit = '人';
+    const max = Math.max(...values, 1);
+    yMax = Math.ceil(max * 1.4 / 10) * 10;
 
     const option = {
       grid: {
@@ -1625,54 +1596,68 @@
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
   }
 
-  /* ---------- 渲染：年级统计 ---------- */
-  function renderGradeBars() {
-    let gradeData;
-    if (gradeTab === 'd7') {
-      gradeData = data.grade.d7 || data.grade.today;
-    } else if (gradeTab === 'yesterday') {
-      gradeData = data.grade.yesterday;
-    } else {
-      gradeData = data.grade.today;
-    }
-    const total = Object.values(gradeData).reduce((s, v) => s + v, 0);
-    const max = Math.max(...Object.values(gradeData));
-
-    const container = document.getElementById('gradeBars');
+  /* ---------- 渲染：主播排行（按组分区） ---------- */
+  function renderAnchorList() {
+    const container = document.getElementById('anchorList');
     container.innerHTML = '';
 
-    data.grade.grades.forEach((g, idx) => {
-      const count = gradeData[g];
-      const pct = total > 0 ? (count / total * 100).toFixed(1) : 0;
-      const width = max > 0 ? (count / max * 100) : 0;
-      const color = COLORS.grade[g] || COLORS.brand;
+    const anchorField = anchorTab === 'yesterday' ? 'yesterday' : anchorTab === 'd7' ? 'd7' : 'today';
 
-      const row = document.createElement('div');
-      row.className = 'grade-row';
-      row.innerHTML = `
-        <div class="grade-row-head">
-          <span class="grade-name">${g}</span>
-          <span class="grade-num mono">${fmt(count)} <small>${pct}%</small></span>
-        </div>
-        <div class="grade-bar-track">
-          <div class="grade-bar-fill" style="width:0%;background:${color}"></div>
-        </div>
-      `;
-      container.appendChild(row);
+    // 优先按组分区渲染（MES 数据有 group 字段）
+    if (data.groups && data.groups.length > 0) {
+      const grandTotal = data.groups.reduce((s, g) =>
+        s + g.anchors.reduce((s2, a) => s2 + ((g.anchorDetail[a] || {})[anchorField] || 0), 0), 0);
 
-      // 触发动画
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          row.querySelector('.grade-bar-fill').style.width = width + '%';
-        }, idx * 80);
+      data.groups.forEach((g, gIdx) => {
+        const sortedAnchors = g.anchors
+          .map(a => ({ name: a, count: (g.anchorDetail[a] || {})[anchorField] || 0 }))
+          .sort((a, b) => b.count - a.count);
+        const groupTotal = sortedAnchors.reduce((s, a) => s + a.count, 0);
+        const max = sortedAnchors.length ? sortedAnchors[0].count : 0;
+
+        // 组标题
+        const head = document.createElement('div');
+        head.className = 'anchor-group-head';
+        head.innerHTML = `
+          <span class="anchor-group-name">${g.name}</span>
+          <span class="anchor-group-total mono">${fmt(groupTotal)}<small> / ${grandTotal > 0 ? (groupTotal / grandTotal * 100).toFixed(1) : 0}%</small></span>
+        `;
+        container.appendChild(head);
+
+        sortedAnchors.forEach((a, idx) => {
+          const pct = groupTotal > 0 ? (a.count / groupTotal * 100).toFixed(1) : '0.0';
+          const width = max > 0 ? (a.count / max * 100) : 0;
+          const color = COLORS.anchor[idx % COLORS.anchor.length];
+          const rankClass = idx === 0 ? 'top-1' : idx === 1 ? 'top-2' : idx === 2 ? 'top-3' : '';
+
+          const item = document.createElement('div');
+          item.className = 'anchor-item';
+          item.innerHTML = `
+            <div class="anchor-rank ${rankClass}">${idx + 1}</div>
+            <div class="anchor-info">
+              <div class="anchor-name">${a.name}</div>
+              <div class="anchor-bar-track">
+                <div class="anchor-bar-fill" style="width:0%;background:${color}"></div>
+              </div>
+            </div>
+            <div class="anchor-num mono">
+              ${fmt(a.count)}
+              <small>${pct}%</small>
+            </div>
+          `;
+          container.appendChild(item);
+
+          requestAnimationFrame(() => {
+            setTimeout(() => {
+              item.querySelector('.anchor-bar-fill').style.width = width + '%';
+            }, idx * 40);
+          });
+        });
       });
-    });
+      return;
+    }
 
-    document.getElementById('gradeTotal').textContent = fmt(total);
-  }
-
-  /* ---------- 渲染：主播排行 ---------- */
-  function renderAnchorList() {
+    // 兜底：无分组数据时平铺渲染（如示例数据）
     let anchorData;
     if (anchorTab === 'd7') {
       anchorData = data.anchor.d7 || data.anchor.today;
@@ -1682,15 +1667,12 @@
       anchorData = data.anchor.today;
     }
     const total = Object.values(anchorData).reduce((s, v) => s + v, 0);
-    
+
     // 排序取TOP 10
     const sorted = Object.entries(anchorData)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 10);
     const max = sorted.length ? sorted[0][1] : 0;
-
-    const container = document.getElementById('anchorList');
-    container.innerHTML = '';
 
     sorted.forEach(([name, count], idx) => {
       const pct = total > 0 ? (count / total * 100).toFixed(1) : 0;
@@ -1736,8 +1718,6 @@
 
     data.groups.forEach((g, gIdx) => {
       const count = groupTab === 'yesterday' ? g.yesterday : groupTab === 'd7' ? g.d7 : g.today;
-      const retain = groupTab === 'yesterday' ? g.yesterdayRetain : groupTab === 'd7' ? g.d7Retain : g.todayRetain;
-      const retainRate = count > 0 ? (retain / count * 100).toFixed(1) : '0.0';
 
       // 对比值：今日 vs 昨日，昨日 vs 前日，近7天 vs 总平均
       let delta = 0;
@@ -1780,21 +1760,13 @@
       card.innerHTML = `
         <div class="group-card-head">
           <span class="group-card-name">${g.name}</span>
-          <span class="group-card-tag">${g.key === 'zz5' ? 'KOC' : 'koc'}</span>
+          ${g.leader ? `<span class="group-card-tag">${g.leader}</span>` : ''}
         </div>
         <div class="group-card-kpis">
           <div class="group-kpi">
             <span class="group-kpi-label">${groupTab === 'd7' ? '7天总计' : groupTab === 'yesterday' ? '昨日' : '今日'}</span>
             <span class="group-kpi-value">${fmt(count)}</span>
             ${groupTab !== 'yesterday' ? `<span class="group-kpi-delta ${delta >= 0 ? 'up' : 'down'}">${fmtPct(deltaPct)}</span>` : ''}
-          </div>
-          <div class="group-kpi">
-            <span class="group-kpi-label">留存</span>
-            <span class="group-kpi-value">${fmt(retain)}</span>
-          </div>
-          <div class="group-kpi">
-            <span class="group-kpi-label">留存率</span>
-            <span class="group-kpi-value">${retainRate}<small>%</small></span>
           </div>
         </div>
         <div class="group-anchor-list">${anchorsHtml}</div>
@@ -1824,9 +1796,9 @@
       return `
         <tr>
           <td class="mono">${r.date}</td>
-          <td><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:12px">${r.channel}</code></td>
+          <td>${r.group || '—'}</td>
           <td>${r.anchor}</td>
-          <td>${r.grade}</td>
+          <td>${r.contentType || '—'}</td>
           <td class="num mono">${fmt(r.count)}</td>
           <td class="num">
             <span class="pct-cell">
@@ -1902,15 +1874,6 @@
   // 恢复数据源偏好：优先级 URL hash > bookmarklet > json > fuxi代理 > 默认
 
   /* ---------- 交互：Tab 切换 ---------- */
-  window.switchGradeTab = function(tab) {
-    if (gradeTab === tab) return;
-    gradeTab = tab;
-    document.querySelectorAll('.panel-grade .tab-btn').forEach(b => {
-      b.classList.toggle('active', b.dataset.tab === tab);
-    });
-    renderGradeBars();
-  };
-
   window.switchAnchorTab = function(tab) {
     if (anchorTab === tab) return;
     anchorTab = tab;
@@ -1920,21 +1883,11 @@
     renderAnchorList();
   };
 
-  // 趋势图指标切换
-  window.switchTrendMetric = function(metric) {
-    if (trendMetric === metric) return;
-    trendMetric = metric;
-    document.querySelectorAll('#trendTabs .ptab').forEach(b => {
-      b.classList.toggle('active', b.dataset.metric === metric);
-    });
-    renderTrendChart();
-  };
-
   /* ---------- 交互：导出 ---------- */
   window.handleExport = function() {
-    const headers = ['日期', '二级渠道', '主播', '年级', '加好友数'];
-    const rows = data.detail.map(r => [r.date, r.channel, r.anchor, r.grade, r.count]);
-    
+    const headers = ['日期', '组别', '主播', '内容类型', '加好友数'];
+    const rows = data.detail.map(r => [r.date, r.group || '', r.anchor, r.contentType || '', r.count]);
+
     let csv = '\uFEFF' + headers.join(',') + '\n';
     rows.forEach(r => { csv += r.join(',') + '\n'; });
 
@@ -1942,7 +1895,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `伏羲_QC渠道加好友数据_${data.today}.csv`;
+    a.download = `MES_企微获客链接加好友数据_${data.today}.csv`;
     a.click();
     URL.revokeObjectURL(url);
 
@@ -1959,7 +1912,6 @@
     renderFilterBar();
     renderKPI();
     renderTrendChart();
-    renderGradeBars();
     renderGroupSummary();
     renderAnchorList();
     renderDetailTable();
