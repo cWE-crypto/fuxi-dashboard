@@ -1303,16 +1303,28 @@
     }
 
     // === 分组汇总：按明细里的 group 字段（来自链接名称解析）聚合，只统计加好友数 ===
+    // 主组名归一：「郑州三组（恩熙）」和「郑州三组」合并到同一张卡片（key = 郑州三组）
+    const normalizeGroupName = g => {
+      if (!g) return g;
+      return String(g).replace(/[（(].*?[)）]/g, '').trim();
+    };
     const groupMap = {};
+    const groupLeaderMap = {};  // 每个主组保留首个非空 leader（MES 的「郑州三组（恩熙）」优先）
     detail.forEach(r => {
       // 双源合并下，伏羲明细无 group 字段 → 归到「伏羲未分组」
       // 单一 MES 下，没有 group 也保留为「未知组」
-      let g = r.group || '';
-      if (!g) {
-        g = (dataSource === 'combined') ? '伏羲未分组' : '未知组';
+      let raw = r.group || '';
+      if (!raw) {
+        raw = (dataSource === 'combined') ? '伏羲未分组' : '未知组';
       }
-      if (!groupMap[g]) groupMap[g] = [];
-      groupMap[g].push(r);
+      const key = normalizeGroupName(raw);
+      if (!groupMap[key]) groupMap[key] = [];
+      groupMap[key].push(r);
+      // 同步把 detail 行的 group 字段归一为 key，保证明细表显示也跟卡片完全一致
+      r.group = key;
+      // 提取括号内 leader（如「郑州三组（恩熙）」→ 恩熙）
+      const m = String(raw).match(/[（(](.+?)[)）]/);
+      if (m && !groupLeaderMap[key]) groupLeaderMap[key] = m[1];
     });
     const groupNames = Object.keys(groupMap).sort();
     data.groups = groupNames.map((name, gIdx) => {
@@ -1325,9 +1337,14 @@
       const yesterdayCount = yesterdayRows.reduce((s, r) => s + r.count, 0);
       const d7Count = d7Rows.reduce((s, r) => s + r.count, 0);
 
-      // 组长名（链接名称括号里的名字，如 郑州三组（恩熙） -> 恩熙）
-      const leaderMatch = name.match(/[（(](.+?)[)）]/);
-      const leader = leaderMatch ? leaderMatch[1] : '';
+      // 组长名：优先用本次合并时的非空 leader，再回退到聚合行里查括号
+      const leader = groupLeaderMap[name] || (() => {
+        for (const r of rows) {
+          const mm = String(r.group || '').match(/[（(](.+?)[)）]/);
+          if (mm) return mm[1];
+        }
+        return '';
+      })();
 
       // 组内主播明细
       const anchorSet = new Set(rows.map(r => r.anchor));

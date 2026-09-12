@@ -52,6 +52,12 @@ def normalize_detail_row(row: dict, source: str) -> dict:
     out["contentType"] = row.get("contentType", "")
     out["grade"] = row.get("grade", "")
     out["plan"] = row.get("plan", "")
+    # 先提取括号内 leader（必须在 anchor override 之前，否则会被清掉）
+    # 例：「郑州三组（恩熙）」→ groupLeader="恩熙"，group="郑州三组"
+    leader_match = re.search(r"[（(](.+?)[)）]", out["group"])
+    out["groupLeader"] = leader_match.group(1).strip() if leader_match else ""
+    if leader_match:
+        out["group"] = re.sub(r"[（(].*?[)）]", "", out["group"]).strip()
     # 主播级人工覆盖：链接大小写规则跟真实组别不符时按 anchor 强制归组
     # 例：任彩瑜（小写 koc 链接，但属郑州五组）
     if out["anchor"] in ANCHOR_GROUP_OVERRIDE:
@@ -113,18 +119,12 @@ def aggregate_groups(detail: list[dict], dates7d: list[str], today: str, yesterd
     - MES 的链接名形如「郑州三组（恩熙）」→ 归到主组「郑州三组」
     - 伏羲已通过 detect_koc_group 标成「郑州三组」/「郑州五组」
     - 没有 group 的行归到「伏羲未分组」
-    同时每个组保留 leader（括号内负责人），leader 取首个出现的非空值。
+    leader 取自 detail 行的 groupLeader 字段（来自原始链接名括号内的负责人名字）。
     """
     groups_map = defaultdict(lambda: {"leader": "", "rows": []})
     for r in detail:
-        raw_group = r.get("group") or "伏羲未分组"
-        # 去掉「（负责人）」括号部分，提取主组名
-        m = re.match(r"^(.+?)[（(].+?[)）]\s*$", raw_group)
-        gname = m.group(1).strip() if m else raw_group.strip()
-
-        # leader 提取
-        lm = re.search(r"[（(](.+?)[)）]", raw_group)
-        leader = lm.group(1).strip() if lm else ""
+        gname = (r.get("group") or "").strip() or "伏羲未分组"
+        leader = (r.get("groupLeader") or "").strip()
 
         bucket = groups_map[gname]
         if not bucket["leader"] and leader:
