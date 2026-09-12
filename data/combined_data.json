@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-12 15:29:56",
+    "updateTime": "2026-09-12 15:39:26",
     "dateRange": "08-31 至 09-12",
     "days": 11,
     "totalRecords": 53,
@@ -37,7 +37,7 @@
     "09-11",
     "09-12"
   ],
-  "updateTime": "2026-09-12 15:29",
+  "updateTime": "2026-09-12 15:39",
   "dateRangeText": "09-06 至 09-12（近 7 天）",
   "kpi": {
     "today": 14,
@@ -906,13 +906,13 @@
       "anchor": "张新淼",
       "count": 3,
       "addCount": 3,
-      "retain48h": 2,
-      "delete48h": 1,
+      "retain48h": 3,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": ""
     },
     {
@@ -921,13 +921,13 @@
       "anchor": "张新淼",
       "count": 3,
       "addCount": 3,
-      "retain48h": 3,
-      "delete48h": 0,
+      "retain48h": 2,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": ""
     },
     {
