@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-13 08:22:43",
+    "updateTime": "2026-09-13 09:45:44",
     "dateRange": "08-31 至 09-13",
     "days": 12,
     "totalRecords": 59,
@@ -38,26 +38,26 @@
     "09-12",
     "09-13"
   ],
-  "updateTime": "2026-09-13 08:22",
+  "updateTime": "2026-09-13 09:45",
   "dateRangeText": "09-07 至 09-13（近 7 天）",
   "kpi": {
-    "today": 67,
-    "todayDelta": 52,
-    "todayDeltaPct": "346.7",
+    "today": 71,
+    "todayDelta": 56,
+    "todayDeltaPct": "373.3",
     "yesterday": 15,
     "ytdDelta": -5,
     "ytdDeltaPct": "-25.0",
-    "total7d": 238,
-    "total7dDelta": 173,
-    "total7dDeltaPct": "266.2",
-    "avg7d": 34,
-    "todayRetain48h": 56,
+    "total7d": 242,
+    "total7dDelta": 177,
+    "total7dDeltaPct": "272.3",
+    "avg7d": 35,
+    "todayRetain48h": 60,
     "yesterdayRetain48h": 14,
-    "totalRetain48h": 204,
+    "totalRetain48h": 208,
     "totalDelete48h": 34,
     "todayDelete48h": 11,
-    "retainRate48h": 85.7,
-    "todayRetainRate48h": 83.6
+    "retainRate48h": 86.0,
+    "todayRetainRate48h": 84.5
   },
   "daily": [
     {
@@ -172,13 +172,13 @@
     },
     {
       "date": "09-13",
-      "count": 67,
-      "addCount": 67,
-      "retain48h": 56,
+      "count": 71,
+      "addCount": 71,
+      "retain48h": 60,
       "delete48h": 11,
-      "retainRate48h": 83.6,
+      "retainRate48h": 84.5,
       "mesCount": 0,
-      "fuxiCount": 67
+      "fuxiCount": 71
     }
   ],
   "groups": [
@@ -228,9 +228,9 @@
       "key": "g1",
       "name": "郑州五组",
       "leader": "锦安",
-      "today": 67,
+      "today": 71,
       "yesterday": 15,
-      "d7": 229,
+      "d7": 233,
       "anchors": [
         "任彩瑜",
         "屈海连",
@@ -248,9 +248,9 @@
           "d7": 76
         },
         "张新淼": {
-          "today": 42,
+          "today": 46,
           "yesterday": 1,
-          "d7": 152
+          "d7": 156
         }
       }
     }
@@ -259,7 +259,7 @@
     "today": {
       "任彩瑜": 0,
       "屈海连": 25,
-      "张新淼": 42,
+      "张新淼": 46,
       "梁孟婷": 0,
       "梁梦婷": 0,
       "赵亚乐": 0,
@@ -279,7 +279,7 @@
     "d7": {
       "任彩瑜": 1,
       "屈海连": 76,
-      "张新淼": 152,
+      "张新淼": 156,
       "梁孟婷": 0,
       "梁梦婷": 2,
       "赵亚乐": 4,
@@ -289,7 +289,7 @@
     "todayAdd": {
       "任彩瑜": 0,
       "屈海连": 25,
-      "张新淼": 42,
+      "张新淼": 46,
       "梁孟婷": 0,
       "梁梦婷": 0,
       "赵亚乐": 0,
@@ -309,7 +309,7 @@
     "d7Add": {
       "任彩瑜": 1,
       "屈海连": 76,
-      "张新淼": 152,
+      "张新淼": 156,
       "梁孟婷": 0,
       "梁梦婷": 2,
       "赵亚乐": 4,
@@ -319,7 +319,7 @@
     "todayRetain": {
       "任彩瑜": 0,
       "屈海连": 22,
-      "张新淼": 34,
+      "张新淼": 38,
       "梁孟婷": 0,
       "梁梦婷": 0,
       "赵亚乐": 0,
@@ -339,7 +339,7 @@
     "d7Retain": {
       "任彩瑜": 1,
       "屈海连": 69,
-      "张新淼": 125,
+      "张新淼": 129,
       "梁孟婷": 0,
       "梁梦婷": 2,
       "赵亚乐": 4,
@@ -359,8 +359,8 @@
   },
   "grade": {
     "today": {
-      "高一": 54,
-      "高三": 10,
+      "高一": 57,
+      "高三": 11,
       "高二": 3
     },
     "yesterday": {
@@ -369,8 +369,8 @@
       "高二": 1
     },
     "d7": {
-      "高一": 178,
-      "高三": 25,
+      "高一": 181,
+      "高三": 26,
       "高二": 15
     },
     "grades": [
@@ -381,16 +381,16 @@
   },
   "sourceBreakdown": {
     "totals": {
-      "伏羲": 283,
+      "伏羲": 287,
       "MES": 20
     },
     "retain": {
-      "伏羲": 237,
+      "伏羲": 241,
       "MES": 20
     },
     "byDate": {
       "伏羲": {
-        "09-13": 67,
+        "09-13": 71,
         "09-12": 15,
         "09-09": 77,
         "09-08": 48,
@@ -412,9 +412,9 @@
       "date": "09-13",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "count": 34,
-      "addCount": 34,
-      "retain48h": 28,
+      "count": 37,
+      "addCount": 37,
+      "retain48h": 31,
       "delete48h": 6,
       "retainRate48h": 0.0,
       "source": "伏羲",
@@ -444,9 +444,9 @@
       "date": "09-13",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "count": 6,
-      "addCount": 6,
-      "retain48h": 4,
+      "count": 7,
+      "addCount": 7,
+      "retain48h": 5,
       "delete48h": 2,
       "retainRate48h": 0.0,
       "source": "伏羲",
