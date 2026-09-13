@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-14 04:22:06",
+    "updateTime": "2026-09-14 05:20:44",
     "dateRange": "09-01 至 09-13",
     "days": 10,
     "totalRecords": 38,
@@ -21,7 +21,7 @@
   ],
   "today": "09-13",
   "yesterday": "09-12",
-  "updateTime": "2026-09-14 04:22",
+  "updateTime": "2026-09-14 05:20",
   "dateRangeText": "09-01 至 09-13（10 天）",
   "kpi": {
     "today": 72,
@@ -687,7 +687,7 @@
       "group": "郑州三组"
     },
     {
-      "date": "09-01",
+      "date": "09-03",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
@@ -700,7 +700,7 @@
       "group": "郑州三组"
     },
     {
-      "date": "09-03",
+      "date": "09-01",
       "channel": "koc免费学--梁孟婷",
       "anchor": "梁孟婷",
       "grade": "高一",
