@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-14 05:22:18",
+    "updateTime": "2026-09-14 06:30:16",
     "dateRange": "09-01 至 09-14",
     "days": 12,
     "totalRecords": 63,
@@ -38,7 +38,7 @@
     "09-13",
     "09-14"
   ],
-  "updateTime": "2026-09-14 05:22",
+  "updateTime": "2026-09-14 06:30",
   "dateRangeText": "09-08 至 09-14（近 7 天）",
   "kpi": {
     "today": 20,
@@ -612,7 +612,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -628,7 +628,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
