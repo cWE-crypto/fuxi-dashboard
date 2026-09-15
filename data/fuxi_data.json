@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-15 16:26:09",
+    "updateTime": "2026-09-15 18:23:22",
     "dateRange": "09-03 至 09-15",
     "days": 11,
-    "totalRecords": 46,
+    "totalRecords": 47,
     "channelFilter": "KOC"
   },
   "dates": [
@@ -22,24 +22,24 @@
   ],
   "today": "09-15",
   "yesterday": "09-14",
-  "updateTime": "2026-09-15 16:26",
+  "updateTime": "2026-09-15 18:23",
   "dateRangeText": "09-03 至 09-15（11 天）",
   "kpi": {
-    "today": 15,
-    "todayDelta": -18,
-    "todayDeltaPct": "-54.5",
-    "total7d": 334,
-    "total7dDelta": 171,
-    "total7dDeltaPct": "105.0",
+    "today": 16,
+    "todayDelta": -17,
+    "todayDeltaPct": "-51.5",
+    "total7d": 335,
+    "total7dDelta": 172,
+    "total7dDeltaPct": "105.7",
     "yesterday": 33,
     "ytdDelta": -39,
     "ytdDeltaPct": "-54.2",
     "avg7d": 30,
-    "todayRetain48h": 13,
-    "totalRetain48h": 280,
+    "todayRetain48h": 14,
+    "totalRetain48h": 281,
     "totalDelete48h": 54,
-    "retainRate48h": 83.8,
-    "todayRetainRate48h": 86.7
+    "retainRate48h": 83.9,
+    "todayRetainRate48h": 87.5
   },
   "daily": [
     {
@@ -124,16 +124,16 @@
     },
     {
       "date": "09-15",
-      "count": 15,
-      "addCount": 15,
-      "retain48h": 13,
+      "count": 16,
+      "addCount": 16,
+      "retain48h": 14,
       "delete48h": 2,
-      "retainRate48h": 86.7
+      "retainRate48h": 87.5
     }
   ],
   "grade": {
     "today": {
-      "高一": 13,
+      "高一": 14,
       "高三": 1,
       "高二": 1
     },
@@ -143,7 +143,7 @@
       "高二": 3
     },
     "todayAdd": {
-      "高一": 13,
+      "高一": 14,
       "高三": 1,
       "高二": 1
     },
@@ -153,7 +153,7 @@
       "高二": 3
     },
     "todayRetain": {
-      "高一": 11,
+      "高一": 12,
       "高三": 1,
       "高二": 1
     },
@@ -173,7 +173,7 @@
       "任彩瑜": 0,
       "屈海连": 0,
       "张新淼": 15,
-      "梁孟婷": 0,
+      "梁孟婷": 1,
       "郭云波": 0,
       "雷双拥": 0
     },
@@ -189,7 +189,7 @@
       "任彩瑜": 0,
       "屈海连": 0,
       "张新淼": 15,
-      "梁孟婷": 0,
+      "梁孟婷": 1,
       "郭云波": 0,
       "雷双拥": 0
     },
@@ -205,7 +205,7 @@
       "任彩瑜": 0,
       "屈海连": 0,
       "张新淼": 13,
-      "梁孟婷": 0,
+      "梁孟婷": 1,
       "郭云波": 0,
       "雷双拥": 0
     },
@@ -478,12 +478,12 @@
       "date": "09-08",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
+      "delete48h": 1,
+      "retain48h": 2,
       "count": 3,
       "group": "郑州五组"
     },
@@ -491,12 +491,12 @@
       "date": "09-08",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 1,
-      "retain48h": 2,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3,
       "group": "郑州五组"
     },
@@ -699,7 +699,7 @@
       "date": "09-15",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -712,7 +712,7 @@
       "date": "09-15",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -720,6 +720,19 @@
       "retain48h": 1,
       "count": 1,
       "group": "郑州五组"
+    },
+    {
+      "date": "09-15",
+      "channel": "koc免费学--梁孟婷",
+      "anchor": "梁孟婷",
+      "grade": "高一",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1,
+      "group": "郑州三组"
     },
     {
       "date": "09-12",
