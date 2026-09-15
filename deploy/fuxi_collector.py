@@ -157,6 +157,8 @@ def detect_koc_group(channel, anchor=None):
 # 比如任彩瑜：链接名是 "koc选科--任彩瑜"（小写 koc），但人是郑州五组的
 ANCHOR_GROUP_OVERRIDE = {
     "任彩瑜": "郑州五组",
+    # 沈阳一组（负责人：亚东），非郑州体系，避免被 KOC 大小写规则误判
+    "刘耘硕": "沈阳一组",
     # 后续遇到新例外按 "主播名: 真实组别" 追加
 }
 
