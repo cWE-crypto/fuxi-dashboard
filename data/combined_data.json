@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-16 22:21:24",
+    "updateTime": "2026-09-16 23:20:56",
     "dateRange": "09-04 至 09-16",
     "days": 12,
     "totalRecords": 141,
@@ -38,7 +38,7 @@
     "09-15",
     "09-16"
   ],
-  "updateTime": "2026-09-16 22:21",
+  "updateTime": "2026-09-16 23:20",
   "dateRangeText": "09-10 至 09-16（近 7 天）",
   "kpi": {
     "today": 47,
@@ -1640,7 +1640,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1656,7 +1656,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1928,7 +1928,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1944,7 +1944,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -2354,13 +2354,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -2370,13 +2370,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
+      "retain48h": 0,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -2504,7 +2504,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -2520,7 +2520,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
