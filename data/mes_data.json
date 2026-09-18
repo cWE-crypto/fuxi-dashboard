@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-18 14:41:11",
+    "updateTime": "2026-09-18 15:39:06",
     "dateRange": "09-12 至 09-18",
     "days": 7,
-    "totalRecords": 121,
+    "totalRecords": 123,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "09-18",
   "yesterday": "09-17",
-  "updateTime": "2026-09-18 14:41",
+  "updateTime": "2026-09-18 15:39",
   "dateRangeText": "09-12 至 09-18（7 天）",
   "kpi": {
-    "today": 20,
+    "today": 21,
     "todayDelta": -11,
-    "todayDeltaPct": "-35.5",
-    "total7d": 121,
-    "total7dDelta": 121,
+    "todayDeltaPct": "-34.4",
+    "total7d": 123,
+    "total7dDelta": 123,
     "total7dDeltaPct": "0.0",
-    "yesterday": 31,
+    "yesterday": 32,
     "ytdDelta": -11,
-    "ytdDeltaPct": "-35.5",
-    "avg7d": 17.3
+    "ytdDeltaPct": "-34.4",
+    "avg7d": 17.6
   },
   "daily": [
     {
@@ -75,17 +75,17 @@
     },
     {
       "date": "09-17",
-      "count": 31,
-      "addCount": 31,
-      "retain48h": 31,
+      "count": 32,
+      "addCount": 32,
+      "retain48h": 32,
       "delete48h": 0,
       "retainRate48h": 100.0
     },
     {
       "date": "09-18",
-      "count": 20,
-      "addCount": 20,
-      "retain48h": 20,
+      "count": 21,
+      "addCount": 21,
+      "retain48h": 21,
       "delete48h": 0,
       "retainRate48h": 100.0
     }
@@ -96,12 +96,18 @@
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
       "today": 0,
-      "yesterday": 4,
-      "d7": 13,
+      "yesterday": 5,
+      "d7": 14,
       "anchors": [
+        "梁梦婷",
         "赵亚乐"
       ],
       "anchorDetail": {
+        "梁梦婷": {
+          "today": 0,
+          "yesterday": 1,
+          "d7": 1
+        },
         "赵亚乐": {
           "today": 0,
           "yesterday": 4,
@@ -113,9 +119,9 @@
       "key": "g1",
       "name": "郑州五组（锦安）",
       "leader": "锦安",
-      "today": 20,
+      "today": 21,
       "yesterday": 27,
-      "d7": 108,
+      "d7": 109,
       "anchors": [
         "刘双双",
         "屈海连",
@@ -123,9 +129,9 @@
       ],
       "anchorDetail": {
         "刘双双": {
-          "today": 0,
+          "today": 1,
           "yesterday": 0,
-          "d7": 2
+          "d7": 3
         },
         "屈海连": {
           "today": 20,
@@ -142,9 +148,11 @@
   ],
   "anchor": {
     "today": {
+      "刘双双": 1,
       "屈海连": 20
     },
     "yesterday": {
+      "梁梦婷": 1,
       "赵亚乐": 4,
       "屈海连": 16,
       "张新淼": 11
@@ -153,10 +161,24 @@
       "刘双双",
       "屈海连",
       "张新淼",
+      "梁梦婷",
       "赵亚乐"
     ]
   },
   "detail": [
+    {
+      "date": "09-17",
+      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
+      "anchor": "梁梦婷",
+      "group": "郑州三组（恩熙）",
+      "contentType": "初三方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
     {
       "date": "09-17",
       "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
@@ -318,6 +340,19 @@
       "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
       "anchor": "赵亚乐",
       "group": "郑州三组（恩熙）",
+      "contentType": "规划资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-规划资料-刘双双",
+      "anchor": "刘双双",
+      "group": "郑州五组（锦安）",
       "contentType": "规划资料",
       "plan": "",
       "source": "MES",
