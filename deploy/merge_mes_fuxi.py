@@ -75,6 +75,13 @@ ANCHOR_GROUP_OVERRIDE = {
     # 后续遇到新例外按 "主播名: 真实组别" 追加
 }
 
+# 常驻占位分组：数据源里暂时没有该组数据，但需要在看板上固定展示
+# （沈阳一组/亚东 目前 MES、伏羲均无其链接与主播数据，先占位，数据到位后自动被真实分组取代）
+# 格式：{"name": 组名, "leader": 负责人, "anchors": [主播名]}
+PLACEHOLDER_GROUPS = [
+    {"name": "沈阳一组", "leader": "亚东", "anchors": ["刘耘硕"]},
+]
+
 # 组别负责人兜底：数据里没带括号 leader 时（如伏羲侧、手工补的链接）用它补全
 GROUP_LEADER_FALLBACK = {
     "郑州三组": "恩熙",
@@ -351,6 +358,7 @@ def build_combined(mes: dict, fuxi: dict) -> dict:
         "anchor": anchors,
         "grade": grade,
         "sourceBreakdown": breakdown,
+        "placeholderGroups": PLACEHOLDER_GROUPS,
         "detail": detail,
     }
 

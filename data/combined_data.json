@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-18 10:09:26",
+    "updateTime": "2026-09-18 10:14:23",
     "dateRange": "09-05 至 09-18",
     "days": 12,
     "totalRecords": 161,
@@ -38,7 +38,7 @@
     "09-17",
     "09-18"
   ],
-  "updateTime": "2026-09-18 10:09",
+  "updateTime": "2026-09-18 10:14",
   "dateRangeText": "09-12 至 09-18（近 7 天）",
   "kpi": {
     "today": 6,
@@ -444,6 +444,15 @@
       }
     }
   },
+  "placeholderGroups": [
+    {
+      "name": "沈阳一组",
+      "leader": "亚东",
+      "anchors": [
+        "刘耘硕"
+      ]
+    }
+  ],
   "detail": [
     {
       "date": "09-18",

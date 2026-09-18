@@ -1369,6 +1369,27 @@
         anchorDetail: anchorDetail
       };
     });
+
+    // 常驻占位分组：数据源里暂缺、但需要固定展示的组（如沈阳一组/亚东）
+    // 一旦该组有真实数据进来，上面的聚合会生成同名分组，这里自动跳过
+    (data.placeholderGroups || []).forEach(p => {
+      if (!p || !p.name) return;
+      if (data.groups.some(g => g.name === p.name)) return;
+      const phAnchors = Array.isArray(p.anchors) ? p.anchors : [];
+      const phAnchorDetail = {};
+      phAnchors.forEach(a => { phAnchorDetail[a] = { today: 0, yesterday: 0, d7: 0 }; });
+      data.groups.push({
+        key: 'g' + data.groups.length,
+        name: p.name,
+        leader: p.leader || '',
+        today: 0,
+        yesterday: 0,
+        d7: 0,
+        anchors: phAnchors,
+        anchorDetail: phAnchorDetail,
+        placeholder: true
+      });
+    });
   }
 
   /* ---------- 渲染：筛选条 ---------- */
@@ -1808,6 +1829,7 @@
         <div class="group-card-head">
           <span class="group-card-name">${g.name}</span>
           ${g.leader ? `<span class="group-card-tag">${g.leader}</span>` : ''}
+          ${g.placeholder ? '<span class="group-card-tag" style="background:rgba(148,163,184,0.18);color:#64748b">待接入</span>' : ''}
         </div>
         <div class="group-card-kpis">
           <div class="group-kpi">
