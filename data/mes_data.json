@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-18 13:39:15",
+    "updateTime": "2026-09-18 14:41:11",
     "dateRange": "09-12 至 09-18",
     "days": 7,
-    "totalRecords": 122,
+    "totalRecords": 121,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "09-18",
   "yesterday": "09-17",
-  "updateTime": "2026-09-18 13:39",
+  "updateTime": "2026-09-18 14:41",
   "dateRangeText": "09-12 至 09-18（7 天）",
   "kpi": {
     "today": 20,
-    "todayDelta": -12,
-    "todayDeltaPct": "-37.5",
-    "total7d": 122,
-    "total7dDelta": 122,
+    "todayDelta": -11,
+    "todayDeltaPct": "-35.5",
+    "total7d": 121,
+    "total7dDelta": 121,
     "total7dDeltaPct": "0.0",
-    "yesterday": 32,
-    "ytdDelta": -12,
-    "ytdDeltaPct": "-37.5",
-    "avg7d": 17.4
+    "yesterday": 31,
+    "ytdDelta": -11,
+    "ytdDeltaPct": "-35.5",
+    "avg7d": 17.3
   },
   "daily": [
     {
@@ -75,9 +75,9 @@
     },
     {
       "date": "09-17",
-      "count": 32,
-      "addCount": 32,
-      "retain48h": 32,
+      "count": 31,
+      "addCount": 31,
+      "retain48h": 31,
       "delete48h": 0,
       "retainRate48h": 100.0
     },
@@ -96,18 +96,12 @@
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
       "today": 0,
-      "yesterday": 5,
-      "d7": 14,
+      "yesterday": 4,
+      "d7": 13,
       "anchors": [
-        "梁梦婷",
         "赵亚乐"
       ],
       "anchorDetail": {
-        "梁梦婷": {
-          "today": 0,
-          "yesterday": 1,
-          "d7": 1
-        },
         "赵亚乐": {
           "today": 0,
           "yesterday": 4,
@@ -151,7 +145,6 @@
       "屈海连": 20
     },
     "yesterday": {
-      "梁梦婷": 1,
       "赵亚乐": 4,
       "屈海连": 16,
       "张新淼": 11
@@ -160,24 +153,10 @@
       "刘双双",
       "屈海连",
       "张新淼",
-      "梁梦婷",
       "赵亚乐"
     ]
   },
   "detail": [
-    {
-      "date": "09-17",
-      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
-      "anchor": "梁梦婷",
-      "group": "郑州三组（恩熙）",
-      "contentType": "初三方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
     {
       "date": "09-17",
       "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
