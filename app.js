@@ -1302,6 +1302,9 @@
       data.anchor.anchors = anchors;
     }
 
+    // 组别负责人兜底（明细里的组名已去掉括号时用它补全，与合并脚本保持一致）
+    const GROUP_LEADER_FALLBACK = { '郑州三组': '恩熙', '郑州五组': '锦安', '沈阳一组': '亚东' };
+
     // === 分组汇总：按明细里的 group 字段（来自链接名称解析）聚合，只统计加好友数 ===
     // 主组名归一：「郑州三组（恩熙）」和「郑州三组」合并到同一张卡片（key = 郑州三组）
     const normalizeGroupName = g => {
@@ -1338,7 +1341,7 @@
       const d7Count = d7Rows.reduce((s, r) => s + r.count, 0);
 
       // 组长名：优先用本次合并时的非空 leader，再回退到聚合行里查括号
-      const leader = groupLeaderMap[name] || (() => {
+      const leader = groupLeaderMap[name] || GROUP_LEADER_FALLBACK[name] || (() => {
         for (const r of rows) {
           const mm = String(r.group || '').match(/[（(](.+?)[)）]/);
           if (mm) return mm[1];
