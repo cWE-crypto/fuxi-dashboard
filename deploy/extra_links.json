@@ -1,6 +1,9 @@
 [
   {
     "_说明": "不在当前 MES 账号 pageList 里、但可用 linkId 直接导出的链接，填在这里即可纳入采集（如沈阳一组）",
-    "_示例": { "linkId": "cawcdeXXXXXXXXXXXX", "linkName": "自孵化-沈阳一组（亚东）-入团-刘耘硕" }
+    "_当前待填": "【0910启用】自孵化-即来即转-入团资料（刘耘硕/沈阳一组）——需要 linkId",
+    "_找linkId": "MES 企微获客链接列表点开该链接的详情/编辑，地址栏或页面里 ca 开头的一串即为 linkId",
+    "_归属映射": "已按链接名称在 mes_collector.py 的 LINK_META_OVERRIDE 里配好（刘耘硕/沈阳一组/入团资料），拿到 linkId 填入下方即可自动出数",
+    "_示例": { "linkId": "cawcdeXXXXXXXXXXXX", "linkName": "【0910启用】自孵化-即来即转-入团资料" }
   }
 ]

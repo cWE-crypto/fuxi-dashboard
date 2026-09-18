@@ -59,6 +59,13 @@ EXPORT_RECORD_URL = f"{MES_BASE}/xianzhi/firefly/backend/auth/export/record/list
 
 EXPORT_TYPE_WECOM_LINK = 6  # 企微获客链接明细
 
+# 链接名 → 归属人工覆盖（key 精确匹配「链接名称」列）
+# 场景：链接名不含主播/组别（如「【0910启用】自孵化-即来即转-入团资料」是刘耘硕/沈阳一组的）
+LINK_META_OVERRIDE = {
+    "【0910启用】自孵化-即来即转-入团资料": {"group": "沈阳一组", "contentType": "入团资料", "host": "刘耘硕"},
+}
+
+
 
 # ------------------------- 链路名称解析(对齐老格式) -------------------------
 
@@ -234,6 +241,10 @@ def parse_xlsx(xlsx_path: Path, link_meta: dict) -> list:
             date = add_time[:10] if add_time else ""
             link_name = d.get("链接名称") or link_meta["linkName"]
             parsed = parse_link_name(link_name)
+            # 链接名不规范时按名称人工指定归属（如沈阳一组的「即来即转-入团资料」，名称里没有主播/组别）
+            ov = LINK_META_OVERRIDE.get(link_name.strip())
+            if ov:
+                parsed = {**parsed, **ov}
             rows.append({
                 "date": date,
                 "linkName": link_name,
