@@ -1,0 +1,6 @@
+[
+  {
+    "_说明": "不在当前 MES 账号 pageList 里、但可用 linkId 直接导出的链接，填在这里即可纳入采集（如沈阳一组）",
+    "_示例": { "linkId": "cawcdeXXXXXXXXXXXX", "linkName": "自孵化-沈阳一组（亚东）-入团-刘耘硕" }
+  }
+]

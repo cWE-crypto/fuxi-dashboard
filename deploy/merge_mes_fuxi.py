@@ -75,6 +75,13 @@ ANCHOR_GROUP_OVERRIDE = {
     # 后续遇到新例外按 "主播名: 真实组别" 追加
 }
 
+# 组别负责人兜底：数据里没带括号 leader 时（如伏羲侧、手工补的链接）用它补全
+GROUP_LEADER_FALLBACK = {
+    "郑州三组": "恩熙",
+    "郑州五组": "锦安",
+    "沈阳一组": "亚东",
+}
+
 
 def merge_detail(mes: dict, fuxi: dict) -> list[dict]:
     rows = []
@@ -138,7 +145,7 @@ def aggregate_groups(detail: list[dict], dates7d: list[str], today: str, yesterd
     out = []
     for idx, (gname, payload) in enumerate(sorted(groups_map.items())):
         rows = payload["rows"]
-        leader = payload["leader"]
+        leader = payload["leader"] or GROUP_LEADER_FALLBACK.get(gname, "")
 
         today_count = sum(r["count"] for r in rows if r["date"] == today)
         yesterday_count = sum(r["count"] for r in rows if r["date"] == yesterday)

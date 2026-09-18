@@ -45,6 +45,10 @@ LOG_DIR.mkdir(exist_ok=True)
 DOWNLOAD_DIR = LOG_DIR / "downloads"
 DOWNLOAD_DIR.mkdir(exist_ok=True)
 COOKIE_FILE = LOG_DIR / "mes_cookies.json"
+# 额外链接白名单：不在当前账号 pageList 里、但可用 linkId 直接导出的链接
+# （典型场景：沈阳一组等其它团队的企微获客链接，列表接口看不到，导出接口仍可按 linkId 出数）
+# 格式：[{"linkId": "cawcdeXXXX", "linkName": "自孵化-沈阳一组（亚东）-入团-刘耘硕"}]
+EXTRA_LINKS_FILE = BASE_DIR / "extra_links.json"
 PLAYWRIGHT_USER_DATA = BASE_DIR / ".playwright_chrome_profile"
 PLAYWRIGHT_USER_DATA.mkdir(exist_ok=True)
 
@@ -125,6 +129,22 @@ def collect_links(page) -> list:
         if link_id and link_name:
             links.append({"linkId": link_id, "linkName": link_name})
     return links
+
+
+def load_extra_links() -> list:
+    """读取额外链接白名单（extra_links.json），补进采集列表"""
+    if not EXTRA_LINKS_FILE.exists():
+        return []
+    try:
+        data = json.loads(EXTRA_LINKS_FILE.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"[!] extra_links.json 解析失败，已忽略: {e}")
+        return []
+    out = []
+    for it in data if isinstance(data, list) else []:
+        if isinstance(it, dict) and it.get("linkId"):
+            out.append({"linkId": it["linkId"], "linkName": it.get("linkName") or it["linkId"]})
+    return out
 
 
 def trigger_export(page, link_id: str, start_date: str, end_date: str) -> str:
@@ -490,8 +510,17 @@ def main():
         COOKIE_FILE.write_text(json.dumps(cookies, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"[i] 已保存 {len(cookies)} 项 cookie")
 
-        # 1) 拉链接列表
+        # 1) 拉链接列表（pageList + 额外白名单，按 linkId 去重）
         links = collect_links(page)
+        seen_ids = {l["linkId"] for l in links}
+        extra_n = 0
+        for l in load_extra_links():
+            if l["linkId"] not in seen_ids:
+                seen_ids.add(l["linkId"])
+                links.append(l)
+                extra_n += 1
+        if extra_n:
+            print(f"[i] 额外白名单补充 {extra_n} 个链接")
         print(f"[i] 共 {len(links)} 个企微获客链接:")
         for l in links:
             print(f"  - {l['linkId']}  {l['linkName']}")
