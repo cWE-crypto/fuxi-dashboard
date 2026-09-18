@@ -1,46 +1,38 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-17 21:39:05",
-    "dateRange": "09-11 至 09-17",
+    "updateTime": "2026-09-18 09:23:35",
+    "dateRange": "09-12 至 09-18",
     "days": 7,
-    "totalRecords": 122,
+    "totalRecords": 108,
     "channelFilter": "MES"
   },
   "dates": [
-    "09-11",
     "09-12",
     "09-13",
     "09-14",
     "09-15",
     "09-16",
-    "09-17"
+    "09-17",
+    "09-18"
   ],
-  "today": "09-17",
-  "yesterday": "09-16",
-  "updateTime": "2026-09-17 21:39",
-  "dateRangeText": "09-11 至 09-17（7 天）",
+  "today": "09-18",
+  "yesterday": "09-17",
+  "updateTime": "2026-09-18 09:23",
+  "dateRangeText": "09-12 至 09-18（7 天）",
   "kpi": {
-    "today": 32,
-    "todayDelta": -7,
-    "todayDeltaPct": "-17.9",
-    "total7d": 122,
-    "total7dDelta": 122,
+    "today": 6,
+    "todayDelta": -26,
+    "todayDeltaPct": "-81.2",
+    "total7d": 108,
+    "total7dDelta": 108,
     "total7dDeltaPct": "0.0",
-    "yesterday": 39,
-    "ytdDelta": -7,
-    "ytdDeltaPct": "-17.9",
-    "avg7d": 17.4
+    "yesterday": 32,
+    "ytdDelta": -26,
+    "ytdDeltaPct": "-81.2",
+    "avg7d": 15.4
   },
   "daily": [
-    {
-      "date": "09-11",
-      "count": 20,
-      "addCount": 20,
-      "retain48h": 20,
-      "delete48h": 0,
-      "retainRate48h": 100.0
-    },
     {
       "date": "09-12",
       "count": 0,
@@ -88,6 +80,14 @@
       "retain48h": 32,
       "delete48h": 0,
       "retainRate48h": 100.0
+    },
+    {
+      "date": "09-18",
+      "count": 6,
+      "addCount": 6,
+      "retain48h": 6,
+      "delete48h": 0,
+      "retainRate48h": 100.0
     }
   ],
   "groups": [
@@ -95,29 +95,23 @@
       "key": "g0",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 5,
-      "yesterday": 2,
-      "d7": 23,
+      "today": 0,
+      "yesterday": 5,
+      "d7": 14,
       "anchors": [
         "梁梦婷",
-        "赵亚乐",
-        "雷双拥"
+        "赵亚乐"
       ],
       "anchorDetail": {
         "梁梦婷": {
-          "today": 1,
-          "yesterday": 0,
-          "d7": 3
+          "today": 0,
+          "yesterday": 1,
+          "d7": 1
         },
         "赵亚乐": {
-          "today": 4,
-          "yesterday": 2,
-          "d7": 17
-        },
-        "雷双拥": {
           "today": 0,
-          "yesterday": 0,
-          "d7": 3
+          "yesterday": 4,
+          "d7": 13
         }
       }
     },
@@ -125,9 +119,9 @@
       "key": "g1",
       "name": "郑州五组（锦安）",
       "leader": "锦安",
-      "today": 27,
-      "yesterday": 37,
-      "d7": 99,
+      "today": 6,
+      "yesterday": 27,
+      "d7": 94,
       "anchors": [
         "刘双双",
         "屈海连",
@@ -140,13 +134,13 @@
           "d7": 2
         },
         "屈海连": {
-          "today": 16,
+          "today": 6,
           "yesterday": 16,
-          "d7": 43
+          "d7": 38
         },
         "张新淼": {
-          "today": 11,
-          "yesterday": 21,
+          "today": 0,
+          "yesterday": 11,
           "d7": 54
         }
       }
@@ -154,23 +148,20 @@
   ],
   "anchor": {
     "today": {
+      "屈海连": 6
+    },
+    "yesterday": {
       "梁梦婷": 1,
       "赵亚乐": 4,
       "屈海连": 16,
       "张新淼": 11
-    },
-    "yesterday": {
-      "赵亚乐": 2,
-      "屈海连": 16,
-      "张新淼": 21
     },
     "anchors": [
       "刘双双",
       "屈海连",
       "张新淼",
       "梁梦婷",
-      "赵亚乐",
-      "雷双拥"
+      "赵亚乐"
     ]
   },
   "detail": [
@@ -180,71 +171,6 @@
       "anchor": "梁梦婷",
       "group": "郑州三组（恩熙）",
       "contentType": "初三方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
-      "anchor": "梁梦婷",
-      "group": "郑州三组（恩熙）",
-      "contentType": "初三方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
-      "anchor": "梁梦婷",
-      "group": "郑州三组（恩熙）",
-      "contentType": "初三方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
-      "anchor": "雷双拥",
-      "group": "郑州三组（恩熙）",
-      "contentType": "高中方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
-      "anchor": "雷双拥",
-      "group": "郑州三组（恩熙）",
-      "contentType": "高中方法资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
-      "anchor": "雷双拥",
-      "group": "郑州三组（恩熙）",
-      "contentType": "高中方法资料",
       "plan": "",
       "source": "MES",
       "addCount": 1,
@@ -422,58 +348,6 @@
       "count": 1
     },
     {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
-      "anchor": "赵亚乐",
-      "group": "郑州三组（恩熙）",
-      "contentType": "规划资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
-      "anchor": "赵亚乐",
-      "group": "郑州三组（恩熙）",
-      "contentType": "规划资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
-      "anchor": "赵亚乐",
-      "group": "郑州三组（恩熙）",
-      "contentType": "规划资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
-      "anchor": "赵亚乐",
-      "group": "郑州三组（恩熙）",
-      "contentType": "规划资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
       "date": "09-15",
       "channel": "MES-郑州五组（锦安）-规划资料-刘双双",
       "anchor": "刘双双",
@@ -500,6 +374,84 @@
       "count": 1
     },
     {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-18",
+      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
+      "anchor": "屈海连",
+      "group": "郑州五组（锦安）",
+      "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
       "date": "09-17",
       "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
       "anchor": "屈海连",
@@ -904,149 +856,6 @@
     },
     {
       "date": "09-16",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
-      "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
-      "anchor": "屈海连",
-      "group": "郑州五组（锦安）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-11",
       "channel": "MES-郑州五组（锦安）-入团资料-屈海连",
       "anchor": "屈海连",
       "group": "郑州五组（锦安）",
