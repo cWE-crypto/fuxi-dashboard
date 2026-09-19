@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-19 14:39:32",
+    "updateTime": "2026-09-19 15:39:21",
     "dateRange": "09-13 至 09-19",
     "days": 7,
-    "totalRecords": 136,
+    "totalRecords": 137,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "09-19",
   "yesterday": "09-18",
-  "updateTime": "2026-09-19 14:39",
+  "updateTime": "2026-09-19 15:39",
   "dateRangeText": "09-13 至 09-19（7 天）",
   "kpi": {
-    "today": 13,
-    "todayDelta": -8,
-    "todayDeltaPct": "-38.1",
-    "total7d": 136,
-    "total7dDelta": 136,
+    "today": 14,
+    "todayDelta": -7,
+    "todayDeltaPct": "-33.3",
+    "total7d": 137,
+    "total7dDelta": 137,
     "total7dDeltaPct": "0.0",
     "yesterday": 21,
-    "ytdDelta": -8,
-    "ytdDeltaPct": "-38.1",
-    "avg7d": 19.4
+    "ytdDelta": -7,
+    "ytdDeltaPct": "-33.3",
+    "avg7d": 19.6
   },
   "daily": [
     {
@@ -83,9 +83,9 @@
     },
     {
       "date": "09-19",
-      "count": 13,
-      "addCount": 13,
-      "retain48h": 13,
+      "count": 14,
+      "addCount": 14,
+      "retain48h": 14,
       "delete48h": 0,
       "retainRate48h": 100.0
     }
@@ -125,9 +125,9 @@
       "key": "g1",
       "name": "郑州五组（锦安）",
       "leader": "锦安",
-      "today": 11,
+      "today": 12,
       "yesterday": 21,
-      "d7": 120,
+      "d7": 121,
       "anchors": [
         "刘双双",
         "屈海连",
@@ -135,9 +135,9 @@
       ],
       "anchorDetail": {
         "刘双双": {
-          "today": 0,
+          "today": 1,
           "yesterday": 1,
-          "d7": 3
+          "d7": 4
         },
         "屈海连": {
           "today": 10,
@@ -156,7 +156,8 @@
     "today": {
       "屈海连": 10,
       "张新淼": 1,
-      "雷双拥": 2
+      "雷双拥": 2,
+      "刘双双": 1
     },
     "yesterday": {
       "屈海连": 20,
@@ -1893,6 +1894,19 @@
       "channel": "MES-郑州三组（恩熙）-规划资料-赵亚乐",
       "anchor": "赵亚乐",
       "group": "郑州三组（恩熙）",
+      "contentType": "规划资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-19",
+      "channel": "MES-郑州五组（锦安）-规划资料-刘双双",
+      "anchor": "刘双双",
+      "group": "郑州五组（锦安）",
       "contentType": "规划资料",
       "plan": "",
       "source": "MES",
