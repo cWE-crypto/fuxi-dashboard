@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-22 09:58:32",
+    "updateTime": "2026-09-22 10:39:43",
     "dateRange": "09-16 至 09-22",
     "days": 7,
     "totalRecords": 138,
@@ -18,7 +18,7 @@
   ],
   "today": "09-22",
   "yesterday": "09-21",
-  "updateTime": "2026-09-22 09:58",
+  "updateTime": "2026-09-22 10:39",
   "dateRangeText": "09-16 至 09-22（7 天）",
   "kpi": {
     "today": 0,
