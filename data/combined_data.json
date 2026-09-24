@@ -5,12 +5,12 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-24 15:39:20",
+    "updateTime": "2026-09-24 16:39:35",
     "dateRange": "09-12 至 09-24",
     "days": 13,
-    "totalRecords": 140,
+    "totalRecords": 141,
     "mesRecords": 82,
-    "fuxiRecords": 58,
+    "fuxiRecords": 59,
     "channelFilter": "MES + 伏羲"
   },
   "dates": [
@@ -39,26 +39,26 @@
     "09-23",
     "09-24"
   ],
-  "updateTime": "2026-09-24 15:39",
+  "updateTime": "2026-09-24 16:39",
   "dateRangeText": "09-18 至 09-24（近 7 天）",
   "kpi": {
-    "today": 28,
-    "todayDelta": -19,
-    "todayDeltaPct": "-40.4",
+    "today": 29,
+    "todayDelta": -18,
+    "todayDeltaPct": "-38.3",
     "yesterday": 47,
     "ytdDelta": 28,
     "ytdDeltaPct": "147.4",
-    "total7d": 216,
-    "total7dDelta": 53,
-    "total7dDeltaPct": "32.5",
+    "total7d": 217,
+    "total7dDelta": 54,
+    "total7dDeltaPct": "33.1",
     "avg7d": 31,
     "todayRetain48h": 26,
     "yesterdayRetain48h": 41,
     "totalRetain48h": 201,
-    "totalDelete48h": 15,
-    "todayDelete48h": 2,
-    "retainRate48h": 93.1,
-    "todayRetainRate48h": 92.9
+    "totalDelete48h": 16,
+    "todayDelete48h": 3,
+    "retainRate48h": 92.6,
+    "todayRetainRate48h": 89.7
   },
   "daily": [
     {
@@ -183,13 +183,13 @@
     },
     {
       "date": "09-24",
-      "count": 28,
-      "addCount": 28,
+      "count": 29,
+      "addCount": 29,
       "retain48h": 26,
-      "delete48h": 2,
-      "retainRate48h": 92.9,
+      "delete48h": 3,
+      "retainRate48h": 89.7,
       "mesCount": 1,
-      "fuxiCount": 27
+      "fuxiCount": 28
     }
   ],
   "groups": [
@@ -257,9 +257,9 @@
       "key": "g2",
       "name": "郑州五组",
       "leader": "锦安",
-      "today": 27,
+      "today": 28,
       "yesterday": 43,
-      "d7": 196,
+      "d7": 197,
       "anchors": [
         "任彩瑜",
         "刘双双",
@@ -269,9 +269,9 @@
       ],
       "anchorDetail": {
         "任彩瑜": {
-          "today": 0,
+          "today": 1,
           "yesterday": 1,
-          "d7": 2
+          "d7": 3
         },
         "刘双双": {
           "today": 0,
@@ -298,7 +298,7 @@
   ],
   "anchor": {
     "today": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "刘双双": 0,
       "刘耘硕": 0,
       "孟萍": 0,
@@ -324,7 +324,7 @@
       "雷双拥": 0
     },
     "d7": {
-      "任彩瑜": 2,
+      "任彩瑜": 3,
       "刘双双": 2,
       "刘耘硕": 6,
       "孟萍": 0,
@@ -337,7 +337,7 @@
       "雷双拥": 4
     },
     "todayAdd": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "刘双双": 0,
       "刘耘硕": 0,
       "孟萍": 0,
@@ -363,7 +363,7 @@
       "雷双拥": 0
     },
     "d7Add": {
-      "任彩瑜": 2,
+      "任彩瑜": 3,
       "刘双双": 2,
       "刘耘硕": 6,
       "孟萍": 0,
@@ -376,11 +376,11 @@
       "雷双拥": 4
     },
     "todayRetain": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "刘双双": 0,
       "刘耘硕": 0,
       "孟萍": 0,
-      "屈海连": 19,
+      "屈海连": 18,
       "张新淼": 6,
       "曲雅": 0,
       "梁孟婷": 0,
@@ -402,11 +402,11 @@
       "雷双拥": 0
     },
     "d7Retain": {
-      "任彩瑜": 2,
+      "任彩瑜": 3,
       "刘双双": 2,
       "刘耘硕": 6,
       "孟萍": 0,
-      "屈海连": 124,
+      "屈海连": 123,
       "张新淼": 53,
       "曲雅": 3,
       "梁孟婷": 0,
@@ -430,7 +430,7 @@
   },
   "grade": {
     "today": {
-      "高一": 23,
+      "高一": 24,
       "高三": 2,
       "高二": 2
     },
@@ -440,7 +440,7 @@
       "高二": 4
     },
     "d7": {
-      "高一": 108,
+      "高一": 109,
       "高三": 13,
       "高二": 13
     },
@@ -452,7 +452,7 @@
   },
   "sourceBreakdown": {
     "totals": {
-      "伏羲": 297,
+      "伏羲": 298,
       "MES": 82
     },
     "retain": {
@@ -461,7 +461,7 @@
     },
     "byDate": {
       "伏羲": {
-        "09-24": 27,
+        "09-24": 28,
         "09-23": 43,
         "09-22": 9,
         "09-21": 17,
@@ -502,8 +502,8 @@
       "anchor": "屈海连",
       "count": 18,
       "addCount": 18,
-      "retain48h": 16,
-      "delete48h": 2,
+      "retain48h": 15,
+      "delete48h": 3,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
@@ -589,6 +589,22 @@
       "group": "郑州五组",
       "contentType": "",
       "grade": "高三",
+      "plan": "",
+      "groupLeader": ""
+    },
+    {
+      "date": "09-24",
+      "channel": "koc选科--任彩瑜",
+      "anchor": "任彩瑜",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "伏羲",
+      "group": "郑州五组",
+      "contentType": "",
+      "grade": "高一",
       "plan": "",
       "groupLeader": ""
     },
