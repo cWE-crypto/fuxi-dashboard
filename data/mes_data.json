@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-24 10:40:02",
+    "updateTime": "2026-09-24 11:39:25",
     "dateRange": "09-18 至 09-24",
     "days": 7,
-    "totalRecords": 81,
+    "totalRecords": 82,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "09-24",
   "yesterday": "09-23",
-  "updateTime": "2026-09-24 10:40",
+  "updateTime": "2026-09-24 11:39",
   "dateRangeText": "09-18 至 09-24（7 天）",
   "kpi": {
-    "today": 0,
-    "todayDelta": -4,
-    "todayDeltaPct": "-100.0",
-    "total7d": 81,
-    "total7dDelta": 81,
+    "today": 1,
+    "todayDelta": -3,
+    "todayDeltaPct": "-75.0",
+    "total7d": 82,
+    "total7dDelta": 82,
     "total7dDeltaPct": "0.0",
     "yesterday": 4,
-    "ytdDelta": -4,
-    "ytdDeltaPct": "-100.0",
-    "avg7d": 11.6
+    "ytdDelta": -3,
+    "ytdDeltaPct": "-75.0",
+    "avg7d": 11.7
   },
   "daily": [
     {
@@ -83,11 +83,11 @@
     },
     {
       "date": "09-24",
-      "count": 0,
-      "addCount": 0,
-      "retain48h": 0,
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
       "delete48h": 0,
-      "retainRate48h": 0.0
+      "retainRate48h": 100.0
     }
   ],
   "groups": [
@@ -113,9 +113,9 @@
       "key": "g1",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 0,
+      "today": 1,
       "yesterday": 4,
-      "d7": 13,
+      "d7": 14,
       "anchors": [
         "曲雅",
         "梁梦婷",
@@ -129,9 +129,9 @@
           "d7": 3
         },
         "梁梦婷": {
-          "today": 0,
+          "today": 1,
           "yesterday": 1,
-          "d7": 1
+          "d7": 2
         },
         "郭云波": {
           "today": 0,
@@ -177,7 +177,9 @@
     }
   ],
   "anchor": {
-    "today": {},
+    "today": {
+      "梁梦婷": 1
+    },
     "yesterday": {
       "曲雅": 3,
       "梁梦婷": 1
@@ -1149,6 +1151,19 @@
       "anchor": "张新淼",
       "group": "郑州五组（锦安）",
       "contentType": "入团资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "09-24",
+      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
+      "anchor": "梁梦婷",
+      "group": "郑州三组（恩熙）",
+      "contentType": "初三方法资料",
       "plan": "",
       "source": "MES",
       "addCount": 1,
