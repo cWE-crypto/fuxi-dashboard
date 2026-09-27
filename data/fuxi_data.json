@@ -1,14 +1,13 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-27 21:54:09",
-    "dateRange": "09-14 至 09-27",
-    "days": 14,
-    "totalRecords": 58,
+    "updateTime": "2026-09-28 02:19:35",
+    "dateRange": "09-15 至 09-27",
+    "days": 13,
+    "totalRecords": 52,
     "channelFilter": "KOC"
   },
   "dates": [
-    "09-14",
     "09-15",
     "09-16",
     "09-17",
@@ -25,34 +24,26 @@
   ],
   "today": "09-27",
   "yesterday": "09-26",
-  "updateTime": "2026-09-27 21:54",
-  "dateRangeText": "09-14 至 09-27（14 天）",
+  "updateTime": "2026-09-28 02:19",
+  "dateRangeText": "09-15 至 09-27（13 天）",
   "kpi": {
     "today": 50,
     "todayDelta": 7,
     "todayDeltaPct": "16.3",
-    "total7d": 309,
-    "total7dDelta": 81,
-    "total7dDeltaPct": "35.5",
+    "total7d": 276,
+    "total7dDelta": 100,
+    "total7dDeltaPct": "57.0",
     "yesterday": 43,
     "ytdDelta": 40,
     "ytdDeltaPct": "1333.3",
-    "avg7d": 22,
-    "todayRetain48h": 38,
-    "totalRetain48h": 258,
-    "totalDelete48h": 51,
-    "retainRate48h": 83.5,
-    "todayRetainRate48h": 76.0
+    "avg7d": 21,
+    "todayRetain48h": 37,
+    "totalRetain48h": 226,
+    "totalDelete48h": 50,
+    "retainRate48h": 81.9,
+    "todayRetainRate48h": 74.0
   },
   "daily": [
-    {
-      "date": "09-14",
-      "count": 33,
-      "addCount": 33,
-      "retain48h": 31,
-      "delete48h": 2,
-      "retainRate48h": 93.9
-    },
     {
       "date": "09-15",
       "count": 16,
@@ -153,9 +144,9 @@
       "date": "09-27",
       "count": 50,
       "addCount": 50,
-      "retain48h": 38,
-      "delete48h": 12,
-      "retainRate48h": 76.0
+      "retain48h": 37,
+      "delete48h": 13,
+      "retainRate48h": 74.0
     }
   ],
   "grade": {
@@ -180,7 +171,7 @@
       "高二": 12
     },
     "todayRetain": {
-      "高一": 24,
+      "高一": 23,
       "高三": 8,
       "高二": 6
     },
@@ -227,7 +218,7 @@
     "todayRetain": {
       "任彩瑜": 2,
       "孟萍": 0,
-      "屈海连": 35,
+      "屈海连": 34,
       "张新淼": 1,
       "梁孟婷": 0
     },
@@ -268,8 +259,8 @@
       "plan": "",
       "source": "",
       "addCount": 29,
-      "delete48h": 8,
-      "retain48h": 21,
+      "delete48h": 9,
+      "retain48h": 20,
       "count": 29,
       "group": "郑州五组"
     },
@@ -313,19 +304,6 @@
       "group": "郑州五组"
     },
     {
-      "date": "09-14",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 13,
-      "delete48h": 0,
-      "retain48h": 13,
-      "count": 13,
-      "group": "郑州五组"
-    },
-    {
       "date": "09-15",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
@@ -349,19 +327,6 @@
       "delete48h": 6,
       "retain48h": 6,
       "count": 12,
-      "group": "郑州五组"
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 11,
-      "delete48h": 0,
-      "retain48h": 11,
-      "count": 11,
       "group": "郑州五组"
     },
     {
@@ -469,19 +434,6 @@
       "group": "郑州五组"
     },
     {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 5,
-      "delete48h": 1,
-      "retain48h": 4,
-      "count": 5,
-      "group": "郑州五组"
-    },
-    {
       "date": "09-17",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
@@ -576,12 +528,12 @@
       "date": "09-19",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
-      "grade": "高三",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 1,
-      "retain48h": 2,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3,
       "group": "郑州五组"
     },
@@ -589,12 +541,12 @@
       "date": "09-19",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
-      "grade": "高一",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
+      "delete48h": 1,
+      "retain48h": 2,
       "count": 3,
       "group": "郑州五组"
     },
@@ -639,19 +591,6 @@
     },
     {
       "date": "09-23",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 2,
-      "delete48h": 0,
-      "retain48h": 2,
-      "count": 2,
-      "group": "郑州五组"
-    },
-    {
-      "date": "09-14",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
       "grade": "高二",
@@ -768,32 +707,6 @@
       "group": "郑州五组"
     },
     {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1,
-      "group": "郑州五组"
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高三",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
-      "count": 1,
-      "group": "郑州五组"
-    },
-    {
       "date": "09-17",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
@@ -850,19 +763,6 @@
       "channel": "koc选科--任彩瑜",
       "anchor": "任彩瑜",
       "grade": "高一",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1,
-      "group": "郑州五组"
-    },
-    {
-      "date": "09-18",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高二",
       "plan": "",
       "source": "",
       "addCount": 1,
@@ -950,9 +850,35 @@
       "group": "郑州五组"
     },
     {
+      "date": "09-18",
+      "channel": "KOC内部讲题送资料-屈海连",
+      "anchor": "屈海连",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1,
+      "group": "郑州五组"
+    },
+    {
       "date": "09-20",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
+      "grade": "高二",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1,
+      "group": "郑州五组"
+    },
+    {
+      "date": "09-22",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
       "grade": "高二",
       "plan": "",
       "source": "",
@@ -972,19 +898,6 @@
       "addCount": 1,
       "delete48h": 1,
       "retain48h": 0,
-      "count": 1,
-      "group": "郑州五组"
-    },
-    {
-      "date": "09-22",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "grade": "高二",
-      "plan": "",
-      "source": "",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
       "count": 1,
       "group": "郑州五组"
     },
