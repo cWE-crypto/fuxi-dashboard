@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-09-28 09:54:02",
+    "updateTime": "2026-09-28 10:40:38",
     "dateRange": "09-22 至 09-28",
     "days": 7,
-    "totalRecords": 37,
+    "totalRecords": 33,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,26 +18,26 @@
   ],
   "today": "09-28",
   "yesterday": "09-27",
-  "updateTime": "2026-09-28 09:54",
+  "updateTime": "2026-09-28 10:40",
   "dateRangeText": "09-22 至 09-28（7 天）",
   "kpi": {
     "today": 8,
     "todayDelta": 0,
     "todayDeltaPct": "0.0",
-    "total7d": 37,
-    "total7dDelta": 37,
+    "total7d": 33,
+    "total7dDelta": 33,
     "total7dDeltaPct": "0.0",
     "yesterday": 8,
     "ytdDelta": 0,
     "ytdDeltaPct": "0.0",
-    "avg7d": 5.3
+    "avg7d": 4.7
   },
   "daily": [
     {
       "date": "09-22",
-      "count": 10,
-      "addCount": 10,
-      "retain48h": 10,
+      "count": 6,
+      "addCount": 6,
+      "retain48h": 6,
       "delete48h": 0,
       "retainRate48h": 100.0
     },
@@ -93,24 +93,6 @@
   "groups": [
     {
       "key": "g0",
-      "name": "沈阳一组（亚东）",
-      "leader": "亚东",
-      "today": 0,
-      "yesterday": 0,
-      "d7": 4,
-      "anchors": [
-        "刘耘硕"
-      ],
-      "anchorDetail": {
-        "刘耘硕": {
-          "today": 0,
-          "yesterday": 0,
-          "d7": 4
-        }
-      }
-    },
-    {
-      "key": "g1",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
       "today": 8,
@@ -156,7 +138,6 @@
       "雷双拥": 4
     },
     "anchors": [
-      "刘耘硕",
       "曲雅",
       "梁梦婷",
       "郭云波",
@@ -164,58 +145,6 @@
     ]
   },
   "detail": [
-    {
-      "date": "09-22",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "group": "沈阳一组（亚东）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-22",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "group": "沈阳一组（亚东）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-22",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "group": "沈阳一组（亚东）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
-    {
-      "date": "09-22",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "group": "沈阳一组（亚东）",
-      "contentType": "入团资料",
-      "plan": "",
-      "source": "MES",
-      "addCount": 1,
-      "delete48h": 0,
-      "retain48h": 1,
-      "count": 1
-    },
     {
       "date": "09-27",
       "channel": "MES-郑州三组（恩熙）-高中方法资料-曲雅",
