@@ -5,16 +5,15 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-27 19:46:43",
-    "dateRange": "09-14 至 09-27",
+    "updateTime": "2026-09-28 09:54:08",
+    "dateRange": "09-15 至 09-28",
     "days": 14,
-    "totalRecords": 90,
-    "mesRecords": 32,
-    "fuxiRecords": 58,
+    "totalRecords": 89,
+    "mesRecords": 37,
+    "fuxiRecords": 52,
     "channelFilter": "MES + 伏羲"
   },
   "dates": [
-    "09-14",
     "09-15",
     "09-16",
     "09-17",
@@ -27,51 +26,42 @@
     "09-24",
     "09-25",
     "09-26",
-    "09-27"
+    "09-27",
+    "09-28"
   ],
-  "today": "09-27",
-  "yesterday": "09-26",
+  "today": "09-28",
+  "yesterday": "09-27",
   "dates7d": [
-    "09-21",
     "09-22",
     "09-23",
     "09-24",
     "09-25",
     "09-26",
-    "09-27"
+    "09-27",
+    "09-28"
   ],
-  "updateTime": "2026-09-27 19:46",
-  "dateRangeText": "09-21 至 09-27（近 7 天）",
+  "updateTime": "2026-09-28 09:54",
+  "dateRangeText": "09-22 至 09-28（近 7 天）",
   "kpi": {
-    "today": 58,
-    "todayDelta": 12,
-    "todayDeltaPct": "26.1",
-    "yesterday": 46,
-    "ytdDelta": 43,
-    "ytdDeltaPct": "1433.3",
-    "total7d": 227,
-    "total7dDelta": 113,
-    "total7dDeltaPct": "99.1",
-    "avg7d": 32,
-    "todayRetain48h": 46,
-    "yesterdayRetain48h": 34,
-    "totalRetain48h": 187,
+    "today": 8,
+    "todayDelta": -51,
+    "todayDeltaPct": "-86.4",
+    "yesterday": 59,
+    "ytdDelta": 13,
+    "ytdDeltaPct": "28.3",
+    "total7d": 216,
+    "total7dDelta": 118,
+    "total7dDeltaPct": "120.4",
+    "avg7d": 31,
+    "todayRetain48h": 8,
+    "yesterdayRetain48h": 45,
+    "totalRetain48h": 176,
     "totalDelete48h": 40,
-    "todayDelete48h": 12,
-    "retainRate48h": 82.4,
-    "todayRetainRate48h": 79.3
+    "todayDelete48h": 0,
+    "retainRate48h": 81.5,
+    "todayRetainRate48h": 100.0
   },
   "daily": [
-    {
-      "date": "09-14",
-      "count": 33,
-      "addCount": 33,
-      "retain48h": 31,
-      "delete48h": 2,
-      "retainRate48h": 93.9,
-      "mesCount": 0,
-      "fuxiCount": 33
-    },
     {
       "date": "09-15",
       "count": 16,
@@ -134,12 +124,12 @@
     },
     {
       "date": "09-21",
-      "count": 20,
-      "addCount": 20,
-      "retain48h": 18,
+      "count": 17,
+      "addCount": 17,
+      "retain48h": 15,
       "delete48h": 2,
-      "retainRate48h": 90.0,
-      "mesCount": 3,
+      "retainRate48h": 88.2,
+      "mesCount": 0,
       "fuxiCount": 17
     },
     {
@@ -194,13 +184,23 @@
     },
     {
       "date": "09-27",
-      "count": 58,
-      "addCount": 58,
-      "retain48h": 46,
-      "delete48h": 12,
-      "retainRate48h": 79.3,
+      "count": 59,
+      "addCount": 59,
+      "retain48h": 45,
+      "delete48h": 14,
+      "retainRate48h": 76.3,
       "mesCount": 8,
-      "fuxiCount": 50
+      "fuxiCount": 51
+    },
+    {
+      "date": "09-28",
+      "count": 8,
+      "addCount": 8,
+      "retain48h": 8,
+      "delete48h": 0,
+      "retainRate48h": 100.0,
+      "mesCount": 8,
+      "fuxiCount": 0
     }
   ],
   "groups": [
@@ -210,7 +210,7 @@
       "leader": "亚东",
       "today": 0,
       "yesterday": 0,
-      "d7": 6,
+      "d7": 4,
       "anchors": [
         "刘耘硕"
       ],
@@ -218,7 +218,7 @@
         "刘耘硕": {
           "today": 0,
           "yesterday": 0,
-          "d7": 6
+          "d7": 4
         }
       }
     },
@@ -227,8 +227,8 @@
       "name": "郑州三组",
       "leader": "恩熙",
       "today": 8,
-      "yesterday": 3,
-      "d7": 26,
+      "yesterday": 8,
+      "d7": 33,
       "anchors": [
         "曲雅",
         "梁孟婷",
@@ -238,8 +238,8 @@
       ],
       "anchorDetail": {
         "曲雅": {
-          "today": 4,
-          "yesterday": 0,
+          "today": 0,
+          "yesterday": 4,
           "d7": 9
         },
         "梁孟婷": {
@@ -248,19 +248,19 @@
           "d7": 0
         },
         "梁梦婷": {
-          "today": 0,
+          "today": 1,
           "yesterday": 0,
-          "d7": 2
+          "d7": 3
         },
         "郭云波": {
           "today": 0,
           "yesterday": 0,
-          "d7": 6
+          "d7": 5
         },
         "雷双拥": {
-          "today": 4,
-          "yesterday": 3,
-          "d7": 9
+          "today": 7,
+          "yesterday": 4,
+          "d7": 16
         }
       }
     },
@@ -268,9 +268,9 @@
       "key": "g2",
       "name": "郑州五组",
       "leader": "锦安",
-      "today": 50,
-      "yesterday": 43,
-      "d7": 195,
+      "today": 0,
+      "yesterday": 51,
+      "d7": 179,
       "anchors": [
         "任彩瑜",
         "孟萍",
@@ -279,8 +279,8 @@
       ],
       "anchorDetail": {
         "任彩瑜": {
-          "today": 2,
-          "yesterday": 0,
+          "today": 0,
+          "yesterday": 2,
           "d7": 8
         },
         "孟萍": {
@@ -289,96 +289,108 @@
           "d7": 0
         },
         "屈海连": {
-          "today": 47,
-          "yesterday": 43,
-          "d7": 151
+          "today": 0,
+          "yesterday": 48,
+          "d7": 150
         },
         "张新淼": {
-          "today": 1,
-          "yesterday": 0,
-          "d7": 36
+          "today": 0,
+          "yesterday": 1,
+          "d7": 21
         }
       }
     }
   ],
   "anchor": {
     "today": {
+      "任彩瑜": 0,
+      "刘耘硕": 0,
+      "孟萍": 0,
+      "屈海连": 0,
+      "张新淼": 0,
+      "曲雅": 0,
+      "梁孟婷": 0,
+      "梁梦婷": 1,
+      "郭云波": 0,
+      "雷双拥": 7
+    },
+    "yesterday": {
       "任彩瑜": 2,
       "刘耘硕": 0,
       "孟萍": 0,
-      "屈海连": 47,
+      "屈海连": 48,
       "张新淼": 1,
       "曲雅": 4,
       "梁孟婷": 0,
       "梁梦婷": 0,
       "郭云波": 0,
       "雷双拥": 4
-    },
-    "yesterday": {
-      "任彩瑜": 0,
-      "刘耘硕": 0,
-      "孟萍": 0,
-      "屈海连": 43,
-      "张新淼": 0,
-      "曲雅": 0,
-      "梁孟婷": 0,
-      "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 3
     },
     "d7": {
       "任彩瑜": 8,
-      "刘耘硕": 6,
+      "刘耘硕": 4,
       "孟萍": 0,
-      "屈海连": 151,
-      "张新淼": 36,
+      "屈海连": 150,
+      "张新淼": 21,
       "曲雅": 9,
       "梁孟婷": 0,
-      "梁梦婷": 2,
-      "郭云波": 6,
-      "雷双拥": 9
+      "梁梦婷": 3,
+      "郭云波": 5,
+      "雷双拥": 16
     },
     "todayAdd": {
+      "任彩瑜": 0,
+      "刘耘硕": 0,
+      "孟萍": 0,
+      "屈海连": 0,
+      "张新淼": 0,
+      "曲雅": 0,
+      "梁孟婷": 0,
+      "梁梦婷": 1,
+      "郭云波": 0,
+      "雷双拥": 7
+    },
+    "yesterdayAdd": {
       "任彩瑜": 2,
       "刘耘硕": 0,
       "孟萍": 0,
-      "屈海连": 47,
+      "屈海连": 48,
       "张新淼": 1,
       "曲雅": 4,
       "梁孟婷": 0,
       "梁梦婷": 0,
       "郭云波": 0,
       "雷双拥": 4
-    },
-    "yesterdayAdd": {
-      "任彩瑜": 0,
-      "刘耘硕": 0,
-      "孟萍": 0,
-      "屈海连": 43,
-      "张新淼": 0,
-      "曲雅": 0,
-      "梁孟婷": 0,
-      "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 3
     },
     "d7Add": {
       "任彩瑜": 8,
-      "刘耘硕": 6,
+      "刘耘硕": 4,
       "孟萍": 0,
-      "屈海连": 151,
-      "张新淼": 36,
+      "屈海连": 150,
+      "张新淼": 21,
       "曲雅": 9,
       "梁孟婷": 0,
-      "梁梦婷": 2,
-      "郭云波": 6,
-      "雷双拥": 9
+      "梁梦婷": 3,
+      "郭云波": 5,
+      "雷双拥": 16
     },
     "todayRetain": {
+      "任彩瑜": 0,
+      "刘耘硕": 0,
+      "孟萍": 0,
+      "屈海连": 0,
+      "张新淼": 0,
+      "曲雅": 0,
+      "梁孟婷": 0,
+      "梁梦婷": 1,
+      "郭云波": 0,
+      "雷双拥": 7
+    },
+    "yesterdayRetain": {
       "任彩瑜": 2,
       "刘耘硕": 0,
       "孟萍": 0,
-      "屈海连": 35,
+      "屈海连": 34,
       "张新淼": 1,
       "曲雅": 4,
       "梁孟婷": 0,
@@ -386,29 +398,17 @@
       "郭云波": 0,
       "雷双拥": 4
     },
-    "yesterdayRetain": {
-      "任彩瑜": 0,
-      "刘耘硕": 0,
-      "孟萍": 0,
-      "屈海连": 31,
-      "张新淼": 0,
-      "曲雅": 0,
-      "梁孟婷": 0,
-      "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 3
-    },
     "d7Retain": {
       "任彩瑜": 8,
-      "刘耘硕": 6,
+      "刘耘硕": 4,
       "孟萍": 0,
-      "屈海连": 115,
-      "张新淼": 32,
+      "屈海连": 112,
+      "张新淼": 19,
       "曲雅": 9,
       "梁孟婷": 0,
-      "梁梦婷": 2,
-      "郭云波": 6,
-      "雷双拥": 9
+      "梁梦婷": 3,
+      "郭云波": 5,
+      "雷双拥": 16
     },
     "anchors": [
       "任彩瑜",
@@ -425,17 +425,17 @@
   },
   "grade": {
     "today": {
-      "高一": 32,
+      "高一": 0,
+      "高三": 0,
+      "高二": 0
+    },
+    "yesterday": {
+      "高一": 33,
       "高三": 9,
       "高二": 9
     },
-    "yesterday": {
-      "高一": 24,
-      "高三": 7,
-      "高二": 12
-    },
     "d7": {
-      "高一": 145,
+      "高一": 129,
       "高三": 22,
       "高二": 28
     },
@@ -447,16 +447,24 @@
   },
   "sourceBreakdown": {
     "totals": {
-      "伏羲": 309,
-      "MES": 32
+      "MES": 37,
+      "伏羲": 277
     },
     "retain": {
-      "伏羲": 258,
-      "MES": 32
+      "MES": 37,
+      "伏羲": 226
     },
     "byDate": {
+      "MES": {
+        "09-28": 8,
+        "09-27": 8,
+        "09-26": 3,
+        "09-24": 4,
+        "09-23": 4,
+        "09-22": 10
+      },
       "伏羲": {
-        "09-27": 50,
+        "09-27": 51,
         "09-26": 43,
         "09-25": 3,
         "09-24": 30,
@@ -468,16 +476,7 @@
         "09-18": 16,
         "09-17": 19,
         "09-16": 8,
-        "09-15": 16,
-        "09-14": 33
-      },
-      "MES": {
-        "09-27": 8,
-        "09-26": 3,
-        "09-24": 4,
-        "09-23": 4,
-        "09-22": 10,
-        "09-21": 3
+        "09-15": 16
       }
     }
   },
@@ -492,13 +491,141 @@
   ],
   "detail": [
     {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
+      "anchor": "梁梦婷",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "初三方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-28",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
       "date": "09-27",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
-      "count": 29,
-      "addCount": 29,
-      "retain48h": 21,
-      "delete48h": 8,
+      "count": 30,
+      "addCount": 30,
+      "retain48h": 20,
+      "delete48h": 10,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
@@ -1388,54 +1515,6 @@
       "groupLeader": ""
     },
     {
-      "date": "09-21",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "MES",
-      "group": "沈阳一组",
-      "contentType": "入团资料",
-      "grade": "",
-      "plan": "",
-      "groupLeader": "亚东"
-    },
-    {
-      "date": "09-21",
-      "channel": "MES-沈阳一组（亚东）-入团资料-刘耘硕",
-      "anchor": "刘耘硕",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "MES",
-      "group": "沈阳一组",
-      "contentType": "入团资料",
-      "grade": "",
-      "plan": "",
-      "groupLeader": "亚东"
-    },
-    {
-      "date": "09-21",
-      "channel": "MES-郑州三组（恩熙）-初三方法资料-郭云波",
-      "anchor": "郭云波",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "MES",
-      "group": "郑州三组",
-      "contentType": "初三方法资料",
-      "grade": "",
-      "plan": "",
-      "groupLeader": "恩熙"
-    },
-    {
       "date": "09-20",
       "channel": "KOC内部纯资料-张新淼",
       "anchor": "张新淼",
@@ -1799,7 +1878,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1815,7 +1894,7 @@
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1832,102 +1911,6 @@
       "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 13,
-      "addCount": 13,
-      "retain48h": 13,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 11,
-      "addCount": 11,
-      "retain48h": 11,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 5,
-      "addCount": 5,
-      "retain48h": 4,
-      "delete48h": 1,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高三",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 2,
-      "addCount": 2,
-      "retain48h": 2,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-14",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     }
