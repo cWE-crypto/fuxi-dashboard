@@ -5,16 +5,15 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-28 15:22:16",
-    "dateRange": "09-15 至 09-28",
-    "days": 14,
-    "totalRecords": 94,
+    "updateTime": "2026-09-28 21:56:25",
+    "dateRange": "09-16 至 09-28",
+    "days": 13,
+    "totalRecords": 90,
     "mesRecords": 39,
-    "fuxiRecords": 55,
+    "fuxiRecords": 51,
     "channelFilter": "MES + 伏羲"
   },
   "dates": [
-    "09-15",
     "09-16",
     "09-17",
     "09-18",
@@ -40,7 +39,7 @@
     "09-27",
     "09-28"
   ],
-  "updateTime": "2026-09-28 15:22",
+  "updateTime": "2026-09-28 21:56",
   "dateRangeText": "09-22 至 09-28（近 7 天）",
   "kpi": {
     "today": 23,
@@ -50,8 +49,8 @@
     "ytdDelta": 13,
     "ytdDeltaPct": "28.3",
     "total7d": 231,
-    "total7dDelta": 133,
-    "total7dDeltaPct": "135.7",
+    "total7dDelta": 149,
+    "total7dDeltaPct": "181.7",
     "avg7d": 33,
     "todayRetain48h": 21,
     "yesterdayRetain48h": 45,
@@ -62,16 +61,6 @@
     "todayRetainRate48h": 91.3
   },
   "daily": [
-    {
-      "date": "09-15",
-      "count": 16,
-      "addCount": 16,
-      "retain48h": 14,
-      "delete48h": 2,
-      "retainRate48h": 87.5,
-      "mesCount": 0,
-      "fuxiCount": 16
-    },
     {
       "date": "09-16",
       "count": 8,
@@ -232,7 +221,6 @@
       "anchors": [
         "周璞",
         "曲雅",
-        "梁孟婷",
         "梁梦婷",
         "郭云波",
         "雷双拥"
@@ -247,11 +235,6 @@
           "today": 0,
           "yesterday": 4,
           "d7": 9
-        },
-        "梁孟婷": {
-          "today": 0,
-          "yesterday": 0,
-          "d7": 0
         },
         "梁梦婷": {
           "today": 1,
@@ -323,7 +306,6 @@
       "屈海连": 12,
       "张新淼": 0,
       "曲雅": 0,
-      "梁孟婷": 0,
       "梁梦婷": 1,
       "郭云波": 0,
       "雷双拥": 8
@@ -337,7 +319,6 @@
       "屈海连": 48,
       "张新淼": 1,
       "曲雅": 4,
-      "梁孟婷": 0,
       "梁梦婷": 0,
       "郭云波": 0,
       "雷双拥": 4
@@ -351,7 +332,6 @@
       "屈海连": 162,
       "张新淼": 21,
       "曲雅": 9,
-      "梁孟婷": 0,
       "梁梦婷": 3,
       "郭云波": 5,
       "雷双拥": 17
@@ -365,7 +345,6 @@
       "屈海连": 12,
       "张新淼": 0,
       "曲雅": 0,
-      "梁孟婷": 0,
       "梁梦婷": 1,
       "郭云波": 0,
       "雷双拥": 8
@@ -379,7 +358,6 @@
       "屈海连": 48,
       "张新淼": 1,
       "曲雅": 4,
-      "梁孟婷": 0,
       "梁梦婷": 0,
       "郭云波": 0,
       "雷双拥": 4
@@ -393,7 +371,6 @@
       "屈海连": 162,
       "张新淼": 21,
       "曲雅": 9,
-      "梁孟婷": 0,
       "梁梦婷": 3,
       "郭云波": 5,
       "雷双拥": 17
@@ -407,7 +384,6 @@
       "屈海连": 10,
       "张新淼": 0,
       "曲雅": 0,
-      "梁孟婷": 0,
       "梁梦婷": 1,
       "郭云波": 0,
       "雷双拥": 8
@@ -421,7 +397,6 @@
       "屈海连": 34,
       "张新淼": 1,
       "曲雅": 4,
-      "梁孟婷": 0,
       "梁梦婷": 0,
       "郭云波": 0,
       "雷双拥": 4
@@ -435,7 +410,6 @@
       "屈海连": 122,
       "张新淼": 19,
       "曲雅": 9,
-      "梁孟婷": 0,
       "梁梦婷": 3,
       "郭云波": 5,
       "雷双拥": 17
@@ -449,7 +423,6 @@
       "屈海连",
       "张新淼",
       "曲雅",
-      "梁孟婷",
       "梁梦婷",
       "郭云波",
       "雷双拥"
@@ -479,11 +452,11 @@
   },
   "sourceBreakdown": {
     "totals": {
-      "伏羲": 290,
+      "伏羲": 274,
       "MES": 39
     },
     "retain": {
-      "伏羲": 237,
+      "伏羲": 223,
       "MES": 39
     },
     "byDate": {
@@ -500,8 +473,7 @@
         "09-19": 8,
         "09-18": 16,
         "09-17": 19,
-        "09-16": 8,
-        "09-15": 16
+        "09-16": 8
       },
       "MES": {
         "09-28": 10,
@@ -753,13 +725,13 @@
       "anchor": "屈海连",
       "count": 9,
       "addCount": 9,
-      "retain48h": 6,
-      "delete48h": 3,
+      "retain48h": 8,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -769,13 +741,13 @@
       "anchor": "屈海连",
       "count": 9,
       "addCount": 9,
-      "retain48h": 8,
-      "delete48h": 1,
+      "retain48h": 6,
+      "delete48h": 3,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1553,13 +1525,13 @@
       "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1569,13 +1541,13 @@
       "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
+      "retain48h": 0,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1958,70 +1930,6 @@
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-15",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 13,
-      "addCount": 13,
-      "retain48h": 11,
-      "delete48h": 2,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-15",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高三",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-15",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-15",
-      "channel": "koc免费学--梁孟婷",
-      "anchor": "梁孟婷",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州三组",
       "contentType": "",
       "grade": "高一",
       "plan": "",
