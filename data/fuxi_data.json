@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-09-29 16:39:14",
+    "updateTime": "2026-09-29 17:38:52",
     "dateRange": "09-16 至 09-29",
     "days": 14,
-    "totalRecords": 55,
+    "totalRecords": 56,
     "channelFilter": "KOC"
   },
   "dates": [
@@ -25,24 +25,24 @@
   ],
   "today": "09-29",
   "yesterday": "09-28",
-  "updateTime": "2026-09-29 16:39",
+  "updateTime": "2026-09-29 17:38",
   "dateRangeText": "09-16 至 09-29（14 天）",
   "kpi": {
-    "today": 16,
-    "todayDelta": 3,
-    "todayDeltaPct": "23.1",
-    "total7d": 290,
-    "total7dDelta": 108,
-    "total7dDeltaPct": "59.3",
+    "today": 17,
+    "todayDelta": 4,
+    "todayDeltaPct": "30.8",
+    "total7d": 291,
+    "total7dDelta": 109,
+    "total7dDeltaPct": "59.9",
     "yesterday": 13,
     "ytdDelta": -38,
     "ytdDeltaPct": "-74.5",
     "avg7d": 21,
-    "todayRetain48h": 13,
-    "totalRetain48h": 236,
+    "todayRetain48h": 14,
+    "totalRetain48h": 237,
     "totalDelete48h": 54,
     "retainRate48h": 81.4,
-    "todayRetainRate48h": 81.2
+    "todayRetainRate48h": 82.4
   },
   "daily": [
     {
@@ -151,16 +151,16 @@
     },
     {
       "date": "09-29",
-      "count": 16,
-      "addCount": 16,
-      "retain48h": 13,
+      "count": 17,
+      "addCount": 17,
+      "retain48h": 14,
       "delete48h": 3,
-      "retainRate48h": 81.2
+      "retainRate48h": 82.4
     }
   ],
   "grade": {
     "today": {
-      "高一": 11,
+      "高一": 12,
       "高三": 1,
       "高二": 4
     },
@@ -170,7 +170,7 @@
       "高二": 3
     },
     "todayAdd": {
-      "高一": 11,
+      "高一": 12,
       "高三": 1,
       "高二": 4
     },
@@ -180,7 +180,7 @@
       "高二": 3
     },
     "todayRetain": {
-      "高一": 8,
+      "高一": 9,
       "高三": 1,
       "高二": 4
     },
@@ -197,7 +197,7 @@
   },
   "anchor": {
     "today": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "孙浩洋": 0,
       "孟萍": 0,
       "屈海连": 15,
@@ -211,7 +211,7 @@
       "张新淼": 0
     },
     "todayAdd": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "孙浩洋": 0,
       "孟萍": 0,
       "屈海连": 15,
@@ -225,7 +225,7 @@
       "张新淼": 0
     },
     "todayRetain": {
-      "任彩瑜": 0,
+      "任彩瑜": 1,
       "孙浩洋": 0,
       "孟萍": 0,
       "屈海连": 12,
@@ -576,12 +576,12 @@
       "date": "09-19",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
-      "grade": "高三",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 1,
-      "retain48h": 2,
+      "delete48h": 0,
+      "retain48h": 3,
       "count": 3,
       "group": "郑州五组"
     },
@@ -589,12 +589,12 @@
       "date": "09-19",
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
-      "grade": "高一",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 3,
-      "delete48h": 0,
-      "retain48h": 3,
+      "delete48h": 1,
+      "retain48h": 2,
       "count": 3,
       "group": "郑州五组"
     },
@@ -876,6 +876,19 @@
       "channel": "KOC内部讲题送资料-屈海连",
       "anchor": "屈海连",
       "grade": "高三",
+      "plan": "",
+      "source": "",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1,
+      "group": "郑州五组"
+    },
+    {
+      "date": "09-29",
+      "channel": "koc选科--任彩瑜",
+      "anchor": "任彩瑜",
+      "grade": "高一",
       "plan": "",
       "source": "",
       "addCount": 1,
