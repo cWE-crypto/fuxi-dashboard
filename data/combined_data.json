@@ -5,11 +5,11 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-09-30 11:39:38",
+    "updateTime": "2026-09-30 12:39:43",
     "dateRange": "09-17 至 09-30",
     "days": 14,
-    "totalRecords": 101,
-    "mesRecords": 49,
+    "totalRecords": 103,
+    "mesRecords": 51,
     "fuxiRecords": 52,
     "channelFilter": "MES + 伏羲"
   },
@@ -40,25 +40,25 @@
     "09-29",
     "09-30"
   ],
-  "updateTime": "2026-09-30 11:39",
+  "updateTime": "2026-09-30 12:39",
   "dateRangeText": "09-24 至 09-30（近 7 天）",
   "kpi": {
-    "today": 13,
-    "todayDelta": -17,
-    "todayDeltaPct": "-56.7",
+    "today": 15,
+    "todayDelta": -15,
+    "todayDeltaPct": "-50.0",
     "yesterday": 30,
     "ytdDelta": 3,
     "ytdDeltaPct": "11.1",
-    "total7d": 212,
-    "total7dDelta": 86,
-    "total7dDeltaPct": "68.3",
-    "avg7d": 30,
-    "todayRetain48h": 13,
+    "total7d": 214,
+    "total7dDelta": 88,
+    "total7dDeltaPct": "69.8",
+    "avg7d": 31,
+    "todayRetain48h": 15,
     "yesterdayRetain48h": 27,
-    "totalRetain48h": 175,
+    "totalRetain48h": 177,
     "totalDelete48h": 37,
     "todayDelete48h": 0,
-    "retainRate48h": 82.5,
+    "retainRate48h": 82.7,
     "todayRetainRate48h": 100.0
   },
   "daily": [
@@ -194,12 +194,12 @@
     },
     {
       "date": "09-30",
-      "count": 13,
-      "addCount": 13,
-      "retain48h": 13,
+      "count": 15,
+      "addCount": 15,
+      "retain48h": 15,
       "delete48h": 0,
       "retainRate48h": 100.0,
-      "mesCount": 7,
+      "mesCount": 9,
       "fuxiCount": 6
     }
   ],
@@ -208,9 +208,9 @@
       "key": "g0",
       "name": "郑州三组",
       "leader": "恩熙",
-      "today": 7,
+      "today": 9,
       "yesterday": 13,
-      "d7": 49,
+      "d7": 51,
       "anchors": [
         "周璞",
         "曲雅",
@@ -235,14 +235,14 @@
           "d7": 4
         },
         "郭云波": {
-          "today": 0,
+          "today": 1,
           "yesterday": 0,
-          "d7": 1
+          "d7": 2
         },
         "雷双拥": {
-          "today": 7,
+          "today": 8,
           "yesterday": 10,
-          "d7": 32
+          "d7": 33
         }
       }
     },
@@ -292,8 +292,8 @@
       "张新淼": 6,
       "曲雅": 0,
       "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 7
+      "郭云波": 1,
+      "雷双拥": 8
     },
     "yesterday": {
       "任彩瑜": 1,
@@ -314,8 +314,8 @@
       "张新淼": 15,
       "曲雅": 11,
       "梁梦婷": 4,
-      "郭云波": 1,
-      "雷双拥": 32
+      "郭云波": 2,
+      "雷双拥": 33
     },
     "todayAdd": {
       "任彩瑜": 0,
@@ -325,8 +325,8 @@
       "张新淼": 6,
       "曲雅": 0,
       "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 7
+      "郭云波": 1,
+      "雷双拥": 8
     },
     "yesterdayAdd": {
       "任彩瑜": 1,
@@ -347,8 +347,8 @@
       "张新淼": 15,
       "曲雅": 11,
       "梁梦婷": 4,
-      "郭云波": 1,
-      "雷双拥": 32
+      "郭云波": 2,
+      "雷双拥": 33
     },
     "todayRetain": {
       "任彩瑜": 0,
@@ -358,8 +358,8 @@
       "张新淼": 6,
       "曲雅": 0,
       "梁梦婷": 0,
-      "郭云波": 0,
-      "雷双拥": 7
+      "郭云波": 1,
+      "雷双拥": 8
     },
     "yesterdayRetain": {
       "任彩瑜": 1,
@@ -380,8 +380,8 @@
       "张新淼": 15,
       "曲雅": 11,
       "梁梦婷": 4,
-      "郭云波": 1,
-      "雷双拥": 32
+      "郭云波": 2,
+      "雷双拥": 33
     },
     "anchors": [
       "任彩瑜",
@@ -420,11 +420,11 @@
   "sourceBreakdown": {
     "totals": {
       "伏羲": 289,
-      "MES": 49
+      "MES": 51
     },
     "retain": {
       "伏羲": 237,
-      "MES": 49
+      "MES": 51
     },
     "byDate": {
       "伏羲": {
@@ -444,7 +444,7 @@
         "09-17": 19
       },
       "MES": {
-        "09-30": 7,
+        "09-30": 9,
         "09-29": 13,
         "09-28": 14,
         "09-27": 8,
@@ -478,6 +478,38 @@
       "grade": "高一",
       "plan": "",
       "groupLeader": ""
+    },
+    {
+      "date": "09-30",
+      "channel": "MES-郑州三组（恩熙）-初三方法资料-郭云波",
+      "anchor": "郭云波",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "初三方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
+    },
+    {
+      "date": "09-30",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "count": 1,
+      "addCount": 1,
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 0.0,
+      "source": "MES",
+      "group": "郑州三组",
+      "contentType": "高中方法资料",
+      "grade": "",
+      "plan": "",
+      "groupLeader": "恩熙"
     },
     {
       "date": "09-30",
@@ -1893,13 +1925,13 @@
       "anchor": "屈海连",
       "count": 3,
       "addCount": 3,
-      "retain48h": 2,
-      "delete48h": 1,
+      "retain48h": 3,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高一",
       "plan": "",
       "groupLeader": ""
     },
@@ -1909,13 +1941,13 @@
       "anchor": "屈海连",
       "count": 3,
       "addCount": 3,
-      "retain48h": 3,
-      "delete48h": 0,
+      "retain48h": 2,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高一",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
