@@ -5,16 +5,15 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-10-01 13:05:19",
-    "dateRange": "09-18 至 10-01",
-    "days": 14,
-    "totalRecords": 109,
+    "updateTime": "2026-10-01 18:50:43",
+    "dateRange": "09-19 至 10-01",
+    "days": 13,
+    "totalRecords": 106,
     "mesRecords": 59,
-    "fuxiRecords": 50,
+    "fuxiRecords": 47,
     "channelFilter": "MES + 伏羲"
   },
   "dates": [
-    "09-18",
     "09-19",
     "09-20",
     "09-21",
@@ -40,7 +39,7 @@
     "09-30",
     "10-01"
   ],
-  "updateTime": "2026-10-01 13:05",
+  "updateTime": "2026-10-01 18:50",
   "dateRangeText": "09-25 至 10-01（近 7 天）",
   "kpi": {
     "today": 12,
@@ -50,8 +49,8 @@
     "ytdDelta": -10,
     "ytdDeltaPct": "-33.3",
     "total7d": 197,
-    "total7dDelta": 60,
-    "total7dDeltaPct": "43.8",
+    "total7dDelta": 76,
+    "total7dDeltaPct": "62.8",
     "avg7d": 28,
     "todayRetain48h": 11,
     "yesterdayRetain48h": 20,
@@ -62,16 +61,6 @@
     "todayRetainRate48h": 91.7
   },
   "daily": [
-    {
-      "date": "09-18",
-      "count": 16,
-      "addCount": 16,
-      "retain48h": 16,
-      "delete48h": 0,
-      "retainRate48h": 100.0,
-      "mesCount": 0,
-      "fuxiCount": 16
-    },
     {
       "date": "09-19",
       "count": 8,
@@ -419,11 +408,11 @@
   },
   "sourceBreakdown": {
     "totals": {
-      "伏羲": 275,
+      "伏羲": 259,
       "MES": 59
     },
     "retain": {
-      "伏羲": 224,
+      "伏羲": 208,
       "MES": 59
     },
     "byDate": {
@@ -440,8 +429,7 @@
         "09-22": 9,
         "09-21": 17,
         "09-20": 14,
-        "09-19": 8,
-        "09-18": 16
+        "09-19": 8
       },
       "MES": {
         "10-01": 8,
@@ -1137,8 +1125,8 @@
     },
     {
       "date": "09-29",
-      "channel": "koc选科--任彩瑜",
-      "anchor": "任彩瑜",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
       "retain48h": 1,
@@ -1153,8 +1141,8 @@
     },
     {
       "date": "09-29",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
+      "channel": "koc选科--任彩瑜",
+      "anchor": "任彩瑜",
       "count": 1,
       "addCount": 1,
       "retain48h": 1,
@@ -1973,13 +1961,13 @@
       "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
+      "retain48h": 0,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1989,13 +1977,13 @@
       "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -2151,54 +2139,6 @@
       "addCount": 2,
       "retain48h": 1,
       "delete48h": 1,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-18",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 11,
-      "addCount": 11,
-      "retain48h": 11,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-18",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 4,
-      "addCount": 4,
-      "retain48h": 4,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高三",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-18",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
