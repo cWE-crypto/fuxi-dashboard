@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-10-01 15:39:26",
+    "updateTime": "2026-10-01 16:39:43",
     "dateRange": "09-25 至 10-01",
     "days": 7,
-    "totalRecords": 57,
+    "totalRecords": 58,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "10-01",
   "yesterday": "09-30",
-  "updateTime": "2026-10-01 15:39",
+  "updateTime": "2026-10-01 16:39",
   "dateRangeText": "09-25 至 10-01（7 天）",
   "kpi": {
-    "today": 6,
-    "todayDelta": -7,
-    "todayDeltaPct": "-53.8",
-    "total7d": 57,
-    "total7dDelta": 57,
+    "today": 7,
+    "todayDelta": -6,
+    "todayDeltaPct": "-46.2",
+    "total7d": 58,
+    "total7dDelta": 58,
     "total7dDeltaPct": "0.0",
     "yesterday": 13,
-    "ytdDelta": -7,
-    "ytdDeltaPct": "-53.8",
-    "avg7d": 8.1
+    "ytdDelta": -6,
+    "ytdDeltaPct": "-46.2",
+    "avg7d": 8.3
   },
   "daily": [
     {
@@ -83,9 +83,9 @@
     },
     {
       "date": "10-01",
-      "count": 6,
-      "addCount": 6,
-      "retain48h": 6,
+      "count": 7,
+      "addCount": 7,
+      "retain48h": 7,
       "delete48h": 0,
       "retainRate48h": 100.0
     }
@@ -95,9 +95,9 @@
       "key": "g0",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 6,
+      "today": 7,
       "yesterday": 13,
-      "d7": 57,
+      "d7": 58,
       "anchors": [
         "周璞",
         "曲雅",
@@ -107,9 +107,9 @@
       ],
       "anchorDetail": {
         "周璞": {
-          "today": 0,
+          "today": 1,
           "yesterday": 3,
-          "d7": 4
+          "d7": 5
         },
         "曲雅": {
           "today": 0,
@@ -136,6 +136,7 @@
   ],
   "anchor": {
     "today": {
+      "周璞": 1,
       "郭云波": 2,
       "梁梦婷": 4
     },
@@ -153,6 +154,19 @@
     ]
   },
   "detail": [
+    {
+      "date": "10-01",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-周璞",
+      "anchor": "周璞",
+      "group": "郑州三组（恩熙）",
+      "contentType": "高中方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
     {
       "date": "09-30",
       "channel": "MES-郑州三组（恩熙）-高中方法资料-周璞",
