@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-10-08 18:34:28",
+    "updateTime": "2026-10-08 19:38:22",
     "dateRange": "10-02 至 10-08",
     "days": 7,
-    "totalRecords": 43,
+    "totalRecords": 45,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "10-08",
   "yesterday": "10-07",
-  "updateTime": "2026-10-08 18:34",
+  "updateTime": "2026-10-08 19:38",
   "dateRangeText": "10-02 至 10-08（7 天）",
   "kpi": {
-    "today": 7,
-    "todayDelta": 1,
-    "todayDeltaPct": "16.7",
-    "total7d": 43,
-    "total7dDelta": 43,
+    "today": 9,
+    "todayDelta": 3,
+    "todayDeltaPct": "50.0",
+    "total7d": 45,
+    "total7dDelta": 45,
     "total7dDeltaPct": "0.0",
     "yesterday": 6,
-    "ytdDelta": 1,
-    "ytdDeltaPct": "16.7",
-    "avg7d": 6.1
+    "ytdDelta": 3,
+    "ytdDeltaPct": "50.0",
+    "avg7d": 6.4
   },
   "daily": [
     {
@@ -83,9 +83,9 @@
     },
     {
       "date": "10-08",
-      "count": 7,
-      "addCount": 7,
-      "retain48h": 7,
+      "count": 9,
+      "addCount": 9,
+      "retain48h": 9,
       "delete48h": 0,
       "retainRate48h": 100.0
     }
@@ -95,9 +95,9 @@
       "key": "g0",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 7,
+      "today": 9,
       "yesterday": 6,
-      "d7": 43,
+      "d7": 45,
       "anchors": [
         "周璞",
         "曲雅",
@@ -112,9 +112,9 @@
           "d7": 3
         },
         "曲雅": {
-          "today": 0,
+          "today": 2,
           "yesterday": 1,
-          "d7": 7
+          "d7": 9
         },
         "梁梦婷": {
           "today": 1,
@@ -136,6 +136,7 @@
   ],
   "anchor": {
     "today": {
+      "曲雅": 2,
       "梁梦婷": 1,
       "雷双拥": 6
     },
@@ -183,6 +184,32 @@
       "date": "10-06",
       "channel": "MES-郑州三组（恩熙）-高中方法资料-周璞",
       "anchor": "周璞",
+      "group": "郑州三组（恩熙）",
+      "contentType": "高中方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "10-08",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-曲雅",
+      "anchor": "曲雅",
+      "group": "郑州三组（恩熙）",
+      "contentType": "高中方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "10-08",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-曲雅",
+      "anchor": "曲雅",
       "group": "郑州三组（恩熙）",
       "contentType": "高中方法资料",
       "plan": "",
