@@ -1,10 +1,10 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-10-09 13:28:54",
+    "updateTime": "2026-10-09 14:31:50",
     "dateRange": "10-03 至 10-09",
     "days": 7,
-    "totalRecords": 42,
+    "totalRecords": 43,
     "channelFilter": "MES"
   },
   "dates": [
@@ -18,19 +18,19 @@
   ],
   "today": "10-09",
   "yesterday": "10-08",
-  "updateTime": "2026-10-09 13:28",
+  "updateTime": "2026-10-09 14:31",
   "dateRangeText": "10-03 至 10-09（7 天）",
   "kpi": {
-    "today": 3,
-    "todayDelta": -6,
-    "todayDeltaPct": "-66.7",
-    "total7d": 42,
-    "total7dDelta": 42,
+    "today": 4,
+    "todayDelta": -5,
+    "todayDeltaPct": "-55.6",
+    "total7d": 43,
+    "total7dDelta": 43,
     "total7dDeltaPct": "0.0",
     "yesterday": 9,
-    "ytdDelta": -6,
-    "ytdDeltaPct": "-66.7",
-    "avg7d": 6.0
+    "ytdDelta": -5,
+    "ytdDeltaPct": "-55.6",
+    "avg7d": 6.1
   },
   "daily": [
     {
@@ -83,9 +83,9 @@
     },
     {
       "date": "10-09",
-      "count": 3,
-      "addCount": 3,
-      "retain48h": 3,
+      "count": 4,
+      "addCount": 4,
+      "retain48h": 4,
       "delete48h": 0,
       "retainRate48h": 100.0
     }
@@ -95,9 +95,9 @@
       "key": "g0",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 3,
+      "today": 4,
       "yesterday": 9,
-      "d7": 42,
+      "d7": 43,
       "anchors": [
         "周璞",
         "曲雅",
@@ -127,9 +127,9 @@
           "d7": 3
         },
         "雷双拥": {
-          "today": 1,
+          "today": 2,
           "yesterday": 6,
-          "d7": 27
+          "d7": 28
         }
       }
     }
@@ -137,7 +137,7 @@
   "anchor": {
     "today": {
       "郭云波": 2,
-      "雷双拥": 1
+      "雷双拥": 2
     },
     "yesterday": {
       "曲雅": 2,
@@ -341,6 +341,19 @@
       "anchor": "梁梦婷",
       "group": "郑州三组（恩熙）",
       "contentType": "初三方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "10-09",
+      "channel": "MES-郑州三组（恩熙）-高中方法资料-雷双拥",
+      "anchor": "雷双拥",
+      "group": "郑州三组（恩熙）",
+      "contentType": "高中方法资料",
       "plan": "",
       "source": "MES",
       "addCount": 1,
