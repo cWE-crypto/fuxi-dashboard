@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-10-10 16:13:29",
+    "updateTime": "2026-10-10 17:15:53",
     "dateRange": "09-27 至 10-07",
     "days": 11,
     "totalRecords": 44,
@@ -22,7 +22,7 @@
   ],
   "today": "10-07",
   "yesterday": "10-06",
-  "updateTime": "2026-10-10 16:13",
+  "updateTime": "2026-10-10 17:15",
   "dateRangeText": "09-27 至 10-07（11 天）",
   "kpi": {
     "today": 19,
@@ -657,8 +657,8 @@
     },
     {
       "date": "09-29",
-      "channel": "koc选科--任彩瑜",
-      "anchor": "任彩瑜",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
       "grade": "高一",
       "plan": "",
       "source": "",
@@ -670,8 +670,8 @@
     },
     {
       "date": "09-29",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
+      "channel": "koc选科--任彩瑜",
+      "anchor": "任彩瑜",
       "grade": "高一",
       "plan": "",
       "source": "",
