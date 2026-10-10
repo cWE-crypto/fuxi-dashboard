@@ -1,46 +1,38 @@
 {
   "meta": {
     "source": "mes_api",
-    "updateTime": "2026-10-09 18:48:15",
-    "dateRange": "10-03 至 10-09",
+    "updateTime": "2026-10-10 10:51:03",
+    "dateRange": "10-04 至 10-10",
     "days": 7,
-    "totalRecords": 44,
+    "totalRecords": 45,
     "channelFilter": "MES"
   },
   "dates": [
-    "10-03",
     "10-04",
     "10-05",
     "10-06",
     "10-07",
     "10-08",
-    "10-09"
+    "10-09",
+    "10-10"
   ],
-  "today": "10-09",
-  "yesterday": "10-08",
-  "updateTime": "2026-10-09 18:48",
-  "dateRangeText": "10-03 至 10-09（7 天）",
+  "today": "10-10",
+  "yesterday": "10-09",
+  "updateTime": "2026-10-10 10:51",
+  "dateRangeText": "10-04 至 10-10（7 天）",
   "kpi": {
-    "today": 5,
-    "todayDelta": -4,
-    "todayDeltaPct": "-44.4",
-    "total7d": 44,
-    "total7dDelta": 44,
+    "today": 0,
+    "todayDelta": -6,
+    "todayDeltaPct": "-100.0",
+    "total7d": 45,
+    "total7dDelta": 45,
     "total7dDeltaPct": "0.0",
-    "yesterday": 9,
-    "ytdDelta": -4,
-    "ytdDeltaPct": "-44.4",
-    "avg7d": 6.3
+    "yesterday": 6,
+    "ytdDelta": -6,
+    "ytdDeltaPct": "-100.0",
+    "avg7d": 6.4
   },
   "daily": [
-    {
-      "date": "10-03",
-      "count": 0,
-      "addCount": 0,
-      "retain48h": 0,
-      "delete48h": 0,
-      "retainRate48h": 0.0
-    },
     {
       "date": "10-04",
       "count": 7,
@@ -83,11 +75,19 @@
     },
     {
       "date": "10-09",
-      "count": 5,
-      "addCount": 5,
-      "retain48h": 5,
+      "count": 6,
+      "addCount": 6,
+      "retain48h": 6,
       "delete48h": 0,
       "retainRate48h": 100.0
+    },
+    {
+      "date": "10-10",
+      "count": 0,
+      "addCount": 0,
+      "retain48h": 0,
+      "delete48h": 0,
+      "retainRate48h": 0.0
     }
   ],
   "groups": [
@@ -95,9 +95,9 @@
       "key": "g0",
       "name": "郑州三组（恩熙）",
       "leader": "恩熙",
-      "today": 5,
-      "yesterday": 9,
-      "d7": 44,
+      "today": 0,
+      "yesterday": 6,
+      "d7": 45,
       "anchors": [
         "周璞",
         "曲雅",
@@ -107,43 +107,40 @@
       ],
       "anchorDetail": {
         "周璞": {
-          "today": 1,
-          "yesterday": 0,
+          "today": 0,
+          "yesterday": 1,
           "d7": 4
         },
         "曲雅": {
           "today": 0,
-          "yesterday": 2,
+          "yesterday": 0,
           "d7": 4
         },
         "梁梦婷": {
           "today": 0,
           "yesterday": 1,
-          "d7": 5
+          "d7": 6
         },
         "郭云波": {
-          "today": 2,
-          "yesterday": 0,
+          "today": 0,
+          "yesterday": 2,
           "d7": 3
         },
         "雷双拥": {
-          "today": 2,
-          "yesterday": 6,
+          "today": 0,
+          "yesterday": 2,
           "d7": 28
         }
       }
     }
   ],
   "anchor": {
-    "today": {
+    "today": {},
+    "yesterday": {
       "周璞": 1,
       "郭云波": 2,
-      "雷双拥": 2
-    },
-    "yesterday": {
-      "曲雅": 2,
       "梁梦婷": 1,
-      "雷双拥": 6
+      "雷双拥": 2
     },
     "anchors": [
       "周璞",
@@ -288,6 +285,19 @@
       "date": "10-06",
       "channel": "MES-郑州三组（恩熙）-初三方法资料-郭云波",
       "anchor": "郭云波",
+      "group": "郑州三组（恩熙）",
+      "contentType": "初三方法资料",
+      "plan": "",
+      "source": "MES",
+      "addCount": 1,
+      "delete48h": 0,
+      "retain48h": 1,
+      "count": 1
+    },
+    {
+      "date": "10-09",
+      "channel": "MES-郑州三组（恩熙）-初三方法资料-梁梦婷",
+      "anchor": "梁梦婷",
       "group": "郑州三组（恩熙）",
       "contentType": "初三方法资料",
       "plan": "",
