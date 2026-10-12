@@ -5,16 +5,15 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-10-12 15:14:27",
-    "dateRange": "09-29 至 10-11",
-    "days": 13,
-    "totalRecords": 73,
+    "updateTime": "2026-10-12 22:55:14",
+    "dateRange": "09-30 至 10-11",
+    "days": 12,
+    "totalRecords": 68,
     "mesRecords": 36,
-    "fuxiRecords": 37,
+    "fuxiRecords": 32,
     "channelFilter": "MES + 伏羲"
   },
   "dates": [
-    "09-29",
     "09-30",
     "10-01",
     "10-02",
@@ -39,7 +38,7 @@
     "10-11",
     "10-12"
   ],
-  "updateTime": "2026-10-12 15:14",
+  "updateTime": "2026-10-12 22:55",
   "dateRangeText": "10-06 至 10-12（近 7 天）",
   "kpi": {
     "today": 0,
@@ -49,8 +48,8 @@
     "ytdDelta": -5,
     "ytdDeltaPct": "-71.4",
     "total7d": 71,
-    "total7dDelta": -39,
-    "total7dDeltaPct": "-35.5",
+    "total7dDelta": -22,
+    "total7dDeltaPct": "-23.7",
     "avg7d": 10,
     "todayRetain48h": 0,
     "yesterdayRetain48h": 1,
@@ -61,16 +60,6 @@
     "todayRetainRate48h": 0.0
   },
   "daily": [
-    {
-      "date": "09-29",
-      "count": 17,
-      "addCount": 17,
-      "retain48h": 14,
-      "delete48h": 3,
-      "retainRate48h": 82.4,
-      "mesCount": 0,
-      "fuxiCount": 17
-    },
     {
       "date": "09-30",
       "count": 7,
@@ -393,11 +382,11 @@
   "sourceBreakdown": {
     "totals": {
       "MES": 36,
-      "伏羲": 145
+      "伏羲": 128
     },
     "retain": {
       "MES": 36,
-      "伏羲": 104
+      "伏羲": 90
     },
     "byDate": {
       "MES": {
@@ -417,8 +406,7 @@
         "10-03": 28,
         "10-02": 7,
         "10-01": 4,
-        "09-30": 7,
-        "09-29": 17
+        "09-30": 7
       }
     }
   },
@@ -982,13 +970,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -998,13 +986,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
+      "retain48h": 0,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1270,13 +1258,13 @@
       "anchor": "屈海连",
       "count": 4,
       "addCount": 4,
-      "retain48h": 3,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 3,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1286,13 +1274,13 @@
       "anchor": "屈海连",
       "count": 4,
       "addCount": 4,
-      "retain48h": 1,
-      "delete48h": 3,
+      "retain48h": 3,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1517,86 +1505,6 @@
       "group": "郑州五组",
       "contentType": "",
       "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-29",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 10,
-      "addCount": 10,
-      "retain48h": 7,
-      "delete48h": 3,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-29",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 4,
-      "addCount": 4,
-      "retain48h": 4,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高二",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-29",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高三",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-29",
-      "channel": "koc选科--任彩瑜",
-      "anchor": "任彩瑜",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
-      "plan": "",
-      "groupLeader": ""
-    },
-    {
-      "date": "09-29",
-      "channel": "KOC内部纯资料-张新淼",
-      "anchor": "张新淼",
-      "count": 1,
-      "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
-      "retainRate48h": 0.0,
-      "source": "伏羲",
-      "group": "郑州五组",
-      "contentType": "",
-      "grade": "高一",
       "plan": "",
       "groupLeader": ""
     }
