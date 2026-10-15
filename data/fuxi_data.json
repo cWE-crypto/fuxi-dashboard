@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-10-15 13:45:07",
+    "updateTime": "2026-10-15 14:48:00",
     "dateRange": "10-02 至 10-11",
     "days": 7,
     "totalRecords": 27,
@@ -18,7 +18,7 @@
   ],
   "today": "10-11",
   "yesterday": "10-07",
-  "updateTime": "2026-10-15 13:45",
+  "updateTime": "2026-10-15 14:48",
   "dateRangeText": "10-02 至 10-11（7 天）",
   "kpi": {
     "today": 1,
