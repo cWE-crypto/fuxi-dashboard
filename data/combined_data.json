@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-10-14 23:10:47",
+    "updateTime": "2026-10-15 01:26:50",
     "dateRange": "10-02 至 10-11",
     "days": 10,
     "totalRecords": 50,
@@ -25,19 +25,19 @@
     "10-10",
     "10-11"
   ],
-  "today": "10-14",
-  "yesterday": "10-13",
+  "today": "10-15",
+  "yesterday": "10-14",
   "dates7d": [
-    "10-08",
     "10-09",
     "10-10",
     "10-11",
     "10-12",
     "10-13",
-    "10-14"
+    "10-14",
+    "10-15"
   ],
-  "updateTime": "2026-10-14 23:10",
-  "dateRangeText": "10-08 至 10-14（近 7 天）",
+  "updateTime": "2026-10-15 01:26",
+  "dateRangeText": "10-09 至 10-15（近 7 天）",
   "kpi": {
     "today": 0,
     "todayDelta": 0,
@@ -45,16 +45,16 @@
     "yesterday": 0,
     "ytdDelta": 0,
     "ytdDeltaPct": "0.0",
-    "total7d": 24,
-    "total7dDelta": -92,
-    "total7dDeltaPct": "-79.3",
-    "avg7d": 3,
+    "total7d": 15,
+    "total7dDelta": -110,
+    "total7dDeltaPct": "-88.0",
+    "avg7d": 2,
     "todayRetain48h": 0,
     "yesterdayRetain48h": 0,
-    "totalRetain48h": 23,
+    "totalRetain48h": 14,
     "totalDelete48h": 1,
     "todayDelete48h": 0,
-    "retainRate48h": 95.8,
+    "retainRate48h": 93.3,
     "todayRetainRate48h": 0.0
   },
   "daily": [
@@ -166,7 +166,7 @@
       "leader": "恩熙",
       "today": 0,
       "yesterday": 0,
-      "d7": 23,
+      "d7": 14,
       "anchors": [
         "周璞",
         "曲雅",
@@ -183,12 +183,12 @@
         "曲雅": {
           "today": 0,
           "yesterday": 0,
-          "d7": 5
+          "d7": 3
         },
         "梁梦婷": {
           "today": 0,
           "yesterday": 0,
-          "d7": 3
+          "d7": 2
         },
         "郭云波": {
           "today": 0,
@@ -198,7 +198,7 @@
         "雷双拥": {
           "today": 0,
           "yesterday": 0,
-          "d7": 8
+          "d7": 2
         }
       }
     },
@@ -259,10 +259,10 @@
       "周璞": 2,
       "屈海连": 1,
       "张新淼": 0,
-      "曲雅": 5,
-      "梁梦婷": 3,
+      "曲雅": 3,
+      "梁梦婷": 2,
       "郭云波": 5,
-      "雷双拥": 8
+      "雷双拥": 2
     },
     "todayAdd": {
       "任彩瑜": 0,
@@ -289,10 +289,10 @@
       "周璞": 2,
       "屈海连": 1,
       "张新淼": 0,
-      "曲雅": 5,
-      "梁梦婷": 3,
+      "曲雅": 3,
+      "梁梦婷": 2,
       "郭云波": 5,
-      "雷双拥": 8
+      "雷双拥": 2
     },
     "todayRetain": {
       "任彩瑜": 0,
@@ -319,10 +319,10 @@
       "周璞": 2,
       "屈海连": 0,
       "张新淼": 0,
-      "曲雅": 5,
-      "梁梦婷": 3,
+      "曲雅": 3,
+      "梁梦婷": 2,
       "郭云波": 5,
-      "雷双拥": 8
+      "雷双拥": 2
     },
     "anchors": [
       "任彩瑜",
@@ -848,13 +848,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
-      "delete48h": 0,
+      "retain48h": 0,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -864,13 +864,13 @@
       "anchor": "屈海连",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
@@ -1024,13 +1024,13 @@
       "anchor": "屈海连",
       "count": 4,
       "addCount": 4,
-      "retain48h": 3,
-      "delete48h": 1,
+      "retain48h": 1,
+      "delete48h": 3,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高二",
+      "grade": "高三",
       "plan": "",
       "groupLeader": ""
     },
@@ -1040,13 +1040,13 @@
       "anchor": "屈海连",
       "count": 4,
       "addCount": 4,
-      "retain48h": 1,
-      "delete48h": 3,
+      "retain48h": 3,
+      "delete48h": 1,
       "retainRate48h": 0.0,
       "source": "伏羲",
       "group": "郑州五组",
       "contentType": "",
-      "grade": "高三",
+      "grade": "高二",
       "plan": "",
       "groupLeader": ""
     },
