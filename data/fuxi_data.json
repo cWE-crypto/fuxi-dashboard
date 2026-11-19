@@ -1,19 +1,19 @@
 {
   "meta": {
     "source": "fuxi_api",
-    "updateTime": "2026-10-24 22:28:31",
-    "dateRange": "10-11 至 10-11",
+    "updateTime": "2026-11-19 20:56:03",
+    "dateRange": "11-19 至 11-19",
     "days": 1,
     "totalRecords": 1,
     "channelFilter": "KOC"
   },
   "dates": [
-    "10-11"
+    "11-19"
   ],
-  "today": "10-11",
-  "yesterday": "10-11",
-  "updateTime": "2026-10-24 22:28",
-  "dateRangeText": "10-11 至 10-11（1 天）",
+  "today": "11-19",
+  "yesterday": "11-19",
+  "updateTime": "2026-11-19 20:56",
+  "dateRangeText": "11-19 至 11-19（1 天）",
   "kpi": {
     "today": 1,
     "todayDelta": 0,
@@ -25,79 +25,79 @@
     "ytdDelta": 0,
     "ytdDeltaPct": "0.0",
     "avg7d": 1,
-    "todayRetain48h": 0,
-    "totalRetain48h": 0,
-    "totalDelete48h": 1,
-    "retainRate48h": 0.0,
-    "todayRetainRate48h": 0.0
+    "todayRetain48h": 1,
+    "totalRetain48h": 1,
+    "totalDelete48h": 0,
+    "retainRate48h": 100.0,
+    "todayRetainRate48h": 100.0
   },
   "daily": [
     {
-      "date": "10-11",
+      "date": "11-19",
       "count": 1,
       "addCount": 1,
-      "retain48h": 0,
-      "delete48h": 1,
-      "retainRate48h": 0.0
+      "retain48h": 1,
+      "delete48h": 0,
+      "retainRate48h": 100.0
     }
   ],
   "grade": {
     "today": {
-      "高二": 1
+      "高三": 1
     },
     "yesterday": {
-      "高二": 1
+      "高三": 1
     },
     "todayAdd": {
-      "高二": 1
+      "高三": 1
     },
     "yesterdayAdd": {
-      "高二": 1
+      "高三": 1
     },
     "todayRetain": {
-      "高二": 0
+      "高三": 1
     },
     "yesterdayRetain": {
-      "高二": 0
+      "高三": 1
     },
     "grades": [
-      "高二"
+      "高三"
     ]
   },
   "anchor": {
     "today": {
-      "屈海连": 1
+      "张新淼": 1
     },
     "yesterday": {
-      "屈海连": 1
+      "张新淼": 1
     },
     "todayAdd": {
-      "屈海连": 1
+      "张新淼": 1
     },
     "yesterdayAdd": {
-      "屈海连": 1
+      "张新淼": 1
     },
     "todayRetain": {
-      "屈海连": 0
+      "张新淼": 1
     },
     "yesterdayRetain": {
-      "屈海连": 0
+      "张新淼": 1
     },
     "anchors": [
-      "屈海连"
+      "张新淼"
     ]
   },
   "detail": [
     {
-      "date": "10-11",
-      "channel": "KOC内部讲题送资料-屈海连",
-      "anchor": "屈海连",
-      "grade": "高二",
+      "date": "11-19",
+      "channel": "KOC内部纯资料-张新淼",
+      "anchor": "张新淼",
+      "grade": "高三",
       "plan": "",
       "source": "",
       "addCount": 1,
-      "delete48h": 1,
-      "retain48h": 0,
+      "delete48h": 0,
+      "retain48h": 1,
       "count": 1,
       "group": "郑州五组"
     }
