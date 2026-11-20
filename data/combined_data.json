@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-11-19 21:26:54",
+    "updateTime": "2026-11-20 03:05:48",
     "dateRange": "10-10 至 11-19",
     "days": 3,
     "totalRecords": 9,
@@ -18,37 +18,37 @@
     "10-11",
     "11-19"
   ],
-  "today": "11-19",
-  "yesterday": "11-18",
+  "today": "11-20",
+  "yesterday": "11-19",
   "dates7d": [
-    "11-13",
     "11-14",
     "11-15",
     "11-16",
     "11-17",
     "11-18",
-    "11-19"
+    "11-19",
+    "11-20"
   ],
-  "updateTime": "2026-11-19 21:26",
-  "dateRangeText": "11-13 至 11-19（近 7 天）",
+  "updateTime": "2026-11-20 03:05",
+  "dateRangeText": "11-14 至 11-20（近 7 天）",
   "kpi": {
-    "today": 1,
-    "todayDelta": 1,
-    "todayDeltaPct": "0.0",
-    "yesterday": 0,
-    "ytdDelta": 0,
+    "today": 0,
+    "todayDelta": -1,
+    "todayDeltaPct": "-100.0",
+    "yesterday": 1,
+    "ytdDelta": 1,
     "ytdDeltaPct": "0.0",
     "total7d": 1,
     "total7dDelta": 1,
     "total7dDeltaPct": "0.0",
     "avg7d": 0,
-    "todayRetain48h": 1,
-    "yesterdayRetain48h": 0,
+    "todayRetain48h": 0,
+    "yesterdayRetain48h": 1,
     "totalRetain48h": 1,
     "totalDelete48h": 0,
     "todayDelete48h": 0,
     "retainRate48h": 100.0,
-    "todayRetainRate48h": 100.0
+    "todayRetainRate48h": 0.0
   },
   "daily": [
     {
@@ -123,16 +123,16 @@
       "key": "g1",
       "name": "郑州五组",
       "leader": "锦安",
-      "today": 1,
-      "yesterday": 0,
+      "today": 0,
+      "yesterday": 1,
       "d7": 1,
       "anchors": [
         "张新淼"
       ],
       "anchorDetail": {
         "张新淼": {
-          "today": 1,
-          "yesterday": 0,
+          "today": 0,
+          "yesterday": 1,
           "d7": 1
         }
       }
@@ -141,14 +141,14 @@
   "anchor": {
     "today": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
     },
     "yesterday": {
       "周璞": 0,
-      "张新淼": 0,
+      "张新淼": 1,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -162,14 +162,14 @@
     },
     "todayAdd": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
     },
     "yesterdayAdd": {
       "周璞": 0,
-      "张新淼": 0,
+      "张新淼": 1,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -183,14 +183,14 @@
     },
     "todayRetain": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
     },
     "yesterdayRetain": {
       "周璞": 0,
-      "张新淼": 0,
+      "张新淼": 1,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -212,10 +212,10 @@
   },
   "grade": {
     "today": {
-      "高三": 1
+      "高三": 0
     },
     "yesterday": {
-      "高三": 0
+      "高三": 1
     },
     "d7": {
       "高三": 1
