@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-11-21 23:08:01",
+    "updateTime": "2026-11-22 03:03:22",
     "dateRange": "10-10 至 11-19",
     "days": 3,
     "totalRecords": 9,
@@ -18,26 +18,26 @@
     "10-11",
     "11-19"
   ],
-  "today": "11-21",
-  "yesterday": "11-20",
+  "today": "11-22",
+  "yesterday": "11-21",
   "dates7d": [
-    "11-15",
     "11-16",
     "11-17",
     "11-18",
     "11-19",
     "11-20",
-    "11-21"
+    "11-21",
+    "11-22"
   ],
-  "updateTime": "2026-11-21 23:08",
-  "dateRangeText": "11-15 至 11-21（近 7 天）",
+  "updateTime": "2026-11-22 03:03",
+  "dateRangeText": "11-16 至 11-22（近 7 天）",
   "kpi": {
     "today": 0,
     "todayDelta": 0,
     "todayDeltaPct": "0.0",
     "yesterday": 0,
-    "ytdDelta": -1,
-    "ytdDeltaPct": "-100.0",
+    "ytdDelta": 0,
+    "ytdDeltaPct": "0.0",
     "total7d": 1,
     "total7dDelta": 1,
     "total7dDeltaPct": "0.0",
