@@ -5,7 +5,7 @@
       "MES",
       "伏羲"
     ],
-    "updateTime": "2026-11-25 22:27:39",
+    "updateTime": "2026-11-26 04:58:08",
     "dateRange": "10-10 至 11-19",
     "days": 3,
     "totalRecords": 9,
@@ -18,19 +18,19 @@
     "10-11",
     "11-19"
   ],
-  "today": "11-25",
-  "yesterday": "11-24",
+  "today": "11-26",
+  "yesterday": "11-25",
   "dates7d": [
-    "11-19",
     "11-20",
     "11-21",
     "11-22",
     "11-23",
     "11-24",
-    "11-25"
+    "11-25",
+    "11-26"
   ],
-  "updateTime": "2026-11-25 22:27",
-  "dateRangeText": "11-19 至 11-25（近 7 天）",
+  "updateTime": "2026-11-26 04:58",
+  "dateRangeText": "11-20 至 11-26（近 7 天）",
   "kpi": {
     "today": 0,
     "todayDelta": 0,
@@ -38,16 +38,16 @@
     "yesterday": 0,
     "ytdDelta": 0,
     "ytdDeltaPct": "0.0",
-    "total7d": 1,
-    "total7dDelta": 1,
-    "total7dDeltaPct": "0.0",
+    "total7d": 0,
+    "total7dDelta": -1,
+    "total7dDeltaPct": "-100.0",
     "avg7d": 0,
     "todayRetain48h": 0,
     "yesterdayRetain48h": 0,
-    "totalRetain48h": 1,
+    "totalRetain48h": 0,
     "totalDelete48h": 0,
     "todayDelete48h": 0,
-    "retainRate48h": 100.0,
+    "retainRate48h": 0.0,
     "todayRetainRate48h": 0.0
   },
   "daily": [
@@ -75,9 +75,9 @@
       "date": "11-19",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
+      "retain48h": 0,
       "delete48h": 0,
-      "retainRate48h": 100.0,
+      "retainRate48h": 0.0,
       "mesCount": 0,
       "fuxiCount": 1
     }
@@ -125,7 +125,7 @@
       "leader": "锦安",
       "today": 0,
       "yesterday": 0,
-      "d7": 1,
+      "d7": 0,
       "anchors": [
         "张新淼"
       ],
@@ -133,7 +133,7 @@
         "张新淼": {
           "today": 0,
           "yesterday": 0,
-          "d7": 1
+          "d7": 0
         }
       }
     }
@@ -155,7 +155,7 @@
     },
     "d7": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -176,7 +176,7 @@
     },
     "d7Add": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -197,7 +197,7 @@
     },
     "d7Retain": {
       "周璞": 0,
-      "张新淼": 1,
+      "张新淼": 0,
       "曲雅": 0,
       "梁梦婷": 0,
       "郭云波": 0
@@ -218,7 +218,7 @@
       "高三": 0
     },
     "d7": {
-      "高三": 1
+      "高三": 0
     },
     "grades": [
       "高三"
@@ -230,7 +230,7 @@
       "MES": 8
     },
     "retain": {
-      "伏羲": 1,
+      "伏羲": 0,
       "MES": 8
     },
     "byDate": {
@@ -259,7 +259,7 @@
       "anchor": "张新淼",
       "count": 1,
       "addCount": 1,
-      "retain48h": 1,
+      "retain48h": 0,
       "delete48h": 0,
       "retainRate48h": 0.0,
       "source": "伏羲",
